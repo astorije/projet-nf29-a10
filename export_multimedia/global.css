@@ -1,0 +1,81 @@
+/* Couleurs :
+ * #26221D Marron foncé +
+ * #8C2C0F Marron coloré
+ * #E5E5B8 Crème
+ * #BFB38D Beige
+ * #402D1F Marron foncé
+ * #585858
+ */
+
+body {
+  font-family:"Trebuchet MS", Tahoma, Arial, Verdana;
+  padding: 0;
+  margin: 0;
+  color: #402D1F;
+}
+
+h1 {
+  text-align: center;
+}
+
+a {
+  color: #8C2C0F;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #26221D;
+}
+
+#questions {
+  position: relative;
+  width: 1000px;
+  margin: auto;
+}
+
+.question {
+  position: absolute;
+  display: none;
+  width: 980px;
+  border: 2px solid #402D1F;
+  background-color: #E5E5B8;
+  color: #171C32;
+  margin: 5px auto;
+  padding: 10px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+}
+
+a#previous, #score {
+  display: none;
+}
+
+#footer {
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  margin: auto;
+  position: fixed;
+  background-color: #BFB38D;
+  bottom: 0;
+  border-top: 1px solid #402D1F;
+}
+#footer ul {
+  margin: 10px;
+  padding: 0;
+}
+#footer li {
+  display: inline-block;
+  width: 120px;
+}
+.left {
+  text-align: left;
+}
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
