@@ -14,6 +14,9 @@
 		<paragraphe>Indice de reponse</paragraphe> 
 		<!-- <image src="image.jpeg"/> --> 
 	</indice> 
+  	<solutionGenerale>
+  		solution
+  	</solutionGenerale>
 	
   </question> 
 
@@ -26,6 +29,9 @@
 			<paragraphe>Indice de reponse</paragraphe> 
 			<!-- <image src="image.jpeg"/> --> 
 		</indice> 
+		<solutionGenerale>
+			solution
+		</solutionGenerale>
 		
 	</question> 
 	
@@ -38,7 +44,9 @@
 			<paragraphe>Indice de reponse 3</paragraphe> 
 			<!-- <image src="image.jpeg"/> --> 
 		</indice> 
-		
+		<solutionGenerale>
+			solution
+		</solutionGenerale>
 	</question> 
 	
 	<question> 
@@ -51,7 +59,9 @@
 			<paragraphe>Indice de reponse 4</paragraphe> 
 			<!-- <image src="image.jpeg"/> --> 
 		</indice>
-		
+		<solutionGenerale>
+			solution
+		</solutionGenerale>
 	</question> 
 	
 	
