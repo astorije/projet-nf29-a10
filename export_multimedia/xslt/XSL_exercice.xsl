@@ -52,6 +52,7 @@
            <xsl:apply-templates select="enonce"/> 
            <xsl:apply-templates select="indice"/>
            <xsl:apply-templates select="reponse"/>
+           <xsl:apply-templates select="solutionGenerale"/>
        </div>
    </xsl:template>
     <xsl:template match="question[last()]">
@@ -104,6 +105,10 @@
      </xsl:template>
     
     <xsl:template match="reponse_texte">
+        <div class="solution"><xsl:value-of select="."/></div>
+    </xsl:template>
+    
+    <xsl:template match="solutionGenerale">
         <div class="solution"><xsl:value-of select="."/></div>
     </xsl:template>
     
