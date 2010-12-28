@@ -83,6 +83,15 @@ a:hover {
   border-color: #FD8F8A;
 }
 
+.audio_body {
+  font-size: 0.85em;
+  margin: 50px auto;
+  padding: 2em;
+  width: 80%;
+  max-width: 800px;
+  clear: both;
+}
+
 embed {
     display: block;
     margin: 0 0 1em;
@@ -91,6 +100,28 @@ embed {
 
 li {
   list-style: none;
+}
+
+#warning {
+  width: 80%;
+  padding: 0.7em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #fee;
+  border: 2px dashed red;
+  border-radius: 5px;
+  -o-border-radius      : 5px;
+  -moz-border-radius    : 5px;
+  -webkit-border-radius : 5px;
+}
+
+.highlight {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em 5em;
+  background-color: #fff;
 }
 
 .hidden {
