@@ -156,9 +156,7 @@
                  
                 </xsl:for-each>
             </ul>
-            <ul>
-                <li><input type="text" name="question6" id="question6" /> <span class="solution">checked</span></li>
-            </ul>
+            
         </div>
     </xsl:template>
 
