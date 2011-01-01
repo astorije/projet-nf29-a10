@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<wspType defaultCode="note" title="note 0.0" description="" uri="note-0_0" key="note-0_0"><wspUpdate currentVersion="0.0.0" localAutoUpdate="minor"><res key="note-0_0.wsp"><description title="note"/></res></wspUpdate><systemSpace space="~param/note-0_0/ss" currentVersion="0.0.000" localAutoUpdate="minor"><res key="note-0_0.ss"><description title="note (ss)"/></res></systemSpace><editionSheet pack="note-0_0" version="0.0.0"/></wspType>

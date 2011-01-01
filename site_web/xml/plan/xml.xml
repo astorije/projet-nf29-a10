@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<pl:plan xmlns:pl="utc.fr/nf29/pr/plan" auteur="" titre="XML" uri="uri_partiePlan_XML">
+        <pl:partie_plan titre="Historique" uri="uri_partiePlan_Historique">
+        <pl:ref_note uri="uri_note_historique" titre="historique"/>
+        </pl:partie_plan>
+        <pl:partie_plan titre="Syntaxe" uri="uri_partiePlan_Syntaxe">
+        <pl:sous_partie_plan titre="Racine" uri="uri_partiePlan_Racine">
+        </pl:sous_partie_plan>
+        <pl:sous_partie_plan titre="&#xC9;l&#xE9;ment" uri="uri_partiePlan_&#xC9;l&#xE9;ment">
+        </pl:sous_partie_plan>
+        <pl:sous_partie_plan titre="Attribut" uri="uri_partiePlan_Attribut">
+        </pl:sous_partie_plan>
+        <pl:sous_partie_plan titre="Commentaire" uri="uri_partiePlan_Commentaire">
+        </pl:sous_partie_plan>
+        </pl:partie_plan>
+        </pl:plan>
+        
