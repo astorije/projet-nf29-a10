@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<?xml-stylesheet type="text/xsl" href="xslt/XSL_exercice.xsl"?>
+<exercice>
+    <titre>
+        Exercices d'introduction au PHP
+    </titre>
+    <question> 
+        <enonce> 
+            <paragraphe>1. Créer un fichier hello.php et le tester en accédant à la page.</paragraphe> 
+            <!--<image src="image.jpeg"/> !-->
+        </enonce> 
+        <indice> 
+            <paragraphe>Indice de reponse</paragraphe> 
+            <!-- <image src="image.jpeg"/> --> 
+        </indice> 
+        <solutionGenerale>
+            solution 1
+        </solutionGenerale>
+        
+    </question> 
+    
+    <question> 
+        <enonce> 
+            <paragraphe>2. Créer les deux fichiers form.html et action.php et les tester en entrant une valeur dans le formulaire (afin de vérifier la mécanique du passage de variable).</paragraphe> 
+            <!-- <image src="image.jpeg"/> --> 
+        </enonce>  
+        <solutionGenerale>
+            solution 2
+        </solutionGenerale>
+    </question> 
+    
+    <question> 
+        <enonce> 
+            <paragraphe>3. Que fait un visiteur qui tente d'exploiter une faille XSS ?</paragraphe> 
+            <!-- <image src="image.jpeg"/> --> 
+        </enonce> 
+        <indice> 
+            <paragraphe> <a href="http://www.youtube.com/watch?v=Juxr3rg5anc"> Explications </a> </paragraphe> 
+            <!-- <image src="image.jpeg"/> --> 
+        </indice>
+        <solutionGenerale>
+            La faille XSS consiste à injecter du HTML, et plus particulièrement du Javascript, sur une page de votre site web. Si ce Javascript est bien fait, il peut récupérer les cookies du visiteur qui l'exécute, cookies qui contiennent des informations censées rester secrètes !
+        </solutionGenerale>
+           
+                <reponse_choix_unique>  
+                    <choix solution="true" > 
+                        Il insère du code Javascript pour récupérer des cookies
+                    </choix> 
+                    <choix solution="false" > 
+                        Il retire des champs du formulaire pour perturber la page cible
+                    </choix>
+                    <choix solution="false" > 
+                        Il crée un formulaire modifié sur son serveur
+                    </choix>
+                </reponse_choix_unique>
+           
+    </question> 
+    
+    <question> 
+        <enonce> 
+            <paragraphe>4. Si on ne met pas d'attribut action au formulaire, que va-t-il se passer ?</paragraphe> 
+            <!-- <image src="image.jpeg"/> --> 
+        </enonce> 
+            <reponse_choix_multiple>  
+                <choix solution="false" > 
+                    Cela va afficher une page vide
+                </choix> 
+                <choix solution="true" > 
+                    Cela va recharger la même page
+                </choix>
+                <choix solution="false" > 
+                    Cela va afficher une erreur 404
+                </choix>
+            </reponse_choix_multiple> 
+        
+    </question> 
+    
+    <question> 
+        <enonce> 
+            <paragraphe>5. Quel est l'attribut à rajouter à une case à cocher pour qu'elle soit cochée par défaut ?</paragraphe> 
+            <!-- <image src="image.jpeg"/> --> 
+        </enonce> 
+        <reponse_texte>checked</reponse_texte>
+        
+    </question>
+</exercice>  
