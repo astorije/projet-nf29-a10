@@ -4,9 +4,11 @@
     xmlns:parcours="utc.fr/nf29/PR/parcours"
     xmlns:context="utc.fr/nf29/PR/contextualisation"
     xmlns:content="utc.fr/nf29/pr/contenu"
+    xmlns:notion="utc.fr/nf29/PR/notion"
     xmlns:ressource="utc.fr/nf29/PR/ressource"
+    xmlns:php="http://php.net/xsl"
     exclude-result-prefixes="xd"
-    version="1.0">
+    version="2.0">
     
     
     <xsl:template match="parcours:parcours">
@@ -27,9 +29,8 @@
                     </h1>
                     
                     <xsl:apply-templates select="context:contextualisation"/>
-                    
-                    
-                    <xsl:apply-templates select="parcours:notion"/>
+                  
+                    <xsl:apply-templates select="notion:notion"/>
                     
                </div>
                 <div id="footer" class="hidden">
@@ -53,13 +54,14 @@
         </div>
     </xsl:template>
     
-    <xsl:template match="parcours:notion">
-        <h2><xsl:value-of select="parcours:titre"/></h2>
+    <xsl:template match="notion:notion">
+        <h2><xsl:value-of select="notion:titre"/></h2>
        <xsl:apply-templates select="ressource:ressource" />
     </xsl:template>
     
     <xsl:template match="ressource:ressource">
-        <div> <a href="{@uri}" target="_blank">ressource</a></div> 
+        <div> <a href="{replace(ressource:uri,'.xml','.html')}"  target="_blank"> <xsl:value-of select="ressource:titre" /> </a> </div> 
+        <!-- echo '<a href="'.$res=split('.', {@uri}).'"  target="_blank"> ressource </a>'; -->
     </xsl:template>
     
     <xsl:template match="content:contenu">
@@ -69,5 +71,12 @@
     <xsl:template match="content:paragraphe">
         <xsl:value-of select="."/>
     </xsl:template>
+    
+    <!-- <xsl:function name="substring-before-match">
+        <xsl:param name="arg" /> 
+        <xsl:param name="regex"  /> 
+        <xsl:sequence select="tokenize($arg,$regex)[1]"/>
+        </xsl:function> -->
+    
     
 </xsl:stylesheet>
