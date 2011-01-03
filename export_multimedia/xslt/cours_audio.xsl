@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
     <xsl:output method="html" indent="yes" encoding="UTF-8"/>
+	<xsl:variable name="timelineWidth" select="number(608)"/>
     <xsl:template match="cours_audio">
 		<html lang="en">
 			<head>
-				<meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
-				<meta charset="utf-8">
+				<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+				<meta charset="utf-8"/>
 				<title>
 					<xsl:value-of select="meta/fichier_audio"/> : cours magistral du <xsl:value-of select="meta/date"/>
 				</title>
@@ -175,7 +176,7 @@
 					}
 				</style>
 				<script type="text/javascript" src="./js/timesheets.js"></script>
-				<!-- optional: timeline -->
+				<xsl:comment> optional: timeline </xsl:comment>
 				<link rel="stylesheet" type="text/css" href="./css/timeline.css"/>
 				<script type="text/javascript" src="./js/timeline.js"></script>
 			</head>
@@ -184,7 +185,7 @@
 			<div class="audio_body">
 				<div id="demo">
 					<div class="highlight rounded_box">
-						<!-- Media Description: one <div> container per segment -->
+						<xsl:comment> Media Description: one div container per segment </xsl:comment>
 						<div id="chapitrage" data-timecontainer="excl" data-mediasync="audio" data-dur="{/cours_audio/segment[last()]/date_fin}" data-first="first.click" data-prev="prev.click" data-next="next.click" data-last="last.click" smil="active">
 							<xsl:for-each select="segment">
 								<xsl:element name="div">
@@ -211,6 +212,7 @@
 								</xsl:element>
 							</xsl:for-each>
 						</div>
+						<xsl:comment> Media Controller: main audio|video player + optional timeline </xsl:comment>
 						<div id="mediaController">
 							<div id="timeline">
 							  <div id="mediaStart" class="play">
@@ -225,18 +227,18 @@
 								<xsl:for-each select="segment">
 								<xsl:element name="a">
 									<xsl:attribute name="href">#chapitrage<xsl:value-of select="position()"/></xsl:attribute>
-									<xsl:attribute name="style">width:300px; background-color: #2cb3ec;</xsl:attribute>
+									<xsl:attribute name="style">width:304px; background-color: #2cb3ec;</xsl:attribute>
+									<span><xsl:value-of select="partie_plan/ref_partie_plan/@uri"/></span>
 								</xsl:element>
-								<span><xsl:value-of select="partie_plan/ref_partie_plan/@uri"/></span>
 								</xsl:for-each>
 							  </div>
 							  <div id="annotationTimeline">
 							  <xsl:for-each select="segment/annotation">
 								<xsl:element name="a">
 									<xsl:attribute name="href">#section<xsl:value-of select="position()"/></xsl:attribute>
-									<xsl:attribute name="style">width:120px; background-color: #22F621;</xsl:attribute>
+									<xsl:attribute name="style">width:121px; background-color: #22F621;</xsl:attribute>
+									<span><xsl:value-of select="date_debut"/> =&gt; <xsl:value-of select="date_fin"/></span>
 								</xsl:element>
-								<span><xsl:value-of select="date_debut"/> =&gt; <xsl:value-of select="date_fin"/></span>
 								</xsl:for-each>
 							  </div>
 							  <div id="timeCursor" style="left: 150px; "><span></span></div>
