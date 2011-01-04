@@ -196,7 +196,7 @@
 									<xsl:attribute name="id">chapitrage<xsl:value-of select="position()"/></xsl:attribute>
 									<xsl:attribute name="data-begin"><xsl:value-of select="date_debut"/></xsl:attribute>
 									<xsl:attribute name="smil">idle</xsl:attribute>
-									<xsl:value-of select="partie_plan/ref_partie_plan/@uri"/>
+									<xsl:value-of select="titre_segment"/>
 								</xsl:element>
 							</xsl:for-each>
 						</div>
@@ -298,9 +298,9 @@
     <xsl:template match="segment">
             <xsl:apply-templates/>
     </xsl:template>
-    
-    <xsl:template match="partie_plan"/>   
-	<xsl:template match="ref_partie_plan"/>    
+      
+	<xsl:template match="reference_plan"/>  
+	<xsl:template match="titre_segment"/>	
     <xsl:template match="segment/date_debut"/>   
     <xsl:template match="segment/date_fin"/>
 

@@ -1,10 +1,13 @@
 <?php
 
-$input = 'cours_audio.xml';
 $xslt = 'cours_audio.xsl';
-$output = 'cours_audio.html';
 
-$procXSL = new XSLTProcessor();
+if($_GET['in'] != null) $input = $_GET['in'];
+else $input = 'cours_audio.xml';
+
+if($_GET['out'] != null) $output = $_GET['out'];
+else $output = 'cours_audio.html';
+
 // Chargement du document XML
 $xml = new DOMDocument;
 $xml->load('xslt/'.$input);
@@ -21,9 +24,6 @@ $proc->importStyleSheet($xsl);
 
 // Transformation du document XML selon la feuille XSL
 $proc->transformToURI($xml, "./".$output);
-/*
-$result = $proc->transformToXML($xml);
-echo $result;
-fwrite($html,$result);
-*/
+if($proc != FALSE) echo "transformation réussie.";
+
 ?>
