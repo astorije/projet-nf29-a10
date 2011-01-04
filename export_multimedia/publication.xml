@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?oxygen RNGSchema="../publication.rng" type="xml"?>
 
-<?xml-stylesheet type="text/xsl" href="xslt/Sans%20titre2.xsl"?>
+<?xml-stylesheet type="text/xsl" href="xslt/publication.xsl"?>
 <publication xmlns="utc.fr/nf29/PR/publication">
     <meta_publication>
         <titre>UML et XML</titre>
