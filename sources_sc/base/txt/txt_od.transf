@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:textOdTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+	<sm:model sc:refUri="/base/txt/txt.model"/>
+	<sm:content>
+		<sm:paraTag/>
+		<sm:simpleListTag/>
+		<sm:itemizedListTag/>
+		<sm:orderedListTag/>
+		<sm:uLinkTag role="url">
+			<sm:WLink style="url">
+				<sm:label>
+					<sm:textLink/>
+				</sm:label>
+				<sm:link>
+					<sm:externalUrlLink/>
+				</sm:link>
+			</sm:WLink>
+		</sm:uLinkTag>
+		<sm:uLinkTag role="urlSite">
+			<sm:textLink/>
+			<sm:dataBlock category="urlSite">
+				<sm:sortKey>
+					<sm:subModelTitle/>
+				</sm:sortKey>
+				<sm:label>
+					<sm:subModelTitle/>
+				</sm:label>
+				<sm:data>
+					<sm:callSubModel/>
+				</sm:data>
+			</sm:dataBlock>
+			<sm:footNote>
+				<sm:callSubModel/>
+			</sm:footNote>
+		</sm:uLinkTag>
+		<sm:uLinkTag role="def">
+			<sm:textLink/>
+			<sm:dataBlock category="def">
+				<sm:sortKey>
+					<sm:subModelTitle/>
+				</sm:sortKey>
+				<sm:label>
+					<sm:subModelTitle/>
+				</sm:label>
+				<sm:data>
+					<sm:callSubModel/>
+				</sm:data>
+			</sm:dataBlock>
+		</sm:uLinkTag>
+		<sm:uLinkTag role="doc">
+			<sm:textLink/>
+			<sm:dataBlock category="doc">
+				<sm:sortKey>
+					<sm:subModelTitle/>
+				</sm:sortKey>
+				<sm:label>
+					<sm:subModelTitle/>
+				</sm:label>
+				<sm:data>
+					<sm:callSubModel/>
+				</sm:data>
+			</sm:dataBlock>
+		</sm:uLinkTag>
+		<sm:phraseTag role="quote">
+			<sm:textWrapper prefix="&quot;" suffix="&quot;"/>
+		</sm:phraseTag>
+		<sm:inlineStyleTag role="imp"/>
+		<sm:inlineImgTag role="ico" axis="inline"/>
+	</sm:content>
+</sm:textOdTransf>

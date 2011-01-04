@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="Site Web référencé">
+	<sm:identification targetNamespace="scpf.org:base" targetPrefix="msl" code="bs" itemExtension="refs"/>
+	<sm:structure>
+		<sm:meta sc:refUri="/base/urlSite/urlSiteMeta.model" usage="required"/>
+		<sm:part code="desc" name="Description" internalized="always" usage="optional">
+			<sm:allowedModel sc:refUri="/base/sTxt/sTxt.model"/>
+		</sm:part>
+	</sm:structure>
+	<sm:authoring>
+		<sm:icon sc:refUri="/base/urlSite/_res/urlSite.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="urlSite"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+		<sm:formEditor indentXml="true"/>
+	</sm:authoring>
+</sm:compositionPrim>

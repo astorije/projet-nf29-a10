@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:transformerList xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<!--def-->
+	<sm:transformer sc:refUri="/base/def/def_od.transf"/>
+	<sm:transformer sc:refUri="/base/def/defMeta_od.transf"/>
+	<!--doc-->
+	<sm:transformer sc:refUri="/base/doc/doc_od.transf"/>
+	<sm:transformer sc:refUri="/base/doc/docMeta_od.transf"/>
+	<!--flow-->
+	<sm:transformer sc:refUri="/base/flow/flow_od.transf"/>
+	<!--title, sTitle-->
+	<sm:transformer sc:refUri="/base/sTitle/sTitle_od.transf"/>
+	<sm:transformer sc:refUri="/base/title/title_od.transf"/>
+	<!--sTxt-->
+	<sm:transformer sc:refUri="/base/sTxt/sTxt_od.transf"/>
+	<!--txt-->
+	<sm:transformer sc:refUri="/base/txt/txt_od.transf"/>
+	<!--urlSite-->
+	<sm:transformer sc:refUri="/base/urlSite/urlSite_od.transf"/>
+	<sm:transformer sc:refUri="/base/urlSite/urlSiteMeta_od.transf"/>
+</sm:transformerList>

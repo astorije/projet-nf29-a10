@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<pl:plan xmlns:pl="utc.fr/nf29/pr/plan" auteur="" titre="UML2" uri="uri_partiePlan_UML2">
+        <pl:partie_plan titre="Introduction" uri="uri_partiePlan_Introduction">
+        <pl:ref_note uri="uri_note_introduction" titre="introduction"/>
+        </pl:partie_plan>
+        <pl:partie_plan titre="Le formalisme UML" uri="uri_partiePlan_Le_formalisme_UML">
+        <pl:sous_partie_plan titre="Les vues" uri="uri_partiePlan_Les_vues">
+        </pl:sous_partie_plan>
+        <pl:sous_partie_plan titre="Les diagrammes" uri="uri_partiePlan_Les_diagrammes">
+        </pl:sous_partie_plan>
+        <pl:sous_partie_plan titre="Les &#xE9;l&#xE9;ments de mod&#xE9;lisation" uri="uri_partiePlan_Les_&#xE9;l&#xE9;ments_de_mod&#xE9;lisation">
+        <pl:sous_sous_partie_plan titre="Les &#xE9;l&#xE9;ments de mod&#xE9;lisation de type commun" uri="uri_partiePlan_Les_&#xE9;l&#xE9;ments_de_mod&#xE9;lisation_de_type_commun">
+        </pl:sous_sous_partie_plan>
+        <pl:sous_sous_partie_plan titre="Les &#xE9;l&#xE9;ments de mod&#xE9;lisation de type relation" uri="uri_partiePlan_Les_&#xE9;l&#xE9;ments_de_mod&#xE9;lisation_de_type_relation">
+        </pl:sous_sous_partie_plan>
+        <pl:sous_sous_partie_plan titre="Les autres &#xE9;l&#xE9;ments de type descriptif" uri="uri_partiePlan_Les_autres_&#xE9;l&#xE9;ments_de_type_descriptif">
+        </pl:sous_sous_partie_plan>
+        </pl:sous_partie_plan>
+        </pl:partie_plan>
+        <pl:partie_plan titre="Standardisation et certification UML" uri="uri_partiePlan_Standardisation_et_certification_UML">
+        </pl:partie_plan>
+        </pl:plan>
+        

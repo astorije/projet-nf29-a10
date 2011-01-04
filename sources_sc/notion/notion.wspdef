@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:wspDefinition xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" keyWsp="notion" name="￼;notion￼" majorVersion="0" mediumVersion="0" minorVersion="0">
+	<sm:publicClasses>
+		<sm:class sc:refUri="/notion/notion.model" access="readWrite"/>
+	</sm:publicClasses>
+</sm:wspDefinition>

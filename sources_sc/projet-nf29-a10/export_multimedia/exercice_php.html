@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Exercices d'introduction au PHP</title>
+    <link rel="stylesheet" href="css/global.css" type="text/css" />
+    <link rel="stylesheet" href="css/exercises.css" type="text/css" />
+    <script src="js/jquery-1.4.4.min.js"></script>
+    <script src="js/jquery.flash.js"></script>
+    <script src="js/exercises.js"></script>
+  </head>
+  <body>
+    <h1 id="title" class="hidden">Exercices d'introduction au PHP</h1>
+
+    <div id="questions">
+      <div id="toggle_solutions">
+        <a href="#">Afficher les solutions</a>
+      </div>
+
+      <form method="post" action="#">
+        <div class="question rounded_box">
+          1. Créer un fichier hello.php et le tester en accédant à la page.
+          <div class="solution">Solution 1</div>
+          <div class="indice">Un gros indice !</div>
+        </div>
+
+        <div class="question rounded_box">
+          2. Créer les deux fichiers form.html et action.php et les tester en entrant une valeur dans le formulaire (afin de vérifier la mécanique du passage de variable).
+          <div class="solution">Solution 3</div>
+        </div>
+
+        <div class="question rounded_box">
+          <div class="enonce">3. Que fait un visiteur qui tente d'exploiter une faille XSS ?</div>
+          <div class="solution">La faille XSS consiste à injecter du HTML, et plus particulièrement du Javascript, sur une page de votre site web. Si ce Javascript est bien fait, il peut récupérer les cookies du visiteur qui l'exécute, cookies qui contiennent des informations censées rester secrètes !</div>
+          <div class="indice"><a href="http://www.youtube.com/watch?v=Juxr3rg5anc">Explications</a></div>
+
+          <ul>
+            <li>
+              <input type="radio" name="question4" value="answer1" id="question3[answer1]"/>
+              <span class="solution"><img src="images/radio_on.png" alt="Vrai" /></span>
+              <label for="question3[answer1]">Il insère du code Javascript pour récupérer des cookies</label>
+            </li>
+            <li>
+              <input type="radio" name="question4" value="answer2" id="question3[answer2]"/>
+              <span class="solution"><img src="images/radio_off.png" alt="Faux" /></span>
+              <label for="question3[answer2]">Il retire des champs du formulaire pour perturber la page cible</label>
+            </li>
+            <li>
+              <input type="radio" name="question4" value="answer3" id="question3[answer3]"/>
+              <span class="solution"><img src="images/radio_off.png" alt="Faux" /></span>
+              <label for="question3[answer3]">Il crée un formulaire modifié sur son serveur</label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="question rounded_box">
+          4. Si on ne met pas d'attribut action au formulaire, que va-t-il se passer ?
+          <div class="solution">Solution 5</div>
+
+          <ul>
+            <li>
+              <input type="checkbox" name="question4[answer1]" id="question4[answer1]" />
+              <span class="solution"><img src="images/checkbox_off.png" alt="Faux" /></span>
+              <label for="question4[answer1]">Cela va afficher une page vide</label>
+            </li>
+            <li>
+              <input type="checkbox" name="question4[answer2]" id="question4[answer2]" />
+              <span class="solution"><img src="images/checkbox_on.png" alt="Vrai" /></span>
+              <label for="question4[answer2]">Cela va recharger la même page</label>
+            </li>
+            <li>
+              <input type="checkbox" name="question4[answer3]" id="question4[answer3]" />
+              <span class="solution"><img src="images/checkbox_off.png" alt="Faux" /></span>
+              <label for="question4[answer3]">Cela va afficher une erreur 404</label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="question rounded_box">
+          5. Quel est l'attribut à rajouter à une case à cocher pour qu'elle soit cochée par défaut ?
+          <div class="solution">Solution 5</div>
+
+          <ul>
+              <li><input type="text" name="question5" id="question5" /> <span class="solution">checked</span></li>
+          </ul>
+        </div>
+      </form>
+    </div>
+
+    <div id="score" class="rounded_box">
+        Votre score est de <strong><span id="score_value"></span> %</strong>.
+    </div>
+
+    <div id="footer" class="hidden">
+    <div id="indice_bloc">
+      <div id="indice_link">
+        <a href="#">Indice</a>
+      </div>
+      <div id="content"></div>
+    </div>
+
+
+<ul>
+     <li class="right"><a id="previous" href="#">Précédent</a></li>
+     <li class="center"><span id="question_number">1</span> / <span id="count_questions"></span></li>
+     <li class="left"><a id="next" href="#">Suivant</a></li>
+</ul>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="Contenus riches">
+	<sm:identification targetNamespace="scpf.org:base" targetPrefix="bs" code="flow" itemExtension="xml"/>
+	<sm:structure>
+		<sm:set usage="required">
+			<sm:part code="txt" name="Texte" family="content" internalized="always">
+				<sm:allowedModel sc:refUri="/base/txt/txt.model"/>
+			</sm:part>
+			<sm:part code="img" name="Image" family="content" internalized="never">
+				<sm:meta sc:refUri="/base/sTitle/sTitle.model" usage="optional"/>
+				<sm:allowedModel sc:refUri="/binaries/gif/gif.model"/>
+				<sm:allowedModel sc:refUri="/binaries/jpg/jpeg.model"/>
+				<sm:allowedModel sc:refUri="/binaries/png/png.model"/>
+			</sm:part>
+			<sm:part code="aud" name="Audio" family="content" internalized="never">
+				<sm:meta sc:refUri="/base/sTitle/sTitle.model" usage="optional"/>
+				<sm:allowedModel sc:refUri="/binaries/mp3/mp3.model"/>
+				<sm:allowedModel sc:refUri="/binaries/rm/rm.model"/>
+			</sm:part>
+			<sm:part code="vid" name="Vidéo" family="content" internalized="never">
+				<sm:meta sc:refUri="/base/sTitle/sTitle.model" usage="optional"/>
+				<sm:allowedModel sc:refUri="/binaries/mov/mov.model"/>
+				<sm:allowedModel sc:refUri="/binaries/avi/avi.model"/>
+				<sm:allowedModel sc:refUri="/binaries/flv/flv.model"/>
+				<sm:allowedModel sc:refUri="/binaries/rm/rm.model"/>
+			</sm:part>
+			<sm:part code="anim" name="Animation" family="content" internalized="never">
+				<sm:meta sc:refUri="/base/sTitle/sTitle.model" usage="optional"/>
+				<sm:allowedModel sc:refUri="/binaries/flash/flash.model"/>
+				<sm:allowedModel sc:refUri="/binaries/eWeb/eWeb.model"/>
+			</sm:part>
+			<sm:part code="tab" name="Tableau" family="content" internalized="never">
+				<sm:meta sc:refUri="/base/sTitle/sTitle.model" usage="optional"/>
+				<sm:allowedModel sc:refUri="/binaries/ods/ods.model"/>
+			</sm:part>
+			<sm:part code="graph" name="Graphique" family="content" internalized="never">
+				<sm:meta sc:refUri="/base/sTitle/sTitle.model" usage="optional"/>
+				<sm:allowedModel sc:refUri="/binaries/odg/odg.model"/>
+			</sm:part>
+			<sm:part code="doc" name="Document" family="content" internalized="never">
+				<sm:meta sc:refUri="/base/sTitle/sTitle.model" usage="optional"/>
+				<sm:allowedModel sc:refUri="/base/doc/doc.model"/>
+			</sm:part>
+		</sm:set>
+	</sm:structure>
+	<sm:authoring>
+		<sm:htmlPreview>
+			<sm:block refCode="*" display="true" displayLevel="false" displayPartName="false"/>
+		</sm:htmlPreview>
+	</sm:authoring>
+</sm:compositionPrim>

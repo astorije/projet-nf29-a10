@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/binaries/jpg/jpeg.model"/>
+	<sm:content>
+		<sm:WImage>
+			<sm:binaryUrl>
+				<sm:imageTransform maxWidth="300" outputType="JPEG"/>
+			</sm:binaryUrl>
+			<sm:linkOverImage>
+				<sm:binaryUrl>
+					<sm:imageTransform scale="1.0" minWidth="50" maxWidth="2000" outputType="JPEG"/>
+				</sm:binaryUrl>
+			</sm:linkOverImage>
+		</sm:WImage>
+	</sm:content>
+</sm:binaryXhtmlTransf>

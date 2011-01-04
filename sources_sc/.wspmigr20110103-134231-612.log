@@ -1,0 +1,10 @@
+
+####################################
+content / updtTo_3.7.016
+####################################
+
+main:
+     [echo] 20110103-134231.703 ####### MIGRATION - updtTo_3.7.016
+- Execute XSL '/home/tmibsm/.scenari/bd.3.7/srv/updt/data/sm_modeling-3.7/3/7/17/content/updtTo_3.7.016/web_extBlockTag.xsl'
+- Execute XSL '/home/tmibsm/.scenari/bd.3.7/srv/updt/data/sm_modeling-3.7/3/7/17/content/updtTo_3.7.016/web_extBlockTag.xsl'
+     [echo] --- Migration terminée ---

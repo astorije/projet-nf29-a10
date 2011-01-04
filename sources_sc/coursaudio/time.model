@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:dataFormPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Heure￼">
+	<sm:identification targetNamespace="utc.fr/nf29/sc/audio" targetPrefix="au" code="time" itemExtension="xml"/>
+	<sm:structure>
+		<sm:field code="heure" name="￼;heure￼" occurence="one">
+			<sm:number min="0" max="2" allowedDecimals="0"/>
+		</sm:field>
+		<sm:field code="minute" name="￼;minute￼" occurence="one">
+			<sm:number min="0" max="60" allowedDecimals="0"/>
+		</sm:field>
+		<sm:field code="seconde" name="￼;seconde￼" occurence="one">
+			<sm:number min="0" max="60" allowedDecimals="0"/>
+		</sm:field>
+	</sm:structure>
+	<sm:storage/>
+</sm:dataFormPrim>

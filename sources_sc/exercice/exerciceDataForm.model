@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:dataFormPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;validation￼">
+	<sm:identification targetNamespace="utc.fr/nf29/sc/exercice" targetPrefix="ex" code="Exercice" itemExtension="xml"/>
+	<sm:structure>
+		<sm:field code="valide" name="￼;valide￼" occurence="one">
+			<sm:number min="0" max="1" allowedDecimals="0"/>
+		</sm:field>
+	</sm:structure>
+	<sm:storage/>
+</sm:dataFormPrim>

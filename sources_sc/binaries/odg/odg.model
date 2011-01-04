@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="Graphique OpenDocument">
+	<sm:help quickHelp=" Ressource au format Open Document Graphics. "/>
+	<sm:identification extensions="odg"/>
+	<sm:structure type="application/vnd.oasis.opendocument.graphics"/>
+	<sm:storage>
+		<sm:glimpseImage>
+			<sm:fromBinary>
+				<sm:freeTransform code="odg2png" options="maxWidth=300px"/>
+			</sm:fromBinary>
+		</sm:glimpseImage>
+	</sm:storage>
+	<sm:authoring>
+		<sm:previewBlock>
+			<sm:imageViewer>
+				<sm:fromBinary>
+					<sm:freeTransform code="odg2png"/>
+				</sm:fromBinary>
+			</sm:imageViewer>
+		</sm:previewBlock>
+		<sm:icon sc:refUri="/binaries/odg/_res/odg.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="res"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+		<sm:emptyFile sc:refUri="/binaries/odg/_res/empty.odg"/>
+	</sm:authoring>
+</sm:binaryPrim>

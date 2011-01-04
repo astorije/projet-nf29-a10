@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:dataFormPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="Références">
+	<sm:identification targetNamespace="scpf.org:base" targetPrefix="bs" code="docMeta"/>
+	<sm:structure>
+		<sm:field code="title" name="Titre" occurence="one" family="content">
+			<sm:string/>
+		</sm:field>
+		<sm:field code="auth" name="Auteurs" occurence="zeroOrOne" family="content">
+			<sm:string/>
+		</sm:field>
+		<sm:field code="code" name="Code" occurence="zeroOrOne" family="property">
+			<sm:string/>
+		</sm:field>
+		<sm:field code="ref" name="Référence" occurence="zeroOrOne" family="property">
+			<sm:string/>
+		</sm:field>
+		<sm:subData code="url" name="Lien web" occurence="zeroOrOne">
+			<sm:allowedDataModel sc:refUri="/base/urlSite/urlSiteMeta.model"/>
+		</sm:subData>
+	</sm:structure>
+	<sm:storage>
+		<sm:fullTitleBuilder>
+			<sm:fieldValue refCode="title"/>
+		</sm:fullTitleBuilder>
+	</sm:storage>
+</sm:dataFormPrim>

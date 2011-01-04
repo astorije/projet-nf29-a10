@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:textXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/base/sTxt/sTxt.model"/>
+	<sm:content>
+		<sm:paraTag tagName="p"/>
+		<sm:simpleListTag/>
+		<sm:itemizedListTag/>
+		<sm:orderedListTag/>
+		<sm:uLinkTag role="url">
+			<sm:externalUrl target="newWindow"/>
+		</sm:uLinkTag>
+		<sm:phraseTag role="quote">
+			<sm:textWrapper prefix="&quot;" suffix="&quot;"/>
+		</sm:phraseTag>
+		<sm:inlineStyleTag role="imp"/>
+		<sm:inlineImgTag role="ico" axis="inline"/>
+	</sm:content>
+</sm:textXhtmlTransf>

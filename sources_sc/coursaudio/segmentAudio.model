@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Segment Audio￼">
+	<sm:identification targetNamespace="utc.fr/nf29/sc/audio" targetPrefix="au" code="segment" itemExtension="segment"/>
+	<sm:structure>
+		<sm:part code="plan" name="￼;Plan de référence￼" internalized="never" usage="required">
+			<sm:allowedModel sc:refUri="/note/plan.model"/>
+		</sm:part>
+		<sm:part code="dateDebut" name="￼;Time Code In￼" internalized="always" usage="required">
+			<sm:meta sc:refUri="/coursaudio/time.model" usage="required"/>
+		</sm:part>
+		<sm:part code="dateFin" name="￼;Time Code Out￼" internalized="always" usage="required">
+			<sm:meta sc:refUri="/coursaudio/time.model" usage="required"/>
+		</sm:part>
+		<sm:set usage="optional">
+			<sm:part code="annotation" name="￼;Annotation￼" internalized="always">
+				<sm:allowedModel sc:refUri="/coursaudio/annotation.model"/>
+			</sm:part>
+		</sm:set>
+	</sm:structure>
+	<sm:authoring/>
+</sm:compositionPrim>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:dataFormPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="Définition">
+	<sm:identification targetNamespace="scpf.org:base" targetPrefix="bs" code="defMeta"/>
+	<sm:structure>
+		<sm:field code="term" name="Terme" occurence="one" family="content">
+			<sm:string/>
+		</sm:field>
+	</sm:structure>
+	<sm:storage>
+		<sm:fullTitleBuilder>
+			<sm:fieldValue refCode="term"/>
+		</sm:fullTitleBuilder>
+	</sm:storage>
+	<sm:authoring>
+		<sm:htmlPreview>
+			<sm:contentView titleFormat="fullTitleText"/>
+		</sm:htmlPreview>
+	</sm:authoring>
+</sm:dataFormPrim>

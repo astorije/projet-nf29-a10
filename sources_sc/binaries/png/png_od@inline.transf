@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryOdTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/binaries/png/png.model"/>
+	<sm:axis code="inline"/>
+	<sm:content>
+		<sm:WImage style="viewPicture">
+			<sm:binaryUrl/>
+			<sm:odParams maxWidth="10" maxHeight="2" dpi="300"/>
+		</sm:WImage>
+	</sm:content>
+</sm:binaryOdTransf>

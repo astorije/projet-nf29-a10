@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionOdtTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+	<sm:model sc:refUri="/base/def/def.model"/>
+	<sm:content>
+		<sm:for codes="def">
+			<sm:callSubModel/>
+			<!--<sm:WSection xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling"><sm:label/><sm:callSubModel/></sm:WSection>-->
+		</sm:for>
+	</sm:content>
+</sm:compositionOdtTransf>

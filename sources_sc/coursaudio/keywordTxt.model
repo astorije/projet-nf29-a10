@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:textPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Texte - keyword￼">
+	<sm:identification targetNamespace="utc.fr/nf29/sc/audio" targetPrefix="au" code="kwtxt"/>
+	<sm:structure>
+		<sm:blockTags>
+			<sm:paraTag name="￼;Renseigner des mots-clés￼"/>
+			<sm:simpleListTag name="￼;mots-clés￼">
+				<sm:memberTag name="￼;mot-clé￼"/>
+			</sm:simpleListTag>
+		</sm:blockTags>
+		<sm:inlineTags/>
+	</sm:structure>
+	<sm:authoring>
+		<sm:htmlPreview>
+			<sm:sameAsFormEditor/>
+		</sm:htmlPreview>
+	</sm:authoring>
+</sm:textPrim>

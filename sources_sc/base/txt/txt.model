@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:textPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="Texte">
+	<sm:help quickHelp=" Texte constitué de paragraphes, de listes, etc. "/>
+	<sm:identification targetNamespace="scpf.org:base" targetPrefix="bs" code="txt"/>
+	<sm:structure>
+		<sm:blockTags>
+			<sm:paraTag name="Paragraphe"/>
+			<sm:simpleListTag name="Liste simple">
+				<sm:memberTag name="Item paragraphe"/>
+			</sm:simpleListTag>
+			<sm:itemizedListTag name="Liste à puce">
+				<sm:listItemTag name="Item"/>
+			</sm:itemizedListTag>
+			<sm:orderedListTag name="Liste ordonnée">
+				<sm:listItemTag name="Item"/>
+			</sm:orderedListTag>
+		</sm:blockTags>
+		<sm:inlineTags>
+			<sm:uLinkTag role="url" name="Adresse web (http:, mailto:)">
+				<sm:externalUrl/>
+			</sm:uLinkTag>
+			<sm:uLinkTag role="urlSite" name="Référence webographique">
+				<sm:refItem>
+					<sm:allowedModel sc:refUri="/base/urlSite/urlSite.model"/>
+				</sm:refItem>
+			</sm:uLinkTag>
+			<sm:uLinkTag role="def" name="Définition">
+				<sm:refItem>
+					<sm:allowedModel sc:refUri="/base/def/def.model"/>
+				</sm:refItem>
+			</sm:uLinkTag>
+			<sm:uLinkTag role="doc" name="Référence bibliographique">
+				<sm:refItem>
+					<sm:allowedModel sc:refUri="/base/doc/doc.model"/>
+				</sm:refItem>
+			</sm:uLinkTag>
+			<sm:phraseTag role="quote" name="Citation"/>
+			<sm:inlineStyleTag role="imp" name="Important"/>
+			<sm:inlineImgTag role="ico" name="Imagette">
+				<sm:alternativeText name="Alternative textuelle"/>
+				<sm:allowedModel sc:refUri="/binaries/gif/gif.model"/>
+				<sm:allowedModel sc:refUri="/binaries/jpg/jpeg.model"/>
+				<sm:allowedModel sc:refUri="/binaries/png/png.model"/>
+			</sm:inlineImgTag>
+		</sm:inlineTags>
+	</sm:structure>
+	<sm:authoring>
+		<sm:formEditor>
+			<sm:htmlStyle tag="uLink" role="url">
+				<sm:entryStyle key="text-decoration" value="underline"/>
+				<sm:entryStyle key="color" value="#0000EE"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="uLink" role="urlSite">
+				<sm:entryStyle key="text-decoration" value="underline"/>
+				<sm:entryStyle key="color" value="#006600"/>
+				<sm:entryImgStyle key="background-image" sc:refUri="/base/txt/_res/link.png"/>
+				<sm:entryStyle key="background-repeat" value="no-repeat"/>
+				<sm:entryStyle key="padding-left" value="17px"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="uLink" role="def">
+				<sm:entryStyle key="text-decoration" value="underline"/>
+				<sm:entryStyle key="color" value="#8B0000"/>
+				<sm:entryImgStyle key="background-image" sc:refUri="/base/txt/_res/star.png"/>
+				<sm:entryStyle key="background-repeat" value="no-repeat"/>
+				<sm:entryStyle key="padding-left" value="12px"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="uLink" role="doc">
+				<sm:entryStyle key="text-decoration" value="underline"/>
+				<sm:entryStyle key="color" value="#336666"/>
+				<sm:entryImgStyle key="background-image" sc:refUri="/base/txt/_res/page.png"/>
+				<sm:entryStyle key="background-repeat" value="no-repeat"/>
+				<sm:entryStyle key="padding-left" value="14px"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="phrase" role="quote">
+				<sm:entryStyle key="font-family" value="&quot;Times New Roman&quot;, Times, serif"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="phrase" role="quote" pseudoClass="before">
+				<sm:entryStyle key="font-weight" value="normal"/>
+				<sm:entryStyle key="content" value="&quot;\&quot;&quot;"/>
+				<sm:entryStyle key="color" value="grey"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="phrase" role="quote" pseudoClass="after">
+				<sm:entryStyle key="font-weight" value="normal"/>
+				<sm:entryStyle key="content" value="&quot;\&quot;&quot;"/>
+				<sm:entryStyle key="color" value="grey"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="inlineStyle" role="imp">
+				<sm:entryStyle key="font-weight" value="bold"/>
+			</sm:htmlStyle>
+		</sm:formEditor>
+		<sm:formEditor key="reread">
+			<sm:htmlStyle tag="para">
+				<sm:entryStyle key="background-color" value="#FFE35B"/>
+				<sm:entryStyle key="font-style" value="italic"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="member">
+				<sm:entryStyle key="background-color" value="#FFE35B"/>
+				<sm:entryStyle key="font-style" value="italic"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="uLink" role="url">
+				<sm:entryStyle key="text-decoration" value="underline"/>
+				<sm:entryStyle key="color" value="#0000EE"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="uLink" role="urlSite">
+				<sm:entryStyle key="text-decoration" value="underline"/>
+				<sm:entryStyle key="color" value="#006600"/>
+				<sm:entryImgStyle key="background-image" sc:refUri="/base/txt/_res/link.png"/>
+				<sm:entryStyle key="background-repeat" value="no-repeat"/>
+				<sm:entryStyle key="padding-left" value="17px"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="uLink" role="def">
+				<sm:entryStyle key="text-decoration" value="underline"/>
+				<sm:entryStyle key="color" value="#8B0000"/>
+				<sm:entryImgStyle key="background-image" sc:refUri="/base/txt/_res/star.png"/>
+				<sm:entryStyle key="background-repeat" value="no-repeat"/>
+				<sm:entryStyle key="padding-left" value="12px"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="uLink" role="doc">
+				<sm:entryStyle key="text-decoration" value="underline"/>
+				<sm:entryStyle key="color" value="#336666"/>
+				<sm:entryImgStyle key="background-image" sc:refUri="/base/txt/_res/page.png"/>
+				<sm:entryStyle key="background-repeat" value="no-repeat"/>
+				<sm:entryStyle key="padding-left" value="14px"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="phrase" role="quote">
+				<sm:entryStyle key="font-family" value="&quot;Times New Roman&quot;, Times, serif"/>
+				<sm:entryStyle key="font-style" value="normal"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="phrase" role="quote" pseudoClass="before">
+				<sm:entryStyle key="font-weight" value="normal"/>
+				<sm:entryStyle key="content" value="&quot;\&quot;&quot;"/>
+				<sm:entryStyle key="color" value="blue"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="phrase" role="quote" pseudoClass="after">
+				<sm:entryStyle key="font-weight" value="normal"/>
+				<sm:entryStyle key="content" value="&quot;\&quot;&quot;"/>
+				<sm:entryStyle key="color" value="blue"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="phrase" role="hidden">
+				<sm:entryStyle key="display" value="none"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="inlineStyle" role="imp">
+				<sm:entryStyle key="font-weight" value="bold"/>
+				<sm:entryStyle key="color" value="black"/>
+				<sm:entryStyle key="font-style" value="normal"/>
+			</sm:htmlStyle>
+		</sm:formEditor>
+		<sm:formEditor key="bkquote">
+			<sm:htmlStyle tag="para">
+				<sm:entryStyle key="font-style" value="italic"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="member">
+				<sm:entryStyle key="background-color" value="#FFE35B"/>
+				<sm:entryStyle key="font-style" value="italic"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="uLink" role="url">
+				<sm:entryStyle key="text-decoration" value="underline"/>
+				<sm:entryStyle key="color" value="#0000EE"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="uLink" role="urlSite">
+				<sm:entryStyle key="text-decoration" value="underline"/>
+				<sm:entryStyle key="color" value="#006600"/>
+				<sm:entryImgStyle key="background-image" sc:refUri="/base/txt/_res/link.png"/>
+				<sm:entryStyle key="background-repeat" value="no-repeat"/>
+				<sm:entryStyle key="padding-left" value="17px"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="uLink" role="def">
+				<sm:entryStyle key="text-decoration" value="underline"/>
+				<sm:entryStyle key="color" value="#8B0000"/>
+				<sm:entryImgStyle key="background-image" sc:refUri="/base/txt/_res/star.png"/>
+				<sm:entryStyle key="background-repeat" value="no-repeat"/>
+				<sm:entryStyle key="padding-left" value="12px"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="uLink" role="doc">
+				<sm:entryStyle key="text-decoration" value="underline"/>
+				<sm:entryStyle key="color" value="#336666"/>
+				<sm:entryImgStyle key="background-image" sc:refUri="/base/txt/_res/page.png"/>
+				<sm:entryStyle key="background-repeat" value="no-repeat"/>
+				<sm:entryStyle key="padding-left" value="14px"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="phrase" role="quote">
+				<sm:entryStyle key="font-family" value="&quot;Times New Roman&quot;, Times, serif"/>
+				<sm:entryStyle key="font-style" value="normal"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="phrase" role="quote" pseudoClass="before">
+				<sm:entryStyle key="font-weight" value="normal"/>
+				<sm:entryStyle key="content" value="&quot;\&quot;&quot;"/>
+				<sm:entryStyle key="color" value="blue"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="phrase" role="quote" pseudoClass="after">
+				<sm:entryStyle key="font-weight" value="normal"/>
+				<sm:entryStyle key="content" value="&quot;\&quot;&quot;"/>
+				<sm:entryStyle key="color" value="blue"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="inlineStyle" role="imp">
+				<sm:entryStyle key="font-weight" value="bold"/>
+				<sm:entryStyle key="color" value="black"/>
+				<sm:entryStyle key="font-style" value="normal"/>
+			</sm:htmlStyle>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:textPrim>

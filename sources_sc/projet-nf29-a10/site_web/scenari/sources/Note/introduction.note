@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+    <not:note 
+        xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive" 
+        xmlns:cnt="utc.fr/contenu" 
+        xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" 
+        xmlns:not="utc.fr/note">
+        <sp:contenuNote>
+            <bs:sTitle xmlns:bs="scpf.org:base">
+                <sc:fullTitle>Introduction</sc:fullTitle>
+            </bs:sTitle>
+            <cnt:contenu xmlns:img="utc.fr/image" xmlns:bs="scpf.org:base">
+                <sp:texte>
+                    <bs:sTxt>
+                        <sc:para xml:space="preserve" sc:id="t3">L'UML (Unified Modeling Language) est un langage de modélisation graphique à base de pictogrammes.</sc:para>
+                        <sc:para xml:space="preserve" sc:id="t4">UML se décompose en plusieurs sous-ensembles</sc:para>
+                        <sc:itemizedList sc:id="t8">
+                            <sc:listItem sc:id="t9">
+                                <sc:para xml:space="preserve" sc:id="t5">Les vues : Les vues sont les observables du système. Elles décrivent le système d'un point de vue donné, qui peut être organisationnel, dynamique, temporel, architectural, géographique, logique, etc. En combinant toutes ces vues, il est possible de définir (ou retrouver) le système complet.</sc:para>
+                            </sc:listItem>
+                        </sc:itemizedList>
+                        <sc:itemizedList sc:id="t10">
+                            <sc:listItem sc:id="t11">
+                                <sc:para xml:space="preserve" sc:id="t6">Les diagrammes : Les diagrammes sont des éléments graphiques. Ceux-ci décrivent le contenu des vues, qui sont des notions abstraites. Les diagrammes peuvent faire partie de plusieurs vues.</sc:para>
+                            </sc:listItem>
+                        </sc:itemizedList>
+                        <sc:itemizedList sc:id="t12">
+                            <sc:listItem sc:id="t13">
+                                <sc:para xml:space="preserve" sc:id="t7">Les modèles d'élément : Les modèles d'élément sont les briques des diagrammes UML, ces modèles sont utilisés dans plusieurs types de diagramme. Exemple d'élément : cas d'utilisation, classe, association, etc.</sc:para>
+                            </sc:listItem>
+                        </sc:itemizedList>
+                    </bs:sTxt>
+                </sp:texte>
+            </cnt:contenu>
+        </sp:contenuNote>
+    </not:note>
+</sc:item>

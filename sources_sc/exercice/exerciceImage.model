@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:imagePrim name="￼;image￼" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:identification extensions="jpg jpeg" mimeTypes="image/jpeg"/>
+	<sm:identification extensions="png" mimeTypes="image/png"/>
+	<sm:structure>
+		<sm:meta sc:refUri="/base/sTitle/sTitle.model" usage="required"/>
+	</sm:structure>
+</sm:imagePrim>

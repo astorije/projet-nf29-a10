@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<?xml-stylesheet type="text/xsl" href="XSL_exercice.xsl"?>
+<exercice>
+	<titre>
+		Exercices d'introduction au PHP
+	</titre>
+  <question> 
+	<enonce> 
+		<paragraphe>1. Créer un fichier hello.php et le tester en accédant à la page.</paragraphe> 
+		<!--<image src="image.jpeg"/> !-->
+	</enonce> 
+	<indice> 
+		<paragraphe>Indice de reponse</paragraphe> 
+		<!-- <image src="image.jpeg"/> --> 
+	</indice> 
+  	<solutionGenerale>
+  		solution
+  	</solutionGenerale>
+	
+  </question> 
+
+	<question> 
+		<enonce> 
+			<paragraphe>2. Créer un fichier test.php et le tester (la fonction phpinfo renvoie les informations techniques sur le module PHP installé sur le serveur).</paragraphe> 
+			<!-- <image src="image.jpeg"/> --> 
+		</enonce> 
+		<indice> 
+			<paragraphe>Indice de reponse</paragraphe> 
+			<!-- <image src="image.jpeg"/> --> 
+		</indice> 
+		<solutionGenerale>
+			solution
+		</solutionGenerale>
+		
+	</question> 
+	
+	<question> 
+		<enonce> 
+			<paragraphe>3. Créer les deux fichiers form.html et action.php et les tester en entrant une valeur dans le formulaire (afin de vérifier la mécanique du passage de variable).</paragraphe> 
+			<!-- <image src="image.jpeg"/> --> 
+		</enonce> 
+		<indice> 
+			<paragraphe>Indice de reponse 3</paragraphe> 
+			<!-- <image src="image.jpeg"/> --> 
+		</indice> 
+		<solutionGenerale>
+			solution
+		</solutionGenerale>
+	</question> 
+	
+	<question> 
+		<enonce> 
+			<paragraphe>
+				4. Créer le fichier bd.php et compléter le pour accéder à une table existante de votre base de données PostgreSQL.</paragraphe> 
+			<!-- <image src="image.jpeg"/> --> 
+		</enonce> 
+		<indice> 
+			<paragraphe>Indice de reponse 4</paragraphe> 
+			<!-- <image src="image.jpeg"/> --> 
+		</indice>
+		<solutionGenerale>
+			solution
+		</solutionGenerale>
+	</question> 
+	
+	
+	<question> 
+		<enonce> 
+			<paragraphe>5. Si on ne met pas d'attribut action au formulaire, que va-t-il se passer ?</paragraphe> 
+			<!-- <image src="image.jpeg"/> --> 
+		</enonce> 
+		<indice> 
+			<paragraphe>Indice pour question 5</paragraphe> 
+			<!-- <image src="image.jpeg"/> --> 
+		</indice> 
+		<reponse>
+			<reponse_choix_multiple>  
+				<choix solution="false" > 
+					Cela va afficher une page vide
+				</choix> 
+				<choix solution="true" > 
+					Cela va recharger la même page
+				</choix>
+				<choix solution="false" > 
+					Cela va afficher une erreur 404
+				</choix>
+			</reponse_choix_multiple> 
+		</reponse>
+	</question> 
+	
+	<question> 
+		<enonce> 
+			<paragraphe>6. Quel est l'attribut à rajouter à une case à cocher pour qu'elle soit cochée par défaut ?</paragraphe> 
+			<!-- <image src="image.jpeg"/> --> 
+		</enonce> 
+		<indice> 
+			<paragraphe>Indice pour question 6</paragraphe> 
+			<!-- <image src="image.jpeg"/> --> 
+		</indice> 
+		<reponse>
+			<reponse_texte>checked</reponse_texte>
+		</reponse>
+	</question>
+
+	
+	<!--<reponse_choix_unique> 
+		<question> 
+		<enonce> 
+		<paragraphe>6. Quel est l'attribut à rajouter à une case à cocher pour qu'elle soit cochée par défaut ?</paragraphe> 
+		<image src="image.jpeg"/>
+		</enonce> 
+	<indice> 
+		<paragraphe>Indice pour question 5</paragraphe> 
+		<image src="image.jpeg"/> 
+	</indice> 
+	<reponse>
+		<reponse_choix_unique>  
+			<choix solution="false" > 
+				Cela va afficher une page vide
+			</choix> 
+			<choix solution="true" > 
+				Cela va recharger la même page
+			</choix>
+			<choix solution="false" > 
+				Cela va afficher une erreur 404
+			</choix>
+		</reponse_choix_unique>
+	</reponse>
+	</question>
+		<choix solution="false"> 
+			choix unique
+		</choix> 
+		</reponse_choix_unique> !-->
+</exercice>  

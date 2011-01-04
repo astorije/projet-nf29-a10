@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;contextualisation￼">
+	<sm:identification targetNamespace="utc.fr/nf29/sc/contextualisation" targetPrefix="ctx" code="contextualisation" itemExtension="contex"/>
+	<sm:structure>
+		<sm:part code="contenu" name="￼;contenu￼" internalized="userDependent" usage="required">
+			<sm:allowedModel sc:refUri="/contenu/contenu.model"/>
+		</sm:part>
+	</sm:structure>
+	<sm:authoring/>
+</sm:compositionPrim>

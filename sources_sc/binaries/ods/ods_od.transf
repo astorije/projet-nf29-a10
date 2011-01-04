@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryOdTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/binaries/ods/ods.model"/>
+	<sm:content>
+		<sm:WObject style="viewResource">
+			<sm:binaryUrl/>
+			<sm:mime value="application/vnd.oasis.opendocument.spreadsheet"/>
+		</sm:WObject>
+	</sm:content>
+</sm:binaryOdTransf>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/binaries/eWeb/eWeb.model"/>
+	<sm:axis code="view"/>
+	<sm:content>
+		<sm:WIFrame internalClass="fra">
+			<sm:binaryUrl/>
+		</sm:WIFrame>
+	</sm:content>
+</sm:binaryXhtmlTransf>

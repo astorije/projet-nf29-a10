@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/binaries/odg/odg.model"/>
+	<sm:axis code="view"/>
+	<sm:content>
+		<sm:WCaptionBlock>
+			<sm:caption>
+				<sm:WLink internalClass="zoom">
+					<sm:label>
+						<sm:fixedString>[zoom...]</sm:fixedString>
+					</sm:label>
+					<sm:link target="newWindow">
+						<sm:position>
+							<sm:centerScreen width="600" height="400"/>
+						</sm:position>
+						<sm:windowFeatures resizable="yes"/>
+						<sm:binaryUrl>
+							<sm:freeTransform code="odg2swf"/>
+						</sm:binaryUrl>
+					</sm:link>
+				</sm:WLink>
+			</sm:caption>
+			<sm:content>
+				<sm:WImage>
+					<sm:binaryUrl>
+						<sm:freeTransform code="odg2png" options="maxWidth=500px"/>
+					</sm:binaryUrl>
+				</sm:WImage>
+			</sm:content>
+		</sm:WCaptionBlock>
+	</sm:content>
+</sm:binaryXhtmlTransf>

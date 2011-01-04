@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Sous sous partie plan￼">
+	<sm:identification targetNamespace="utc.fr/nf29/sc/plan" targetPrefix="not" code="sousSousPartiePlan" itemExtension="xml"/>
+	<sm:structure>
+		<sm:set usage="optional">
+			<sm:part code="note" name="￼;Note￼" internalized="never">
+				<sm:allowedModel sc:refUri="/note/note.model"/>
+			</sm:part>
+			<sm:part code="segmentAudio" name="￼;Segment Audio￼" internalized="never">
+				<sm:allowedModel sc:refUri="/coursaudio/segmentAudio.model"/>
+			</sm:part>
+		</sm:set>
+	</sm:structure>
+	<sm:authoring/>
+</sm:compositionPrim>

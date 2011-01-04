@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<grammar 
+  xmlns="http://relaxng.org/ns/structure/1.0"
+  xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+  datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
+  ns="utc.fr/nf29/pr/contenu">
+  
+  <start>
+    <element name="contenu">
+      <zeroOrMore>
+          <optional>
+              <element name="paragraphe"><text/></element>
+          </optional>
+          <optional>
+              <element name="image">
+                  <attribute name="src">
+                      <data type="anyURI"/>
+                  </attribute>
+                  <attribute name="label">
+                      <data type="string"/>
+                  </attribute>
+              </element>
+          </optional>
+          <optional>
+            <element name="itemListe">
+              <zeroOrMore>
+                <optional>
+                  <element name="paragraphe"><text/></element>
+                </optional>
+                <optional>
+                  <element name="sousItemListe">
+                    <zeroOrMore>
+                      <optional>
+                        <element name="paragraphe"><text/></element>
+                      </optional>
+                      <optional>
+                        <element name="sousSousItemListe">
+                          <zeroOrMore>
+                            <element name="paragraphe"><text/></element>
+                          </zeroOrMore>
+                        </element>
+                      </optional>
+                    </zeroOrMore>
+                  </element>
+                </optional>
+              </zeroOrMore>
+            </element>
+          </optional>
+      </zeroOrMore>
+    </element>
+  </start>
+</grammar>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/binaries/gif/gif.model"/>
+	<sm:content>
+		<sm:WImage internalClass="img">
+			<sm:binaryUrl>
+				<sm:imageTransform maxWidth="500" outputType="PNG"/>
+			</sm:binaryUrl>
+			<sm:linkOverImage>
+				<sm:binaryUrl/>
+			</sm:linkOverImage>
+		</sm:WImage>
+	</sm:content>
+</sm:binaryXhtmlTransf>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Note￼">
+	<sm:identification targetNamespace="utc.fr/nf29/sc/note" targetPrefix="not" code="note" itemExtension="note"/>
+	<sm:structure>
+		<sm:set usage="required">
+			<sm:part code="contenuNote" name="￼;Contenu de la note￼" internalized="always">
+				<sm:meta sc:refUri="/base/sTitle/sTitle.model" usage="optional"/>
+				<sm:allowedModel sc:refUri="/contenu/contenu.model"/>
+			</sm:part>
+		</sm:set>
+	</sm:structure>
+	<sm:authoring>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼;note_￼"/>
+			<sm:counter optional="false"/>
+		</sm:itemNameCreator>
+		<sm:formEditor indentXml="false">
+			<sm:composition>
+				<sm:standardWidget tagStyle="font-size:16pt;"/>
+			</sm:composition>
+			<sm:part refCode="contenuNote">
+				<sm:standardWidget tagStyle="font-size:12pt"/>
+			</sm:part>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:compositionPrim>

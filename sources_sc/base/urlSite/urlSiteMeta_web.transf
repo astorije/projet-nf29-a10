@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:dataFormXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/base/urlSite/urlSiteMeta.model"/>
+	<sm:content>
+		<sm:WBlock internalClass="url">
+			<sm:WLink internalClass="lnk">
+				<sm:label>
+					<sm:choose>
+						<sm:when codes="name">
+							<sm:forField codes="name">
+								<sm:fieldValueString/>
+							</sm:forField>
+						</sm:when>
+						<sm:otherwise>
+							<sm:WText value="open link"/>
+						</sm:otherwise>
+					</sm:choose>
+				</sm:label>
+				<sm:link target="newWindow">
+					<sm:externalUrl>
+						<sm:fieldValueString field="url"/>
+					</sm:externalUrl>
+				</sm:link>
+			</sm:WLink>
+		</sm:WBlock>
+	</sm:content>
+</sm:dataFormXhtmlTransf>

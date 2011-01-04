@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;contenu￼">
+	<sm:identification targetNamespace="utc.fr/nf29/sc/contenu" targetPrefix="cnt" code="contenu" itemExtension="contenu"/>
+	<sm:structure>
+		<sm:set usage="required">
+			<sm:part code="texte" name="￼;Texte￼" internalized="userDependent">
+				<sm:allowedModel sc:refUri="/contenu/contenuText.model"/>
+			</sm:part>
+			<sm:part code="image" name="￼;Image￼" internalized="userDependent">
+				<sm:allowedModel sc:refUri="/contenu/image.model"/>
+			</sm:part>
+		</sm:set>
+	</sm:structure>
+	<sm:authoring/>
+</sm:compositionPrim>

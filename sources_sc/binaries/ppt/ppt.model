@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:binaryPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="Présentation Microsoft Powerpoint" category="Ressources">
+	<sm:help quickHelp=" Ressource au format Microsoft Powerpoint. "/>
+	<sm:identification extensions="ppt"/>
+	<sm:structure type="application/vnd.ms-powerpoint"/>
+	<sm:authoring>
+		<sm:icon sc:refUri="/binaries/ppt/_res/ppt.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="res"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+		<sm:emptyFile sc:refUri="/binaries/ppt/_res/empty.ppt"/>
+	</sm:authoring>
+</sm:binaryPrim>

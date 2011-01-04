@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:dataFormXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/base/doc/docMeta.model"/>
+	<sm:content>
+		<sm:forField codes="title">
+			<sm:WBlock internalClass="title">
+				<sm:fieldValueString/>
+			</sm:WBlock>
+		</sm:forField>
+		<sm:forField codes="auth">
+			<sm:WBlock internalClass="auth">
+				<sm:fieldValueString/>
+			</sm:WBlock>
+		</sm:forField>
+		<sm:forField codes="code">
+			<sm:WBlock internalClass="code">
+				<sm:fieldValueString/>
+			</sm:WBlock>
+		</sm:forField>
+		<sm:forField codes="ref">
+			<sm:WBlock internalClass="ref">
+				<sm:fieldValueString/>
+			</sm:WBlock>
+		</sm:forField>
+		<sm:forSubData codes="url">
+			<sm:WBlock internalClass="url">
+				<sm:callSubModel/>
+			</sm:WBlock>
+		</sm:forSubData>
+	</sm:content>
+</sm:dataFormXhtmlTransf>

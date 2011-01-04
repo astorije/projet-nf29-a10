@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:dataFormPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="Site Web">
+	<sm:identification targetNamespace="scpf.org:base" targetPrefix="bs" code="urlSiteMeta"/>
+	<sm:structure>
+		<sm:field code="name" name="Intitulé du site web" occurence="one" family="content">
+			<sm:string/>
+		</sm:field>
+		<sm:field code="url" name="Adresse du site web" occurence="one" family="content">
+			<sm:string/>
+		</sm:field>
+	</sm:structure>
+	<sm:storage>
+		<sm:fullTitleBuilder>
+			<sm:fieldValue refCode="name"/>
+		</sm:fullTitleBuilder>
+		<sm:shortTitleBuilder returnFullTitleIfEmpty="no">
+			<sm:fieldValue refCode="name"/>
+		</sm:shortTitleBuilder>
+	</sm:storage>
+	<sm:authoring>
+		<sm:htmlPreview>
+			<sm:contentView titleFormat="fullTitleText"/>
+		</sm:htmlPreview>
+	</sm:authoring>
+</sm:dataFormPrim>

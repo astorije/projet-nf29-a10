@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Sous sous partie￼">
+	<sm:identification targetNamespace="utc.fr/nf29/sc/article" targetPrefix="art" code="soussouspartie" itemExtension="xml"/>
+	<sm:structure>
+		<sm:set usage="required">
+			<sm:part code="contenu" name="￼;Contenu￼" internalized="always">
+				<sm:allowedModel sc:refUri="/contenu/contenu.model"/>
+			</sm:part>
+			<sm:part code="note" name="￼;Note￼" internalized="never">
+				<sm:allowedModel sc:refUri="/note/note.model"/>
+			</sm:part>
+		</sm:set>
+	</sm:structure>
+	<sm:authoring/>
+</sm:compositionPrim>

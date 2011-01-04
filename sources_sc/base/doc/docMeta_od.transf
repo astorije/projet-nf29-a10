@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:dataFormOdTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/base/doc/docMeta.model"/>
+	<sm:content>
+		<sm:WTable style="docMeta">
+			<sm:forField codes="title auth code ref">
+				<sm:WTableRow id="row2">
+					<sm:WTableCell id="cell2">
+						<sm:WParagraph style="fieldName">
+							<sm:fieldName/>
+						</sm:WParagraph>
+					</sm:WTableCell>
+					<sm:WTableCell id="cell3">
+						<sm:WParagraph style="fieldValue">
+							<sm:fieldValueString/>
+						</sm:WParagraph>
+					</sm:WTableCell>
+				</sm:WTableRow>
+			</sm:forField>
+			<sm:forField codes="url">
+				<sm:WTableRow id="row3">
+					<sm:WTableCell id="cell4">
+						<sm:WParagraph style="fieldName">
+							<sm:fieldName/>
+						</sm:WParagraph>
+					</sm:WTableCell>
+					<sm:WTableCell id="cell5">
+						<sm:fieldValueRefItem>
+							<sm:callRefModel/>
+						</sm:fieldValueRefItem>
+					</sm:WTableCell>
+				</sm:WTableRow>
+			</sm:forField>
+		</sm:WTable>
+	</sm:content>
+</sm:dataFormOdTransf>

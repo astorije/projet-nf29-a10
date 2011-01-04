@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:wspDefinition xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" keyWsp="note" name="￼;note￼" majorVersion="0" mediumVersion="0" minorVersion="0">
+	<sm:publicClasses>
+		<sm:class sc:refUri="/note/plan.model" access="readWrite"/>
+		<sm:class sc:refUri="/binaries/gif/gif.model" access="readWrite"/>
+		<sm:class sc:refUri="/binaries/jpg/jpeg.model" access="readWrite"/>
+		<sm:class sc:refUri="/binaries/png/png.model" access="readWrite"/>
+		<sm:class sc:refUri="/note/note.model" access="readWrite"/>
+	</sm:publicClasses>
+</sm:wspDefinition>

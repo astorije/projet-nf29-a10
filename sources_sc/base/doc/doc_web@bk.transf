@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/base/doc/doc.model"/>
+	<sm:axis code="bk"/>
+	<sm:content format="xhtml">
+		<sm:WSimpleBlock internalClass="bk">
+			<sm:callCompositionMeta/>
+			<sm:for codes="file">
+				<sm:WSimpleBlock internalClass="file">
+					<sm:callSubModel/>
+				</sm:WSimpleBlock>
+			</sm:for>
+			<sm:for codes="desc">
+				<sm:WSimpleBlock internalClass="desc">
+					<sm:callSubModel/>
+				</sm:WSimpleBlock>
+			</sm:for>
+		</sm:WSimpleBlock>
+	</sm:content>
+</sm:compositionXhtmlTransf>

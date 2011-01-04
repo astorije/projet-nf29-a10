@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryOdTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/binaries/odf/odf.model"/>
+	<sm:axis code="inline"/>
+	<sm:content>
+		<sm:WObject style="viewResource">
+			<sm:binaryUrl/>
+			<sm:mime value="application/vnd.oasis.opendocument.formula"/>
+			<sm:odParams maxWidth="10" maxHeight="2"/>
+		</sm:WObject>
+	</sm:content>
+</sm:binaryOdTransf>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/binaries/jpg/jpeg.model"/>
+	<sm:axis code="inline"/>
+	<sm:content>
+		<sm:WImage internalClass="img">
+			<sm:binaryUrl>
+				<sm:imageTransform maxWidth="300" outputType="JPEG"/>
+			</sm:binaryUrl>
+			<sm:defaultStyle>.sfile_jpg_jpeg_inline_img {
+  vertical-align: middle;
+}</sm:defaultStyle>
+		</sm:WImage>
+	</sm:content>
+</sm:binaryXhtmlTransf>

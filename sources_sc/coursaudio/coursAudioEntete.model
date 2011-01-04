@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:dataFormPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;coursAudioM￼">
+	<sm:identification targetNamespace="utc.fr/nf29/sc/audio" targetPrefix="au" code="coursaudioentete" itemExtension="xml"/>
+	<sm:structure>
+		<sm:field code="date" name="￼;date￼" occurence="one">
+			<sm:date/>
+		</sm:field>
+		<sm:field code="fichierAudio" name="￼;fichierAudio￼" occurence="one">
+			<sm:string/>
+		</sm:field>
+		<sm:field code="urlServeur" name="￼;urlServeur￼" occurence="one">
+			<sm:string/>
+		</sm:field>
+	</sm:structure>
+	<sm:storage/>
+</sm:dataFormPrim>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Article￼">
+	<sm:identification targetNamespace="utc.fr/nf29/sc/article" targetPrefix="art" code="article" itemExtension="article"/>
+	<sm:structure>
+		<sm:meta sc:refUri="/base/sTitle/sTitleArticle.model" usage="required"/>
+		<sm:set usage="required">
+			<sm:part code="partie" name="￼;Partie￼" internalized="always">
+				<sm:meta sc:refUri="/base/sTitle/sTitlePartie.model" usage="required"/>
+				<sm:allowedModel sc:refUri="/article/partie.model"/>
+			</sm:part>
+		</sm:set>
+	</sm:structure>
+	<sm:authoring>
+		<sm:itemNameCreator>
+			<sm:fixedString value="￼;article_￼"/>
+			<sm:counter optional="false"/>
+		</sm:itemNameCreator>
+		<sm:formEditor indentXml="false">
+			<sm:composition>
+				<sm:standardWidget tagStyle="font-size:16pt;"/>
+			</sm:composition>
+			<sm:part refCode="partie">
+				<sm:standardWidget tagStyle="font-size:12pt;"/>
+			</sm:part>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:compositionPrim>

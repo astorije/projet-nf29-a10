@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/binaries/flash/flash.model"/>
+	<sm:content>
+		<sm:WObject>
+			<sm:binaryUrl/>
+			<sm:classid value="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"/>
+			<sm:codebase value="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab"/>
+			<sm:pluginspage value="http://www.macromedia.com/go/getflash/"/>
+			<sm:width>
+				<sm:fixedValue value="450"/>
+			</sm:width>
+			<sm:height>
+				<sm:fixedValue value="400"/>
+			</sm:height>
+			<sm:param name="play">
+				<sm:fixedValue value="true"/>
+			</sm:param>
+			<sm:param name="loop">
+				<sm:fixedValue value="false"/>
+			</sm:param>
+			<sm:param name="wmode">
+				<sm:fixedValue value="transparent"/>
+			</sm:param>
+		</sm:WObject>
+	</sm:content>
+</sm:binaryXhtmlTransf>

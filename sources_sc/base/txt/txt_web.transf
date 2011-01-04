@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:textXhtmlTransf xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<sm:model sc:refUri="/base/txt/txt.model"/>
+	<sm:content>
+		<sm:paraTag tagName="p"/>
+		<sm:simpleListTag/>
+		<sm:itemizedListTag/>
+		<sm:orderedListTag/>
+		<sm:uLinkTag role="url">
+			<sm:externalUrl target="newWindow"/>
+		</sm:uLinkTag>
+		<sm:uLinkTag role="urlSite">
+			<sm:refItem crossRefEntries="urlRef">
+				<sm:label>
+					<sm:textLink/>
+				</sm:label>
+				<sm:tooltip>
+					<!--<sm:ttTitle xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling"><sm:subModelTitle/></sm:ttTitle>-->
+					<sm:behavior trigger="onclick" sticky="true"/>
+					<sm:shadow/>
+					<sm:ttContent>
+						<sm:callSubModel/>
+					</sm:ttContent>
+				</sm:tooltip>
+			</sm:refItem>
+		</sm:uLinkTag>
+		<sm:uLinkTag role="def">
+			<sm:refItem crossRefEntries="def">
+				<sm:label>
+					<sm:textLink/>
+				</sm:label>
+				<sm:tooltip>
+					<!--<sm:ttTitle xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling"><sm:subModelTitle/></sm:ttTitle>-->
+					<sm:behavior trigger="onclick" sticky="true"/>
+					<sm:shadow/>
+					<sm:ttContent>
+						<sm:callSubModel/>
+					</sm:ttContent>
+				</sm:tooltip>
+			</sm:refItem>
+		</sm:uLinkTag>
+		<sm:uLinkTag role="doc">
+			<sm:refItem crossRefEntries="doc">
+				<sm:label>
+					<sm:textLink/>
+				</sm:label>
+				<sm:tooltip>
+					<!--<sm:ttTitle xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling"><sm:subModelTitle/></sm:ttTitle>-->
+					<sm:behavior trigger="onclick" sticky="true"/>
+					<sm:shadow/>
+					<sm:ttContent>
+						<sm:callSubModel axis="bk"/>
+					</sm:ttContent>
+				</sm:tooltip>
+			</sm:refItem>
+		</sm:uLinkTag>
+		<sm:phraseTag role="quote">
+			<sm:textWrapper prefix="&quot;" suffix="&quot;"/>
+		</sm:phraseTag>
+		<sm:inlineStyleTag role="imp"/>
+		<sm:inlineImgTag role="ico" axis="inline"/>
+	</sm:content>
+</sm:textXhtmlTransf>

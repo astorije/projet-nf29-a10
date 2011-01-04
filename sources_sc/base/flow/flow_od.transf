@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionOdtTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0">
+	<sm:model sc:refUri="/base/flow/flow.model"/>
+	<sm:content>
+		<sm:inDataOrder>
+			<sm:for codes="txt">
+				<sm:callSubModel/>
+			</sm:for>
+			<sm:for codes="img">
+				<sm:WCaptionBlock>
+					<sm:caption category="illustration"/>
+					<sm:callSubModel/>
+				</sm:WCaptionBlock>
+			</sm:for>
+			<!--NON GERE EN OD aud, vid, anim.-->
+			<sm:for codes="tab">
+				<sm:WCaptionBlock>
+					<sm:caption category="table"/>
+					<sm:callSubModel/>
+				</sm:WCaptionBlock>
+			</sm:for>
+			<sm:for codes="graph">
+				<sm:WCaptionBlock>
+					<sm:caption category="graphic"/>
+					<sm:callSubModel/>
+				</sm:WCaptionBlock>
+			</sm:for>
+			<sm:for codes="doc">
+				<sm:WCaptionBlock>
+					<sm:caption category="document"/>
+					<sm:callSubModel/>
+				</sm:WCaptionBlock>
+			</sm:for>
+		</sm:inDataOrder>
+	</sm:content>
+</sm:compositionOdtTransf>

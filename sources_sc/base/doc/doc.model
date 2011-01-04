@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="Document">
+	<sm:identification targetNamespace="scpf.org:base" targetPrefix="bs" code="doc" itemExtension="refs"/>
+	<sm:structure>
+		<sm:meta sc:refUri="/base/doc/docMeta.model" usage="required"/>
+		<sm:part code="file" name="Fichier" internalized="never" usage="optional">
+			<sm:allowedModel sc:refUri="/binaries/pdf/pdf.model"/>
+			<sm:allowedModel sc:refUri="/binaries/odt/odt.model"/>
+			<sm:allowedModel sc:refUri="/binaries/ods/ods.model"/>
+			<sm:allowedModel sc:refUri="/binaries/odp/odp.model"/>
+			<sm:allowedModel sc:refUri="/binaries/odg/odg.model"/>
+			<sm:allowedModel sc:refUri="/binaries/xls/xls.model"/>
+			<sm:allowedModel sc:refUri="/binaries/doc/doc.model"/>
+			<sm:allowedModel sc:refUri="/binaries/ppt/ppt.model"/>
+			<sm:allowedModel sc:refUri="/binaries/flash/flash.model"/>
+			<sm:allowedModel sc:refUri="/binaries/mov/mov.model"/>
+			<sm:allowedModel sc:refUri="/binaries/avi/avi.model"/>
+			<sm:allowedModel sc:refUri="/binaries/flv/flv.model"/>
+			<sm:allowedModel sc:refUri="/binaries/rm/rm.model"/>
+			<sm:allowedModel sc:refUri="/binaries/mp3/mp3.model"/>
+			<sm:allowedModel sc:refUri="/binaries/zip/zip.model"/>
+		</sm:part>
+		<sm:part code="desc" name="Description" internalized="always" usage="optional">
+			<sm:allowedModel sc:refUri="/base/sTxt/sTxt.model"/>
+		</sm:part>
+	</sm:structure>
+	<sm:authoring>
+		<sm:icon sc:refUri="/base/doc/_res/doc.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="res"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+		<sm:formEditor indentXml="true"/>
+	</sm:authoring>
+</sm:compositionPrim>

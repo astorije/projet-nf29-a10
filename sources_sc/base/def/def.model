@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="Définition">
+	<sm:identification targetNamespace="scpf.org:base" targetPrefix="bs" code="def" itemExtension="refs"/>
+	<sm:structure>
+		<sm:meta sc:refUri="/base/def/defMeta.model" usage="required"/>
+		<sm:part code="def" name="Définition" internalized="always" usage="required">
+			<sm:allowedModel sc:refUri="/base/sTxt/sTxt.model"/>
+		</sm:part>
+	</sm:structure>
+	<sm:authoring>
+		<sm:icon sc:refUri="/base/def/_res/def.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="def"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+		<sm:formEditor indentXml="true"/>
+	</sm:authoring>
+</sm:compositionPrim>

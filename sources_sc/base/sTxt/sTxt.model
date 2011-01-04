@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:textPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="Texte (simple)">
+	<sm:identification targetNamespace="scpf.org:base" targetPrefix="bs" code="sTxt"/>
+	<sm:structure>
+		<sm:blockTags>
+			<sm:paraTag name="Paragraphe"/>
+			<sm:simpleListTag name="Liste simple">
+				<sm:memberTag name="Item paragraphe"/>
+			</sm:simpleListTag>
+			<sm:itemizedListTag name="Liste à puce">
+				<sm:listItemTag name="Item"/>
+			</sm:itemizedListTag>
+			<sm:orderedListTag name="Liste ordonnée">
+				<sm:listItemTag name="Item"/>
+			</sm:orderedListTag>
+		</sm:blockTags>
+		<sm:inlineTags>
+			<sm:uLinkTag role="url" name="Lien externe simple">
+				<sm:externalUrl/>
+			</sm:uLinkTag>
+			<sm:phraseTag role="quote" name="Citation"/>
+			<sm:inlineStyleTag role="imp" name="Important"/>
+			<sm:inlineImgTag role="ico" name="Imagette">
+				<sm:alternativeText name="Alternative textuelle"/>
+				<sm:allowedModel sc:refUri="/binaries/gif/gif.model"/>
+				<sm:allowedModel sc:refUri="/binaries/jpg/jpeg.model"/>
+				<sm:allowedModel sc:refUri="/binaries/png/png.model"/>
+			</sm:inlineImgTag>
+		</sm:inlineTags>
+	</sm:structure>
+	<sm:authoring>
+		<sm:formEditor>
+			<sm:htmlStyle tag="uLink" role="url">
+				<sm:entryStyle key="text-decoration" value="underline"/>
+				<sm:entryStyle key="color" value="#0000EE"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="phrase" role="quote">
+				<sm:entryStyle key="font-family" value="&quot;Times New Roman&quot;, Times, serif"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="phrase" role="quote" pseudoClass="before">
+				<sm:entryStyle key="font-weight" value="normal"/>
+				<sm:entryStyle key="content" value="&quot;\&quot;&quot;"/>
+				<sm:entryStyle key="color" value="grey"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="phrase" role="quote" pseudoClass="after">
+				<sm:entryStyle key="font-weight" value="normal"/>
+				<sm:entryStyle key="content" value="&quot;\&quot;&quot;"/>
+				<sm:entryStyle key="color" value="grey"/>
+			</sm:htmlStyle>
+			<sm:htmlStyle tag="inlineStyle" role="imp">
+				<sm:entryStyle key="font-weight" value="bold"/>
+			</sm:htmlStyle>
+		</sm:formEditor>
+	</sm:authoring>
+</sm:textPrim>

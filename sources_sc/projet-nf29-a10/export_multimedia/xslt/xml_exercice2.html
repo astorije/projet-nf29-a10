@@ -1,0 +1,94 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>Exercices d'introduction au PHP</title>
+      <link rel="stylesheet" href="../css/global.css" type="text/css">
+      <link rel="stylesheet" href="../css/exercises.css" type="text/css"><script src="../js/jquery-1.4.4.min.js"></script><script src="../js/jquery.flash.js"></script><script src="../js/exercises.js"></script></head>
+   <body>
+      <div id="questions">
+         <div id="toggle_solutions"><a href="#">Afficher les solutions</a></div>
+         <form method="post" action="#">
+            <h1 id="title" class="hidden">
+               Exercices d'introduction au PHP
+                   
+            </h1>
+            <div class="question rounded_box">1. Cr&eacute;er un fichier hello.php et le tester en acc&eacute;dant &agrave; la page.
+               <div class="indice">Indice de reponse</div>
+               <div class="solution">
+                              solution
+                          
+               </div>
+            </div>
+            <div class="question rounded_box">2. Cr&eacute;er les deux fichiers form.html et action.php et les tester en entrant une valeur dans le formulaire (afin de v&eacute;rifier
+               la m&eacute;canique du passage de variable).
+               <div class="indice">Indice de reponse 3</div>
+               <div class="solution">
+                              solution
+                          
+               </div>
+            </div>
+            <div class="question rounded_box">
+                               3. Que fait un visiteur qui tente d'exploiter une faille XSS ?
+               <div class="indice">Explications</div>
+               <div class="solution">
+                  <ul>
+                     <li><input type="radio" name="question5" id="question5[answer1]" value=" &#xA;                        Il ins&egrave;re du code Javascript pour r&eacute;cup&eacute;rer des cookies&#xA;                    "><span class="solution"><img src="../images/radio_on.png" alt="Vrai"></span><label for="question5[answer1]"> 
+                                                   Il ins&egrave;re du code Javascript pour r&eacute;cup&eacute;rer des cookies
+                                               </label></li>
+                     <li><input type="radio" name="question5" id="question5[answer1]" value=" &#xA;                        Il retire des champs du formulaire pour perturber la page cible&#xA;                    "><span class="solution"><img src="../images/radio_on.png" alt="Vrai"></span><label for="question5[answer1]"> 
+                                                   Il retire des champs du formulaire pour perturber la page cible
+                                               </label></li>
+                     <li><input type="radio" name="question5" id="question5[answer1]" value=" &#xA;                        Il cr&eacute;e un formulaire modifi&eacute; sur son serveur&#xA;                    "><span class="solution"><img src="../images/radio_off.png" alt="Faux"></span><label for="question5[answer1]"> 
+                                                   Il cr&eacute;e un formulaire modifi&eacute; sur son serveur
+                                               </label></li>
+                  </ul>
+               </div>
+               <div class="solution">
+                              La faille XSS consiste &agrave; injecter du HTML, et plus particuli&egrave;rement du Javascript, sur une page de votre site
+                  web. Si ce Javascript est bien fait, il peut r&eacute;cup&eacute;rer les cookies du visiteur qui l'ex&eacute;cute, cookies qui contiennent des
+                  informations cens&eacute;es rester secr&egrave;tes !
+                          
+               </div>
+            </div>
+            <div class="question rounded_box">4. Si on ne met pas d'attribut action au formulaire, que va-t-il se passer ?
+               <div class="indice">Indice pour question 4</div>
+               <div class="solution"></div>
+               <ul>
+                  <li><input type="checkbox" name="question5" id="question5[answer1]" value=" &#xA;                    Cela va afficher une page vide&#xA;                "><span class="solution"><img src="../images/checkbox_off.png" alt="Faux"></span><label for="question5[answer1]"> 
+                                            Cela va afficher une page vide
+                                        </label></li>
+                  <li><input type="checkbox" name="question5" id="question5[answer1]" value=" &#xA;                    Cela va recharger la m&ecirc;me page&#xA;                "><span class="solution"><img src="../images/checkbox_on.png" alt="Vrai"></span><label for="question5[answer1]"> 
+                                            Cela va recharger la m&ecirc;me page
+                                        </label></li>
+                  <li><input type="checkbox" name="question5" id="question5[answer1]" value=" &#xA;                    Cela va afficher une erreur 404&#xA;                "><span class="solution"><img src="../images/checkbox_off.png" alt="Faux"></span><label for="question5[answer1]"> 
+                                            Cela va afficher une erreur 404
+                                        </label></li>
+               </ul>
+            </div>
+            <div class="question rounded_box">5. Quel est l'attribut &agrave; rajouter &agrave; une case &agrave; cocher pour qu'elle soit coch&eacute;e par d&eacute;faut ?
+               <div class="enonce"><input type="text" name="" id=""></div>
+               <div class="indice">Indice pour question 5</div>
+               <ul><span class="solution">
+                     <div class="solution">checked</div></span></ul>
+            </div>
+         </form>
+      </div>
+      <div id="score" class="rounded_box">
+         Votre score est de <strong><span id="score_value"></span> %</strong>.
+         
+      </div>
+      <div id="footer" class="hidden">
+         <div id="indice_bloc">
+            <div id="indice_link"><a href="#">Indice</a></div>
+            <div id="content"></div>
+         </div>
+         <ul>
+            <li class="right"><a id="previous" href="#">Pr&eacute;c&eacute;dent</a></li>
+            <li class="center"><span id="question_number">1</span> / <span id="count_questions"></span></li>
+            <li class="left"><a id="next" href="#">Suivant</a></li>
+         </ul>
+      </div>
+   </body>
+</html>

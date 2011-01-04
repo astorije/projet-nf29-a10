@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:videoPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="Vidéo MOV" category="Ressources">
+	<sm:identification extensions="mov"/>
+	<sm:structure type="video/quicktime"/>
+	<sm:authoring showPreview="true">
+		<sm:icon sc:refUri="/binaries/mov/_res/mov.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="video"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+	</sm:authoring>
+</sm:videoPrim>

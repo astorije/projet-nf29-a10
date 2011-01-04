@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:videoPrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="Vidéo AVI" category="Ressources">
+	<sm:identification extensions="avi"/>
+	<sm:structure type="video/x-msvideo"/>
+	<sm:authoring showPreview="false">
+		<sm:icon sc:refUri="/binaries/avi/_res/avi.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="video"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+	</sm:authoring>
+</sm:videoPrim>

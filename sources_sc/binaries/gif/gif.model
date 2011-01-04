@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><sm:imagePrim xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" name="Image GIF" category="Ressource">
+	<sm:help quickHelp=" Image au format GIF."/>
+	<sm:identification extensions="gif"/>
+	<sm:structure type="image/gif"/>
+	<sm:authoring>
+		<sm:icon sc:refUri="/binaries/gif/_res/gif.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="image"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+	</sm:authoring>
+</sm:imagePrim>

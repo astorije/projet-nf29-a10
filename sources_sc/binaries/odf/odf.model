@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:binaryPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="Equation mathématique OpenDocument">
+	<sm:help quickHelp=" Ressource au format Open Document Formular. "/>
+	<sm:identification extensions="odf"/>
+	<sm:structure type="application/vnd.oasis.opendocument.formula"/>
+	<sm:storage>
+		<sm:glimpseImage>
+			<sm:fromBinary>
+				<sm:freeTransform code="odf2png" options="maxWidth=300px"/>
+			</sm:fromBinary>
+		</sm:glimpseImage>
+	</sm:storage>
+	<sm:authoring>
+		<sm:previewBlock>
+			<sm:imageViewer>
+				<sm:fromBinary>
+					<sm:freeTransform code="odf2png"/>
+				</sm:fromBinary>
+			</sm:imageViewer>
+		</sm:previewBlock>
+		<sm:icon sc:refUri="/binaries/odf/_res/odf.png"/>
+		<sm:itemNameCreator>
+			<sm:fixedString value="res"/>
+			<sm:counter optional="true"/>
+		</sm:itemNameCreator>
+		<sm:emptyFile sc:refUri="/binaries/odf/_res/empty.odf"/>
+	</sm:authoring>
+</sm:binaryPrim>

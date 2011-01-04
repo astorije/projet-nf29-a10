@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:wspDefinition xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" keyWsp="projet" name="￼;projet￼" majorVersion="0" mediumVersion="0" minorVersion="0">
+	<sm:publicClasses>
+		<sm:group name="￼;test￼" displayMode="open">
+			<sm:class sc:refUri="/article/article.model" access="readWrite"/>
+			<sm:class sc:refUri="/exercice/exercice.model" access="readWrite"/>
+			<sm:class sc:refUri="/note/plan.model" access="readWrite"/>
+			<sm:class sc:refUri="/note/note.model" access="readWrite"/>
+			<sm:class sc:refUri="/notion/notion.model" access="readWrite"/>
+			<sm:class sc:refUri="/parcours/parcours.model" access="readWrite"/>
+			<sm:class sc:refUri="/coursaudio/coursAudio.model" access="readWrite"/>
+			<sm:class sc:refUri="/coursaudio/segmentAudio.model" access="readWrite"/>
+		</sm:group>
+		<sm:group name="￼;Ressources￼" displayMode="open">
+			<sm:class sc:refUri="/binaries/gif/gif.model" access="readWrite"/>
+			<sm:class sc:refUri="/binaries/jpg/jpeg.model" access="readWrite"/>
+			<sm:class sc:refUri="/binaries/png/png.model" access="readWrite"/>
+		</sm:group>
+	</sm:publicClasses>
+</sm:wspDefinition>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Annotation￼">
+	<sm:identification targetNamespace="utc.fr/nf29/sc/audio" targetPrefix="au" code="note" itemExtension="xml"/>
+	<sm:structure>
+		<sm:meta sc:refUri="/base/sTitle/sTitle.model" usage="required"/>
+		<sm:part code="tcin" name="￼;Time Code In￼" internalized="userDependent" usage="required">
+			<sm:meta sc:refUri="/coursaudio/time.model" usage="required"/>
+		</sm:part>
+		<sm:part code="tcout" name="￼;Time Code Out￼" internalized="userDependent" usage="required">
+			<sm:meta sc:refUri="/coursaudio/time.model" usage="required"/>
+		</sm:part>
+		<sm:part code="contenu" name="￼;contenu￼" internalized="always" usage="required">
+			<sm:allowedModel sc:refUri="/contenu/contenu.model"/>
+		</sm:part>
+	</sm:structure>
+	<sm:authoring/>
+</sm:compositionPrim>

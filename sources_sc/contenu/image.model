@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;image￼">
+	<sm:identification targetNamespace="utc.fr/nf29/sc/image" targetPrefix="img" code="image" itemExtension="xml"/>
+	<sm:structure>
+		<sm:set usage="required">
+			<sm:part code="image" name="￼;Image￼" internalized="userDependent">
+				<sm:allowedModel sc:refUri="/binaries/jpg/jpeg.model"/>
+				<sm:allowedModel sc:refUri="/binaries/png/png.model"/>
+				<sm:allowedModel sc:refUri="/binaries/gif/gif.model"/>
+			</sm:part>
+		</sm:set>
+	</sm:structure>
+	<sm:authoring/>
+</sm:compositionPrim>

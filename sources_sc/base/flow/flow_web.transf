@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:compositionXhtmlTransf xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling">
+	<sm:model sc:refUri="/base/flow/flow.model"/>
+	<sm:content format="xhtml">
+		<sm:inDataOrder>
+			<sm:for codes="txt">
+				<sm:WSimpleBlock commonClass="flowTxt">
+					<sm:callSubModel/>
+				</sm:WSimpleBlock>
+			</sm:for>
+			<sm:for codes="img">
+				<sm:WCaptionBlock commonClass="flowImg">
+					<sm:caption>
+						<sm:title>
+							<sm:partTitle/>
+						</sm:title>
+					</sm:caption>
+					<sm:content>
+						<sm:callSubModel/>
+					</sm:content>
+				</sm:WCaptionBlock>
+			</sm:for>
+			<sm:for codes="aud vid anim tab graph">
+				<sm:WCaptionBlock commonClass="flowObj">
+					<sm:caption>
+						<sm:title>
+							<sm:partTitle/>
+						</sm:title>
+					</sm:caption>
+					<sm:content>
+						<sm:callSubModel axis="view"/>
+					</sm:content>
+				</sm:WCaptionBlock>
+			</sm:for>
+			<sm:for codes="doc">
+				<sm:WSimpleBlock commonClass="flowDoc">
+					<sm:title>
+						<sm:partTitle suffix=" : "/>
+					</sm:title>
+					<sm:callSubModel/>
+				</sm:WSimpleBlock>
+			</sm:for>
+		</sm:inDataOrder>
+	</sm:content>
+</sm:compositionXhtmlTransf>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:dataFormPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Entête￼">
+	<sm:identification targetNamespace="utc.fr/nf29/sc/publication" targetPrefix="pu" code="entete" itemExtension="xml"/>
+	<sm:structure>
+		<sm:field code="versionmaj" name="￼;Version majeure￼" occurence="one">
+			<sm:number min="0" max="Infinity" allowedDecimals="0"/>
+		</sm:field>
+		<sm:field code="versionmin" name="￼;Version mineure￼" occurence="one">
+			<sm:number min="0" max="Infinity" allowedDecimals="0"/>
+		</sm:field>
+		<sm:field code="auteurs" name="￼;Auteurs￼" occurence="one">
+			<sm:string/>
+		</sm:field>
+		<sm:field code="date" name="￼;Date de publication￼" occurence="one">
+			<sm:date/>
+		</sm:field>
+	</sm:structure>
+	<sm:storage/>
+</sm:dataFormPrim>

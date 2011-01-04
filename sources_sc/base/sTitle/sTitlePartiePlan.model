@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:titlePrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="Titre de la partie plan" info="Titre simple">
+	<sm:identification targetNamespace="scpf.org:base" targetPrefix="bs" code="sTitlePartiePlan"/>
+	<sm:structure>
+		<sm:fullTitleTag name="Titre de la partie plan"/>
+	</sm:structure>
+</sm:titlePrim>
