@@ -16,11 +16,11 @@
             <head>
                 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
                 <title>Parcours</title>
-                <link rel="stylesheet" href="../css/global.css" type="text/css" />
-                <link rel="stylesheet" href="../css/exercises.css" type="text/css" />
-                <script src="../js/jquery-1.4.4.min.js"></script>
-                <script src="../js/jquery.flash.js"></script>
-                <script src="../js/exercises.js"></script>          
+                <link rel="stylesheet" href="css/global.css" type="text/css" />
+                <link rel="stylesheet" href="css/exercises.css" type="text/css" />
+                <script src="js/jquery-1.4.4.min.js"></script>
+                <script src="js/jquery.flash.js"></script>
+                <script src="js/exercises.js"></script>          
             </head>
             <body>
                 <div id="questions">
@@ -60,7 +60,8 @@
     </xsl:template>
     
     <xsl:template match="ressource:ressource">
-        <div> <a href="{replace(ressource:uri,'.xml','.html')}"  target="_blank"> <xsl:value-of select="ressource:titre" /> </a> </div> 
+        <div> <a href="{replace(ressource:uri,'.xml','.html')}"  target="_blank"> <xsl:value-of select="ressource:titre" /> </a> 
+            <iframe height="300px" width="100%" src="file:///C:/Users/gaelle/Documents/MOD2/export_multimedia/{replace(ressource:uri,'.xml','.html')}"> </iframe></div> 
         <!-- echo '<a href="'.$res=split('.', {@uri}).'"  target="_blank"> ressource </a>'; -->
     </xsl:template>
     
