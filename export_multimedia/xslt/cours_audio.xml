@@ -10,15 +10,15 @@
         <partie_plan>
             <ref_partie_plan uri="partie1"></ref_partie_plan>
         </partie_plan>
-        <date_debut>0:00</date_debut>
-        <date_fin>2:04</date_fin>
+        <date_debut>00:00:00</date_debut>
+        <date_fin>00:02:30</date_fin>
         <annotation>
             <titre>Définition de XML</titre>
             <contenu> 
                 <paragraphe>The Extensible Markup Language (XML) is a simple text-based format for representing structured information: documents, data, configuration, books, transactions, invoices, and much more. It was derived from an older standard format called SGML (ISO 8879), in order to be more suitable for Web use.</paragraphe>
             </contenu>
-            <date_debut>0:00</date_debut>
-            <date_fin>0:50</date_fin>
+            <date_debut>00:00:00</date_debut>
+            <date_fin>00:00:30</date_fin>
         </annotation>
         <annotation>
             <titre>standard du W3C</titre>
@@ -26,8 +26,8 @@
                 <paragraphe>Voici un lien vers un complément de cours. Présentation de XML</paragraphe>
                 <paragraphe>http://www.w3.org/TR/2008/REC-xml-20081126</paragraphe>
             </contenu>
-            <date_debut>0:50</date_debut>
-            <date_fin>1:40</date_fin>
+            <date_debut>00:00:30</date_debut>
+            <date_fin>00:01:10</date_fin>
         </annotation>
         <annotation>
             <titre>Exemple de fichier XML</titre>
@@ -35,16 +35,16 @@
                 <paragraphe>Liste nominative de patients</paragraphe>
                 <image src="http://www.med.univ-rennes1.fr/~poulique/cours/webdyn/webdyn/img039.gif"></image>
             </contenu>
-            <date_debut>1:40</date_debut>
-            <date_fin>2:30</date_fin>
+            <date_debut>00:01:10</date_debut>
+            <date_fin>00:02:30</date_fin>
         </annotation>
     </segment>
     <segment>
         <partie_plan>
             <ref_partie_plan uri="partie2"></ref_partie_plan>
         </partie_plan>
-        <date_debut>2:04</date_debut>
-        <date_fin>4:08</date_fin>
+        <date_debut>00:02:30</date_debut>
+        <date_fin>00:04:08</date_fin>
         <annotation>
             <titre>Caractéristiques recherchées pour un document XML</titre>
             <contenu>
@@ -52,8 +52,8 @@
                 <paragraphe>Un document XML a pour objectif d'être lisible par un être humain, afin de plus facilement en appréhender le format.</paragraphe>
                 <paragraphe>Un document XML est passif, il dépend de programmes informatiques qui le transforment.</paragraphe>
             </contenu>
-            <date_debut>2:30</date_debut>
-            <date_fin>3:19</date_fin>
+            <date_debut>00:02:30</date_debut>
+            <date_fin>00:03:30</date_fin>
         </annotation>
         <annotation>
             <titre>Syntaxe XML</titre>
@@ -61,8 +61,8 @@
                 <paragraphe>Présentation de la Syntaxe XML</paragraphe>
                 <paragraphe>http://www4.utc.fr/~nf29/DOCS/site/co/xmlAC02.html</paragraphe>
                 </contenu>
-            <date_debut>3:19</date_debut>
-            <date_fin>4:08</date_fin>
+            <date_debut>00:03:30</date_debut>
+            <date_fin>00:04:08</date_fin>
         </annotation>
     </segment>
 </cours_audio>

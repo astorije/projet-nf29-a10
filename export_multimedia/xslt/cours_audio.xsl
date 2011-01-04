@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
     <xsl:output method="html" indent="yes" encoding="UTF-8"/>
-	<xsl:variable name="timelineWidth" select="number(608)"/>
+	<xsl:variable name="largeur_timeline" select="number(608)"/>
+	<xsl:variable name="secondes_fin" select="number(substring(/cours_audio/segment[last()]/date_fin,7,2))"/>
+	<xsl:variable name="minutes_fin" select="number(substring(/cours_audio/segment[last()]/date_fin,4,2))"/>
+	<xsl:variable name="heures_fin" select="number(substring(/cours_audio/segment[last()]/date_fin,1,2))"/>
+	<xsl:variable name="duree_totale" select="number($secondes_fin + 60*$minutes_fin + 3600*$heures_fin)"/>
     <xsl:template match="cours_audio">
 		<html lang="en">
 			<head>
@@ -223,20 +227,40 @@
 								  <img src="./images/media-play.png" alt="play"/>
 								</button>
 							  </div>
-							  <div id="chapitrageTimeLine">
+							  <div id="chapitrageTimeLine">							  
 								<xsl:for-each select="segment">
+								<xsl:variable name="secondes_debut_segment" select="number(substring(./date_debut,7,2))"/>
+								<xsl:variable name="minutes_debut_segment" select="number(substring(./date_debut,4,2))"/>
+								<xsl:variable name="heures_debut_segment" select="number(substring(./date_debut,1,2))"/>
+								<xsl:variable name="time_debut_segment" select="number($secondes_debut_segment + 60*$minutes_debut_segment + 3600*$heures_debut_segment)"/>
+								<xsl:variable name="secondes_fin_segment" select="number(substring(./date_fin,7,2))"/>
+								<xsl:variable name="minutes_fin_segment" select="number(substring(./date_fin,4,2))"/>
+								<xsl:variable name="heures_fin_segment" select="number(substring(./date_fin,1,2))"/>
+								<xsl:variable name="time_fin_segment" select="number($secondes_fin_segment + 60*$minutes_fin_segment + 3600*$heures_fin_segment)"/>
+								<xsl:variable name="duree_segment" select="number($time_fin_segment - $time_debut_segment)"/>
+								<xsl:variable name="largeur_segment" select="number(floor($duree_segment div $duree_totale * $largeur_timeline)-1)"/>
 								<xsl:element name="a">
 									<xsl:attribute name="href">#chapitrage<xsl:value-of select="position()"/></xsl:attribute>
-									<xsl:attribute name="style">width:304px; background-color: #2cb3ec;</xsl:attribute>
+									<xsl:attribute name="style">width:<xsl:value-of select="$largeur_segment"/>px; background-color: #2cb3ec;</xsl:attribute>
 									<span><xsl:value-of select="partie_plan/ref_partie_plan/@uri"/></span>
 								</xsl:element>
 								</xsl:for-each>
 							  </div>
 							  <div id="annotationTimeline">
 							  <xsl:for-each select="segment/annotation">
+							  <xsl:variable name="secondes_debut_annot" select="number(substring(./date_debut,7,2))"/>
+								<xsl:variable name="minutes_debut_annot" select="number(substring(./date_debut,4,2))"/>
+								<xsl:variable name="heures_debut_annot" select="number(substring(./date_debut,1,2))"/>
+								<xsl:variable name="time_debut_annot" select="number($secondes_debut_annot + 60*$minutes_debut_annot + 3600*$heures_debut_annot)"/>
+								<xsl:variable name="secondes_fin_annot" select="number(substring(./date_fin,7,2))"/>
+								<xsl:variable name="minutes_fin_annot" select="number(substring(./date_fin,4,2))"/>
+								<xsl:variable name="heures_fin_annot" select="number(substring(./date_fin,1,2))"/>
+								<xsl:variable name="time_fin_annot" select="number($secondes_fin_annot + 60*$minutes_fin_annot + 3600*$heures_fin_annot)"/>
+								<xsl:variable name="duree_annot" select="number($time_fin_annot - $time_debut_annot)"/>
+								<xsl:variable name="largeur_annot" select="number(floor($duree_annot div $duree_totale * $largeur_timeline)-1)"/>
 								<xsl:element name="a">
 									<xsl:attribute name="href">#section<xsl:value-of select="position()"/></xsl:attribute>
-									<xsl:attribute name="style">width:121px; background-color: #22F621;</xsl:attribute>
+									<xsl:attribute name="style">width:<xsl:value-of select="$largeur_annot"/>px; background-color: #22F621;</xsl:attribute>
 									<span><xsl:value-of select="date_debut"/> =&gt; <xsl:value-of select="date_fin"/></span>
 								</xsl:element>
 								</xsl:for-each>
