@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="plan.rng" type="xml"?>
+<?xml-stylesheet type="text/xsl" href="plan.xsl"?>
+<plan auteur="Pascal" titre="Presentation">
+    <partie_plan titre="partie 1">
+        <ref_note uri="uri_note_note1" titre="note1"/>
+		<ref_note uri="uri_note_note2" titre="note2"/>
+        <sous_partie_plan titre="partie 1.1">
+            <ref_note uri="uri_note_note2" titre="note2"/>
+            <sous_sous_partie_plan titre="partie 1.1.a">
+                <ref_note uri="uri_note3" titre="note3"/>
+            </sous_sous_partie_plan>
+            <sous_sous_partie_plan titre="partie 1.1.b">
+            </sous_sous_partie_plan>
+        </sous_partie_plan>
+        <sous_partie_plan titre="partie 1.2">
+        </sous_partie_plan>
+    </partie_plan>
+    <partie_plan titre="partie 2">
+        <sous_partie_plan titre="partie 2.1"></sous_partie_plan>
+    </partie_plan>
+</plan>

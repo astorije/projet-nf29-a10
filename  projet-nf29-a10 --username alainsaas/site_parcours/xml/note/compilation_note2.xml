@@ -1,0 +1,16 @@
+<note uri="uri_note_compilation_note2">
+<titre>Note 2 [Compilation]</titre>
+    <list>
+        <puce1>
+            <paragraphe>Liste1 NOTE2</paragraphe>
+        </puce1>
+        <puce1>
+            <paragraphe>Liste2 NOTE2</paragraphe>
+        </puce1>
+    </list>
+    <paragraphe>Bonjour, ceci est une note 2.</paragraphe>
+    <image>
+        <url>http://www.aaa.fre.fr/images/tt22.gif</url>
+        <description>image 22 gif</description>
+    </image>
+</note>

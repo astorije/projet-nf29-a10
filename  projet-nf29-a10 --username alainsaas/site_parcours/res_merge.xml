@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><?oxygen RNGSchema="note.rng" type="xml"?><ns_1:note xmlns:ns_1="">
+    <ns_2:meta_note xmlns:ns_2="">
+        <ns_3:statut xmlns:ns_3="">Brouillon</ns_3:statut>
+        <ns_4:date_creation xmlns:ns_4="">2010-05-012010-05-03</ns_4:date_creation>
+        <ns_5:date_modification xmlns:ns_5="">2010-05-022010-05-08</ns_5:date_modification>
+        <ns_6:auteur xmlns:ns_6=""><ns_7:nom xmlns:ns_7="">PilgrimSaint Ilaire</ns_7:nom><ns_8:prenom xmlns:ns_8="">ScottGui</ns_8:prenom></ns_6:auteur>
+        <ns_9:contributeurs xmlns:ns_9="">
+            <ns_10:contributeur xmlns:ns_10=""><ns_11:nom xmlns:ns_11="">FlowersLi</ns_11:nom><ns_12:prenom xmlns:ns_12="">RamonaFranck</ns_12:prenom></ns_10:contributeur>
+            <contributeur><nom>Chau</nom><prenom>Knives</prenom></contributeur>
+        </ns_9:contributeurs>
+        <ns_13:relecteur xmlns:ns_13=""><ns_14:nom xmlns:ns_14="">Lee</ns_14:nom><ns_15:prenom xmlns:ns_15="">Lucas</ns_15:prenom></ns_13:relecteur>
+    </ns_2:meta_note>
+    <ns_16:titre xmlns:ns_16="">Note 1Note 2</ns_16:titre>
+    <ns_17:list xmlns:ns_17="">
+        <ns_18:puce1 xmlns:ns_18="">
+            <ns_19:paragraphe xmlns:ns_19="">Liste1Liste1 NOTE2</ns_19:paragraphe>
+        </ns_18:puce1>
+        <ns_20:puce1 xmlns:ns_20="">
+            <ns_21:paragraphe xmlns:ns_21="">Liste2Liste2 NOTE2</ns_21:paragraphe>
+        </ns_20:puce1>
+    </ns_17:list>
+    <ns_22:paragraphe xmlns:ns_22="">Bonjour, ceci est une note.Bonjour, ceci est une note 2.</ns_22:paragraphe>
+    <ns_23:image xmlns:ns_23="">
+        <ns_24:url xmlns:ns_24="">http://www.aaa.fre.fr/images/tt.gifhttp://www.aaa.fre.fr/images/tt22.gif</ns_24:url>
+        <ns_25:description xmlns:ns_25="">image gifimage 22 gif</ns_25:description>
+    </ns_23:image>
+</ns_1:note>

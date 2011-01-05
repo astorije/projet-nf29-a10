@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exercice>
+    <titre>Exercice d'introduction UML </titre>
+    
+    <question>
+		<enonce>
+			<paragraphe>
+				 Quelle différence entre UML et Merise ?
+			</paragraphe>
+			<paragraphe>
+				Prendre un cas concret et le représenter sous les deux formes possibles.
+			</paragraphe>
+		</enonce>
+		<SolutionGenerale>
+			<paragraphe>
+				Google is your friend !
+			</paragraphe>
+		</SolutionGenerale>
+    </question>
+    
+    <question>
+		<enonce>
+			<paragraphe>
+				UML est un langage ?
+			</paragraphe>
+		</enonce>
+		
+		<SolutionGenerale>
+			<paragraphe>
+				TEXT_SOLUTION_GENERALE
+			</paragraphe>
+		</SolutionGenerale>
+		<reponseChoixUnique>
+			<choix valide="1">
+				VRAI
+			</choix>
+			<choix valide="0">
+				FAUX
+			</choix>
+			
+		</reponseChoixUnique>
+	</question>
+    
+    <question>
+		<enonce>
+			<paragraphe>
+				Quel logiciel permet des faire des diagrammes UML ?
+			</paragraphe>
+		</enonce>
+		<SolutionGenerale>
+			<paragraphe>
+				Solution 4
+			</paragraphe>
+		</SolutionGenerale>
+		<reponseChoixMultiple>
+			<choix valide="0">
+				Word
+			</choix>
+			<choix valide="1">
+				Astah
+			</choix>
+			<choix valide="1">
+				Rationnal Rose
+			</choix>
+		</reponseChoixMultiple>
+	</question>
+    
+    
+    <question>
+		<enonce>
+			<paragraphe>
+			 Quel est le nom de l'uv d'ingéniérie documentaire de l'utc
+			</paragraphe>
+		</enonce>
+		<SolutionGenerale>
+			<paragraphe>
+				Solution 5
+			</paragraphe>
+		</SolutionGenerale>
+		<reponseTexte valide="1">
+			nf29
+		</reponseTexte>
+	</question>
+    
+</exercice>

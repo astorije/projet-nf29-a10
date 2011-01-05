@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div class="cadre">
+  <div id="chapitrage" data-timecontainer="excl" data-mediasync="audio" data-dur="00:04:08" data-first="first.click" data-prev="prev.click" data-next="next.click" data-last="last.click" smil="active">
+    <div class="partie" data-begin="00:00:00" smil="idle">
+      <h2>Présentation UML</h2>
+        
+        
+        
+        
+        <div class="annotation" data-begin="00:00:00" smil="idle">
+				début : 00:00:00
+				fin : 00:00:30
+            
+             
+                <p>The Extensible Markup Language (XML) is a simple text-based format for representing structured information: documents, data, configuration, books, transactions, invoices, and much more. It was derived from an older standard format called SGML (ISO 8879), in order to be more suitable for Web use.</p>
+            
+            
+            
+        </div>
+        <div class="annotation" data-begin="00:00:30" smil="idle">
+				début : 00:00:30
+				fin : 00:01:10
+            
+            
+                <p>Voici un lien vers un complément de cours. Présentation de XML</p>
+                <p>http://www.w3.org/TR/2008/REC-xml-20081126</p>
+            
+            
+            
+        </div>
+        <div class="annotation" data-begin="00:01:10" smil="idle">
+				début : 00:01:10
+				fin : 00:02:30
+            
+            
+                <p>Liste nominative de patients</p>
+                
+            
+            
+            
+        </div>
+    </div>
+    <div class="partie" data-begin="00:02:30" smil="idle">
+      <h2>Caractéristiques recherchées pour un document XML</h2>
+        
+        
+        
+        
+        <div class="annotation" data-begin="00:02:30" smil="idle">
+				début : 00:02:30
+				fin : 00:03:30
+            
+            
+                <p>Les règles syntaxiques strictes d'XML rendent son interprétation informatique univoque.</p>
+                <p>Un document XML a pour objectif d'être lisible par un être humain, afin de plus facilement en appréhender le format.</p>
+                <p>Un document XML est passif, il dépend de programmes informatiques qui le transforment.</p>
+            
+            
+            
+        </div>
+        <div class="annotation" data-begin="00:03:30" smil="idle">
+				début : 00:03:30
+				fin : 00:04:08
+            
+            
+                <p>Présentation de la Syntaxe XML</p>
+                <p>http://www4.utc.fr/~nf29/DOCS/site/co/xmlAC02.html</p>
+                
+            
+            
+        </div>
+    </div>
+  </div>
+</div>

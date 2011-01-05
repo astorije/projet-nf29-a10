@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="note.rng" type="xml"?>
+<note uri="uri_note1">
+    <meta_note>
+        <statut>Brouillon</statut>
+        <date_creation>2010-05-01</date_creation>
+        <date_modification>2010-05-02</date_modification>
+        <auteur><nom>Pilgrim</nom><prenom>Scott</prenom></auteur>
+        <contributeurs>
+            <contributeur><nom>Flowers</nom><prenom>Ramona</prenom></contributeur>
+            <contributeur><nom>Chau</nom><prenom>Knives</prenom></contributeur>
+        </contributeurs>
+        <relecteur><nom>Lee</nom><prenom>Lucas</prenom></relecteur>
+    </meta_note>
+    <titre>Note 1</titre>
+    <list>
+        <puce1>
+            <paragraphe>Liste1</paragraphe>
+        </puce1>
+        <puce1>
+            <paragraphe>Liste2</paragraphe>
+        </puce1>
+    </list>
+    <paragraphe>Bonjour, ceci est une note.</paragraphe>
+    <image>
+        <url>http://www.aaa.fre.fr/images/tt.gif</url>
+        <description>image gif</description>
+    </image>
+</note>

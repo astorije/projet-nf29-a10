@@ -1,0 +1,34 @@
+<note uri="uri_note_compilation_introduction">
+
+    <note:note xmlns:note="utc.fr/nf29/pr/note" xmlns:contenu="utc.fr/nf29/pr/contenu" uri="note_Introduction">
+        <note:meta_note><note:date_creation>2011-01-01</note:date_creation><note:date_modification>2011-01-01</note:date_modification><note:auteur><note:utilisateur><note:nom>none</note:nom><note:prenom>none</note:prenom></note:utilisateur></note:auteur><note:contributeurs><note:utilisateur><note:nom>none</note:nom><note:prenom>none</note:prenom></note:utilisateur></note:contributeurs><note:relecteur><note:utilisateur><note:nom>none</note:nom><note:prenom>none</note:prenom></note:utilisateur></note:relecteur><note:statut>none</note:statut><note:version>none</note:version></note:meta_note>
+            
+                <note:titre>Introduction</note:titre>
+            
+            
+                <contenu:contenu>
+                    
+                        <contenu:paragraphe>L'UML (Unified Modeling Language) est un langage de modélisation graphique à base de pictogrammes.</contenu:paragraphe>
+                        <contenu:paragraphe>UML se décompose en plusieurs sous-ensembles</contenu:paragraphe>
+                        <contenu:itemListe>
+                            <contenu:sousItemListe>
+                                <contenu:paragraphe>Les vues : Les vues sont les observables du système. Elles décrivent le système d'un point de vue donné, qui peut être organisationnel, dynamique, temporel, architectural, géographique, logique, etc. En combinant toutes ces vues, il est possible de définir (ou retrouver) le système complet.</contenu:paragraphe>
+                            </contenu:sousItemListe>
+                        </contenu:itemListe>
+                        <contenu:itemListe>
+                            <contenu:sousItemListe>
+                                <contenu:paragraphe>Les diagrammes : Les diagrammes sont des éléments graphiques. Ceux-ci décrivent le contenu des vues, qui sont des notions abstraites. Les diagrammes peuvent faire partie de plusieurs vues.</contenu:paragraphe>
+                            </contenu:sousItemListe>
+                        </contenu:itemListe>
+                        <contenu:itemListe>
+                            <contenu:sousItemListe>
+                                <contenu:paragraphe>Les modèles d'élément : Les modèles d'élément sont les briques des diagrammes UML, ces modèles sont utilisés dans plusieurs types de diagramme. Exemple d'élément : cas d'utilisation, classe, association, etc.</contenu:paragraphe>
+                            </contenu:sousItemListe>
+                        </contenu:itemListe>
+                    
+                </contenu:contenu>
+            
+        
+    </note:note>
+
+</note>
