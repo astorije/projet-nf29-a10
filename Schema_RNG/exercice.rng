@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+    xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+    datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes" ns="utc.fr/nf29/pr/exercice">
+
+    <start>
+        <element name="exercice">
+            <element name="titre">
+                <data type="string"/>
+            </element>
+
+            <element name="meta_exercice">
+                <element name="date_creation">
+                    <data type="date"/>
+                </element>
+                <optional>
+                    <element name="date_modification">
+                        <data type="date"/>
+                    </element>
+                </optional>
+                <element name="auteur">
+                    <externalRef href="utilisateur.rng"/>
+                </element>
+
+                <optional>
+                    <element name="contributeurs">
+                        <oneOrMore>
+                            <externalRef href="utilisateur.rng"/>
+                        </oneOrMore>
+                    </element>
+                </optional>
+            </element>
+
+            <oneOrMore>
+                <ref name="question"/>
+            </oneOrMore>
+        </element>
+
+    </start>
+
+    <define name="question">
+        <element name="question">
+            <element name="enonce">
+                <externalRef href="contenu.rng"/>
+            </element>
+
+            <optional>
+                <element name="indice">
+                    <externalRef href="contenu.rng"/>
+                </element>
+            </optional>
+
+            <optional>
+                <element name="solutionGenerale">
+                    <data type="string"/>
+                </element>
+            </optional>
+
+            <choice>
+                <oneOrMore>
+                    <element name="reponseTexte">
+                        <data type="string"/>
+                        <attribute name="valide">
+                            <data type="integer"/>
+                        </attribute>
+                    </element>
+                </oneOrMore>
+
+
+                <element name="reponseChoixMultiple">
+                    <oneOrMore>
+                        <element name="choix">
+                            <data type="string"/>
+                            <attribute name="valide">
+                                <data type="integer"/>
+                            </attribute>
+                        </element>
+                    </oneOrMore>
+                </element>
+
+
+                <element name="reponseChoixUnique">
+                    <oneOrMore>
+                        <element name="choix">
+                            <data type="string"/>
+                            <attribute name="valide">
+                                <data type="integer"/>
+                            </attribute>
+                        </element>
+                    </oneOrMore>
+                </element>
+            </choice>
+
+        </element>
+    </define>
+
+</grammar>
