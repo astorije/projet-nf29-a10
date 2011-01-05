@@ -51,10 +51,11 @@
        <div class="question rounded_box"> 
           <xsl:apply-templates select="enonce"/> 
            <xsl:apply-templates select="indice"/>
-           <xsl:apply-templates select="reponse_texte"/>
-           <xsl:apply-templates select="reponse_choix_multiple"/>
-           <xsl:apply-templates select="reponse_choix_unique"/>
-           <xsl:apply-templates select="solutionGenerale"/>
+           <xsl:apply-templates select="SolutionGenerale"/>
+           <xsl:apply-templates select="reponseTexte"/>
+           <xsl:apply-templates select="reponseChoixMultiple"/>
+           <xsl:apply-templates select="reponseChoixUnique"/>
+           
            
        </div>
     </xsl:template>
@@ -65,9 +66,12 @@
             <xsl:apply-templates select="enonce"/> 
             <xsl:apply-templates select="indice"/>
             <ul>
-                <span class="solution"><xsl:apply-templates select="reponse_texte"/>
-                    <xsl:apply-templates select="reponse_choix_multiple"/>
-                    <xsl:apply-templates select="reponse_choix_unique"/>
+                <span class="solution">
+                    <xsl:apply-templates select="SolutionGenerale"/>
+                    <xsl:apply-templates select="reponseTexte"/>
+                    <xsl:apply-templates select="reponseChoixMultiple"/>
+                    <xsl:apply-templates select="reponseChoixUnique"/>
+                    
                 </span>
             </ul>
         </div>
@@ -80,7 +84,7 @@
     <xsl:template match="enonce">
         <xsl:value-of select="./paragraphe"/>
         <xsl:apply-templates select="image"/>
-        <xsl:if test="../reponse_texte">
+        <xsl:if test="../reponseTexte">
             <div class="enonce"><input type="text" name="question{/exercice/question/position()}" id="question{../position()}"/> </div>
         </xsl:if>
     </xsl:template>
@@ -97,15 +101,15 @@
             <IMG src="{@src}" border="0" align="center" width="5%" height="5%"/>
     </xsl:template>
     
-    <xsl:template match="reponse_texte">
+    <xsl:template match="reponseTexte">
         <div class="solution"><xsl:value-of select="."/></div>
     </xsl:template>
     
-    <xsl:template match="solutionGenerale">
-        <div class="solution"><xsl:value-of select="."/></div>
+    <xsl:template match="SolutionGenerale">
+        <div class="solution"><xsl:value-of select="./paragraphe"/></div>
     </xsl:template>
     
-    <xsl:template match="reponse_choix_multiple">
+    <xsl:template match="reponseChoixMultiple">
         <div class="solution"></div>
             <ul>  
             <xsl:for-each select="choix">
@@ -113,10 +117,10 @@
                     <input type="checkbox" name="question{ancestor::node()[2]/position()}" id="question[answer{position()}]"></input> 
                    
                     <span class="solution">
-                        <xsl:if test="@solution='true'">
+                        <xsl:if test="@valide=1">
                             <span class="solution"><img src="images/checkbox_on.png" alt="Vrai" /></span>
                         </xsl:if>
-                        <xsl:if test="@solution='false'">
+                        <xsl:if test="@valide=0">
                             <span class="solution"><img src="images/checkbox_off.png" alt="Faux" /></span>
                         </xsl:if>
                     </span>
@@ -130,17 +134,17 @@
            </ul>
         
     </xsl:template>
-   <xsl:template match="reponse_choix_unique">
+    <xsl:template match="reponseChoixUnique">
         <div class="solution"></div>
         <ul>  
             <xsl:for-each select="choix">
                 <li>
                     <input type="radio" name="question{ancestor::node()[2]/position()}" id="question[answer{position()}]" value="answer{position()}"></input>
                     <span class="solution">
-                        <xsl:if test="@solution='true'">
+                        <xsl:if test="@valide=1">
                             <img src="images/radio_on.png" alt="Vrai" />
                         </xsl:if>
-                        <xsl:if test="@solution='false'">
+                        <xsl:if test="@valide=0">
                             <img src="images/radio_off.png" alt="Faux" />
                         </xsl:if>
                     </span>

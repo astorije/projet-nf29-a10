@@ -18,21 +18,46 @@
                 <title>Parcours</title>
                 <link rel="stylesheet" href="css/global.css" type="text/css" />
                 <link rel="stylesheet" href="css/exercises.css" type="text/css" />
+                <link rel="stylesheet" href="css/style.css" type="text/css" />
                 <script src="js/jquery-1.4.4.min.js"></script>
                 <script src="js/jquery.flash.js"></script>
-                <script src="js/exercises.js"></script>          
+                <script src="js/custom.js"></script>
+                <script src="js/exercises.js"></script> 
+                <style type="text/css">
+                    #chargement 
+                    {
+                    display:none;
+                    }
+                </style>
             </head>
             <body>
                 <div id="questions">
-                    <h1 id="title" class="hidden">
-                        <xsl:apply-templates select="publication:meta_publication"/>
-                    </h1>
-                    
-                    <xsl:apply-templates select="publication:corps"/>
-                    
-                    <xsl:apply-templates select="notion:notion"/>
+                  
+                    <div id="conteneur">
+                        <div id="gauche">
+                            <h1 id="titles" class="hidden">
+                                <xsl:apply-templates select="publication:meta_publication"/>
+                            </h1>
+                            <xsl:apply-templates select="publication:corps"/>
+                            <xsl:apply-templates select="notion:notion"/>
+                        </div>
+                        <iframe id="test" height="800px" width="100%" src=""></iframe>
+                    </div>
                     
                 </div>
+                
+                <script type="text/javascript">  
+                    function envoieRequete(url,id)
+                    {
+                    
+                    $('#button'+id).click( function() {
+                    $('#test').attr('src',url);
+                    
+                    });
+                    }
+                    
+                </script>
+                
                 <div id="footer" class="hidden">
                     
                 </div>
@@ -53,13 +78,14 @@
         <div> 
             <xsl:apply-templates select="context:contextualisation"/>
             <xsl:apply-templates select="publication:ref_parcours"/>
+            <div id="chargement"><b style="color:#ff0000;">CHARGEMENT EN COURS ...</b></div>
         </div>
     </xsl:template>
     
     <xsl:template match="publication:ref_parcours">
-        <div> 
-            <iframe height="600px" width="100%" src="file:///C:/Users/gaelle/Documents/MOD2/export_multimedia/{replace(@uri,'.xml','.html')}"> </iframe>
-        </div>
+        
+            <p> <button id="button{position()}" onclick="envoieRequete('file:///C:/Users/gaelle/Documents/MOD2/export_multimedia/{replace(. ,'\.xml','.html')}', '{position()}')">Parcours <xsl:value-of select="position()" /></button></p>
+        
     </xsl:template>
     
     
@@ -70,16 +96,7 @@
         </div>
     </xsl:template>
     
-    <xsl:template match="notion:notion">
-        <h2><xsl:value-of select="notion:titre"/></h2>
-        <xsl:apply-templates select="ressource:ressource" />
-    </xsl:template>
-    
-    <xsl:template match="ressource:ressource">
-        <div> <a href="{replace(ressource:uri,'.xml','.html')}"  target="_blank"> <xsl:value-of select="ressource:titre" /> </a> </div> 
-        <!-- echo '<a href="'.$res=split('.', {@uri}).'"  target="_blank"> ressource </a>'; -->
-        <iframe height="300px" width="100%" src="file:///C:/Users/gaelle/Documents/MOD2/export_multimedia/{replace(ressource:uri,'.xml','.html')}"> </iframe> 
-    </xsl:template>
+   
     
     <xsl:template match="content:contenu">
         <p><xsl:apply-templates select="content:paragraphe"/></p>
