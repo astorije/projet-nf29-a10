@@ -1,0 +1,248 @@
+@page {
+	size: 4.18in 6.88in;
+	margin: 10px 5px 10px 5px;
+	padding: 5px;
+	border: 1px solid black;
+}
+
+* {
+	display: block;
+}
+
+meta_publication titre {
+	font: bold serif;
+	position: relative;
+	font-size: 30px;
+	left: 0;
+	text-align: left;
+}
+
+meta_publication  auteur {
+	font: bold serif;
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 10px;
+}
+
+version,collection,edition {
+	font-size: 9px;
+	font-style: italic;
+	position: relative;
+}
+
+publication corps contextualisation {
+	clear: both;
+	border: 1px solid black;
+	padding: 0.2em;
+	margin: 1em;
+	page-break-inside: avoid;
+	align:center;
+}
+
+publication corps contextualisation titre {
+	text-align: center;
+	font-size: 15px;
+}
+
+publication corps contextualisation contenu paragraphe {
+	font-size: 10px;
+	margin-bottom: 3px;
+	font-style: italic;
+	text-align: justify
+}
+
+
+
+
+publication parcours meta_parcours titre {
+	font: bold serif;
+	position: relative;
+	font-size: 20px;
+	left: 0;
+	text-align: left;
+	/*display: none;*/
+}
+
+publication parcours meta_parcours auteur {
+	font: bold serif;
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 10px;
+}
+
+publication parcours contextualisation {
+	clear: both;
+	padding: 0.2em;
+	margin: 1em;
+	border: 1px solid black;
+	font-size: 30pt;
+	page-break-inside: avoid;
+}
+
+publication parcours contextualisation titre {
+	text-align: center;
+	font-size: 20px;
+}
+
+publication parcours contextualisation contenu paragraphe {
+	font-size: 10px;
+	margin-bottom: 3px;
+	font-style: italic;
+}
+
+publication parcours notion titre {
+	text-align: center;
+	font-size: 20px;
+	font-style: italic;
+	margin-bottom: 10px;
+	
+}
+
+
+publication parcours notion ressource titre {
+	font-size: 15px;
+	margin-bottom: 3px;
+	text-align: left;
+}
+publication parcours notion ressource type {
+	display: none;
+}
+type {
+	display: none;
+}
+
+publication parcours notion ressource uri {
+	display: none;
+}
+
+uri {
+	display: none;
+}
+
+article { 
+	margin: 10px 5px 10px 5px;
+	padding: 5px;
+}
+
+note { 
+	margin-top: 20px;
+}
+
+titre_article {
+	text-align: center; 
+	margin-bottom: 10px;
+	font-size: 40px;
+	color: rgb(213,81,36);
+}
+
+titre {
+	margin: 0px 0px 10px 10px;
+	font-size: 30px;
+	color: rgb(68,125,71);
+}
+
+sous_partie titre{
+	margin-left: 20px;
+	font-size: 20px;
+	color: rgb(213,81,36);
+}
+
+sous_sous_partie titre{
+	margin-left: 30px;
+	font-size: 15px;
+	color: rgb(68,125,71);
+}
+
+note titre{
+	margin-left: 30px;
+	font-size: 15px;
+	color: rgb(213,81,36);
+}
+
+meta_article, statut_validation, statut_completude {
+	display: none;
+}
+
+itemListe {
+	margin-left: 20px;
+}
+
+sousItemListe {
+	margin-left: 30px;
+}
+
+sousSousItemListe {
+	margin-left: 40px;
+}
+
+paragraphe{
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+
+exercice { 
+	margin: 10px 5px 10px 5px;
+	padding: 5px;
+	border: 1px solid black;
+}
+
+titre{
+	font: 30px Arial;
+	color: orange;
+	text-align: center;
+	margin-bottom: 30px;
+	color: rgb(213,81,36);
+}
+
+indice contenu paragraphe{
+	margin-left: 20px;
+	font-size: 14px;
+	color: rgb(68,125,71);
+}
+
+paragraphe{
+	margin-left	: 10px;
+	font: 13px Arial;
+	text-align: justify;
+	margin-bottom: 10px;
+}
+
+image{	
+	margin-bottom: 50px;
+}
+
+solutionGenerale{			
+	margin-left	: 20px;
+	font: 14px Arial;
+	color: black;
+	margin-bottom: 10px;
+	color: rgb(68,125,71);
+}
+
+reponseTexte{
+	margin-left	: 20px;
+	font: 13px Arial;
+	color: black;
+	margin-bottom: 10px;
+}
+
+reponseChoixMultiple{
+	font: 13px Arial;
+	margin-left	: 20px;
+	margin-bottom: 10px;
+}
+
+reponseChoixUnique{
+	font: 13px Arial;
+	margin-left	: 20px;
+	margin-bottom: 10px;
+}
+
+meta_article, auteur, contributeurs, date_modification, date_creation,image{
+	display: none;
+}
+date_debut,date_fin,reference_plan,url_server,date{
+	display: none;
+}
