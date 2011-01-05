@@ -19,7 +19,7 @@
 								Articles<br/>
 							</div>
 							<div id="details">
-								<ul><li>Cr&eacute;er</li><li>Consulter</li><li>Rechercher</li></ul>
+								<ul><li>Cr&eacute;er</li><li><a href="ls.php?id=article">Consulter</a></li></ul></ul>
 							</div>
 						</div><br/>
 						<div id="notes">
