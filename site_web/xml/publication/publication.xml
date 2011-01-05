@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet media='all' href='style.css' type='text/css'?>
+<?xml-stylesheet type="text/xsl" href="../../../../MOD2/export_multimedia/xslt/Sans%20titre2.xsl"?>
+<publication xmlns="utc.fr/nf29/PR/publication">
+    <meta_publication>
+        <titre>UML et XML</titre>
+        <auteur>
+            <utilisateur>
+                <nom>Saas</nom>
+                <prenom>Alain</prenom>
+            </utilisateur>
+            <utilisateur>
+              <nom>Canonge</nom>
+              <prenom>Julien</prenom>
+            </utilisateur>
+        </auteur>
+        <version>1.0</version>
+        <collection>Les collections du petit UTCéens</collection>
+        <edition>Editions de l'Université de Technologie de Compiègne</edition>
+    </meta_publication>
+    <corps>
+      <contextualisation xmlns="utc.fr/nf29/PR/contextualisation">
+        <titre>Note de l'éditeur</titre>
+        <contenu xmlns="utc.fr/nf29/pr/contenu">
+          <paragraphe>Devant le succès de l'encyclopédie étudiante de l'UTC, les éditions de l'Université de Technologie de Compiègne sont heureuses de vous présenter cet ouvrage dédié à l'UML et au XML. L'ensemble des contenus de cette publication ont été rédigé collaborativement par les étudiants de l'université.</paragraphe>
+          <paragraphe>Bonne lecture.</paragraphe>
+        </contenu>
+      </contextualisation>
+    <ref_parcours>parcours_xml.xml</ref_parcours> 
+    </corps>
+</publication>

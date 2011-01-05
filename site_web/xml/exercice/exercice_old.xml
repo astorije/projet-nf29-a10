@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href='style.css' type='text/css' media="all"?>
+<exercice uri="a1" xmlns="utc.fr/nf29/pr/exercice">
+  <titre>Standard W3C</titre>
+  
+  <meta_exercice>
+	<date_creation>2010-12-25</date_creation>
+	<date_modification>2010-12-30 </date_modification>
+	<auteur>
+		<utilisateur>
+            <nom>Dupond</nom>
+            <prenom>Jean</prenom>
+        </utilisateur>
+	</auteur>
+	<contributeurs>
+		<utilisateur>
+			<nom>JOBS</nom>
+			<prenom>Steve</prenom>
+		</utilisateur>
+		<utilisateur>
+			<nom>LECLERC</nom>
+			<prenom>Paul</prenom>
+		</utilisateur>
+	</contributeurs>
+  </meta_exercice>
+  
+  <question>
+		<enonce>
+			<contenu xmlns="utc.fr/nf29/pr/contenu">
+				<paragraphe> Proposer un modèle conceptuel UML permettant de modéliser ce document dans un langage orienté métier.</paragraphe>
+				<image src="image.jpeg" label=""/> 
+			</contenu>	
+		</enonce>
+		
+		<indice>
+			<contenu xmlns="utc.fr/nf29/pr/contenu">
+				<paragraphe> Indice : Il faut bien prendre en compte ceci.</paragraphe>
+				<image src="image2.jpeg" label=""/> 
+			</contenu>	
+		</indice>
+		
+		
+		<solutionGenerale>Solution generale: On peut modifier ceci de telle façon. </solutionGenerale>
+		
+		<reponseTexte valide="1"> Pour modéliser le UML</reponseTexte>
+		
+		
+		<reponseChoixMultiple>
+			<choix valide="1">Choix1() </choix>
+			<choix valide="1">Choix2() </choix>
+			<choix valide="0">Choix3() </choix>
+			<choix valide="0">Choix4() </choix>
+		</reponseChoixMultiple>
+		
+		<reponseChoixUnique>
+			<choix valide="1"> Un choix </choix>
+			<choix valide="0"> Autre choix </choix>
+		</reponseChoixUnique>
+	</question>
+	
+</exercice>  

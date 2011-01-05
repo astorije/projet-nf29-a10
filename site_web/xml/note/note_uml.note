@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<note uri="a1" xmlns="utc.fr/nf29/pr/note">
+    <meta_note>
+        <statut></statut>
+        <date_creation>2010-12-28</date_creation>
+        <date_modification>2010-12-29</date_modification>
+        <auteur>
+            <utilisateur>
+                <nom>Pilgrim</nom>
+                <prenom>Scott</prenom>
+            </utilisateur>
+        </auteur>
+        <contributeurs>
+            <utilisateur>
+                <nom>Flowers</nom>
+                <prenom>Ramona</prenom>
+            </utilisateur>
+            <utilisateur>
+                <nom>Chau</nom>
+                <prenom>Knives</prenom>
+            </utilisateur>           
+        </contributeurs>
+        <relecteur>
+            <utilisateur>
+                <nom>Lee</nom>
+                <prenom>Lucas</prenom>
+            </utilisateur>    
+        </relecteur>
+        <statut>publié</statut>
+        <version>1.0</version>
+    </meta_note>
+	<titre>Industrialisation</titre>
+	<contenu>
+		<paragraphe>Après l'unification et la standardisation, bientôt l'industrialisation d'UML : les outils qui supportent UML se multiplient (GDPro, ObjectTeam, Objecteering, OpenTool, Rational Rose, Rhapsody, STP, Visio, Visual Modeler, WithClass...).</paragraphe>
+	</contenu>
+    <titre>ce que j'ai retenu de l'UML</titre>
+    <contenu xmlns="utc.fr/nf29/pr/contenu">
+        <paragraphe>contenu de la note sur le cours d'UML</paragraphe>
+    </contenu>
+</note>

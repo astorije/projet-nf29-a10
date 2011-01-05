@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="plan.rng" type="xml"?>
+<?xml-stylesheet type="text/xsl" href="plan.xsl"?>
+<?oxygen RNGSchema="plan.rng" type="xml"?>
+<pl:plan xmlns:pl="utc.fr/nf29/pr/plan" uri="uri_plan_xml" auteur="Pascal" titre="XML : Extensible Markup Language">
+    <pl:partie_plan titre="Historique" uri="uri_partiePlan_partie1">
+		<pl:ref_note uri="uri_note_xml" titre="XML"/>
+		<pl:sous_partie_plan titre="Objectif initial" uri="uri_partiePlan_partie1.1">
+            <pl:sous_sous_partie_plan titre="L'unification et la normalisation des méthodes" uri="uri_partiePlan_partie1.1.a">
+            </pl:sous_sous_partie_plan>
+            <pl:sous_sous_partie_plan titre="UML aujourd'hui : un standard incontournable" uri="uri_partiePlan_partie1.1.b">
+			</pl:sous_sous_partie_plan>
+        </pl:sous_partie_plan>
+		<pl:sous_partie_plan titre="Versions" uri="uri_partiePlan_partie1.2">
+        </pl:sous_partie_plan>
+    </pl:partie_plan>
+	<pl:partie_plan titre="Composants et syntaxe d'un document XML" uri="uri_partiePlan_partie2">
+        <pl:sous_partie_plan titre="Le nœud document" uri="uri_partiePlan_partie2.1"></pl:sous_partie_plan>
+		<pl:sous_partie_plan titre="Les éléments" uri="uri_partiePlan_partie2.2"></pl:sous_partie_plan>
+        <pl:sous_partie_plan titre="Les attributs" uri="uri_partiePlan_partie2.3"></pl:sous_partie_plan>
+    </pl:partie_plan>
+</pl:plan>
+

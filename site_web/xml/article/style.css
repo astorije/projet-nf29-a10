@@ -1,0 +1,67 @@
+* {
+	display: block;
+	font-family: Arial;
+	font-size: 15px;
+}
+
+
+article { 
+	margin: 10px 5px 10px 5px;
+	padding: 5px;
+}
+
+note { 
+	margin-top: 20px;
+}
+
+titre_article {
+	text-align: center; 
+	margin-bottom: 10px;
+	font-size: 40px;
+	color: rgb(213,81,36);
+}
+
+titre {
+	margin: 0px 0px 10px 10px;
+	font-size: 30px;
+	color: rgb(68,125,71);
+}
+
+sous_partie titre{
+	margin-left: 20px;
+	font-size: 20px;
+	color: rgb(213,81,36);
+}
+
+sous_sous_partie titre{
+	margin-left: 30px;
+	font-size: 15px;
+	color: rgb(68,125,71);
+}
+
+note titre{
+	margin-left: 30px;
+	font-size: 15px;
+	color: rgb(213,81,36);
+}
+
+meta_article, statut_validation, statut_completude {
+	display: none;
+}
+
+itemListe {
+	margin-left: 20px;
+}
+
+sousItemListe {
+	margin-left: 30px;
+}
+
+sousSousItemListe {
+	margin-left: 40px;
+}
+
+paragraphe{
+	font-size: 12px;
+	margin-bottom: 10px;
+}

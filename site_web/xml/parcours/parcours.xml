@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="parcours.rng" type="xml"?>
+<?xml-stylesheet media='all' href='style.css' type='text/css'?>
+<?xml-stylesheet type="text/xsl" href="parcours.xsl"?>
+<parcours xmlns="utc.fr/nf29/PR/parcours">
+    <meta_parcours>
+        <titre>Revision NF29</titre>
+        <auteur>
+            <utilisateur>
+                <nom>Saas</nom>
+                <prenom>Alain</prenom>
+            </utilisateur>
+        </auteur>
+    </meta_parcours>
+    
+    <contextualisation xmlns="utc.fr/nf29/PR/contextualisation">
+        <titre>Parcours de révision pour le médian de NF29</titre>
+        <contenu xmlns="utc.fr/nf29/pr/contenu">
+            <paragraphe>Revoir surtout le chapitre sur le XML.</paragraphe>
+            <paragraphe>Le reste est facile.</paragraphe>
+        </contenu>
+    </contextualisation>
+	
+    <notion xmlns="utc.fr/nf29/PR/notion">
+       	<titre>Le XML</titre>
+	    <ressource xmlns="utc.fr/nf29/PR/ressource">
+			<titre>Article sur le XML</titre>
+			<uri>article_xml</uri>
+			<type>article</type>
+		</ressource>
+        <ressource xmlns="utc.fr/nf29/PR/ressource">
+			<titre>Exercices de TD</titre>
+			<uri>xml_exercice_v1</uri>
+			<type>exercice</type>
+		</ressource>
+        <ressource xmlns="utc.fr/nf29/PR/ressource">
+			<titre>Enregistrements audio</titre>
+			<uri>cours_audio</uri>
+			<type>audio</type>
+		</ressource>
+    </notion>
+	  
+</parcours>
