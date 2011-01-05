@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+    <au:coursaudio xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive"
+        xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:au="utc.fr/nf29/sc/audio">
+        <au:coursaudioentete>
+            <sp:date>2010-12-11</sp:date>
+            <sp:fichierAudio>NF17_cours_XML_1.mp3</sp:fichierAudio>
+            <sp:urlServeur>http://thibaud.bourgeois.free.fr/nf29/encyclopedie/</sp:urlServeur>
+        </au:coursaudioentete>
+        <sp:segment sc:refUri="/test/coursAudio/NF17_cours_XML_01.segment"/>
+        <sp:segment sc:refUri="/test/coursAudio/NF17_cours_XML_02.segment"/>
+    </au:coursaudio>
+</sc:item>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+    <au:segment xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive"
+        xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:au="utc.fr/nf29/sc/audio">
+        <bs:sTitle xmlns:bs="scpf.org:base">
+            <sc:fullTitle>NF17_cours_XML_02</sc:fullTitle>
+        </bs:sTitle>
+        <sp:plan sc:refUri="/test/Plan/plan_01.plan"/>
+        <sp:dateDebut>
+            <au:time>
+                <sp:heure>0</sp:heure>
+                <sp:minute>20</sp:minute>
+                <sp:seconde>1</sp:seconde>
+            </au:time>
+        </sp:dateDebut>
+        <sp:dateFin>
+            <au:time>
+                <sp:heure>1</sp:heure>
+                <sp:minute>45</sp:minute>
+                <sp:seconde>0</sp:seconde>
+            </au:time>
+        </sp:dateFin>
+        <sp:annotation>
+            <au:note xmlns:cnt="utc.fr/nf29/sc/contenu">
+                <bs:sTitle xmlns:bs="scpf.org:base">
+                    <sc:fullTitle>Caractéristiques recherchées pour un document XML</sc:fullTitle>
+                </bs:sTitle>
+                <sp:tcin>
+                    <au:time>
+                        <sp:heure>1</sp:heure>
+                        <sp:minute>0</sp:minute>
+                        <sp:seconde>0</sp:seconde>
+                    </au:time>
+                </sp:tcin>
+                <sp:tcout>
+                    <au:time>
+                        <sp:heure>1</sp:heure>
+                        <sp:minute>10</sp:minute>
+                        <sp:seconde>0</sp:seconde>
+                    </au:time>
+                </sp:tcout>
+                <sp:contenu>
+                    <cnt:contenu xmlns:img="utc.fr/nf29/sc/image"
+                        xmlns:cont="utc.fr/nf29/sc/contenu">
+                        <sp:texte>
+                            <cont:textContenu>
+                                <sc:para xml:space="preserve" sc:id="t5">Les règles syntaxiques strictes d'XML rendent son interprétation informatique univoque.</sc:para>
+                            </cont:textContenu>
+                        </sp:texte>
+                        <sp:texte>
+                            <cont:textContenu>
+                                <sc:para xml:space="preserve" sc:id="t7">Un document XML a pour objectif d'être lisible par un être humain, afin de plus facilement en appréhender le format.</sc:para>
+                            </cont:textContenu>
+                        </sp:texte>
+                        <sp:texte>
+                            <cont:textContenu>
+                                <sc:para xml:space="preserve" sc:id="t9">Un document XML est passif, il dépend de programmes informatiques qui le transforment.</sc:para>
+                            </cont:textContenu>
+                        </sp:texte>
+                    </cnt:contenu>
+                </sp:contenu>
+            </au:note>
+        </sp:annotation>
+        <sp:annotation>
+            <au:note xmlns:cnt="utc.fr/nf29/sc/contenu">
+                <bs:sTitle xmlns:bs="scpf.org:base">
+                    <sc:fullTitle>Exemple de fichier XML</sc:fullTitle>
+                </bs:sTitle>
+                <sp:tcin>
+                    <au:time>
+                        <sp:heure>0</sp:heure>
+                        <sp:minute>14</sp:minute>
+                        <sp:seconde>0</sp:seconde>
+                    </au:time>
+                </sp:tcin>
+                <sp:tcout>
+                    <au:time>
+                        <sp:heure>0</sp:heure>
+                        <sp:minute>15</sp:minute>
+                        <sp:seconde>0</sp:seconde>
+                    </au:time>
+                </sp:tcout>
+                <sp:contenu>
+                    <cnt:contenu xmlns:img="utc.fr/nf29/sc/image"
+                        xmlns:cont="utc.fr/nf29/sc/contenu">
+                        <sp:texte>
+                            <cont:textContenu>
+                                <sc:para xml:space="preserve" sc:id="t7">Liste nominative de patients</sc:para>
+                            </cont:textContenu>
+                        </sp:texte>
+                        <sp:image>
+                            <img:image>
+                                <sp:image sc:refUri="/test/coursAudio/exemple_xml.gif"/>
+                            </img:image>
+                        </sp:image>
+                    </cnt:contenu>
+                </sp:contenu>
+            </au:note>
+        </sp:annotation>
+    </au:segment>
+</sc:item>

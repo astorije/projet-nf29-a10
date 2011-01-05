@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <cours_audio>
+        <meta>
+      <fichier_audio>NF17_cours_XML_1.mp3</fichier_audio>
+      <date>2010-12-11</date>
+      <url_server>http://thibaud.bourgeois.free.fr/nf29/encyclopedie/</url_server>
+   </meta>
+        <segment>
+    
+        
+        <reference_plan>plan_01.plan</reference_plan>
+      <titre_segment>1.1. sous partie plan</titre_segment>
+
+        <date_debut>
+            0:0:0
+        </date_debut>
+        <date_fin>
+            0:20:0
+        </date_fin>
+        
+            <annotation>
+                <titre>Définition de XML</titre>
+                <date_debut>
+                    0:1:0
+                </date_debut>
+                <date_fin>
+                    0:2:0
+                </date_fin>
+                <contenu>
+                    
+                        
+                            
+                                <paragraphe>The Extensible Markup Language (XML) is a simple text-based format for representing structured information: documents, data, configuration, books, transactions, invoices, and much more. It was derived from an older standard format called SGML (ISO 8879), in order to be more suitable for Web use.</paragraphe>
+                            
+                        
+                    
+                </contenu>
+            </annotation>
+        
+    
+   </segment>
+        <segment>
+    
+        
+        <reference_plan>plan_01.plan</reference_plan>
+      <titre_segment>1.2. sous partie plan</titre_segment>
+
+        <date_debut>
+            0:20:1
+        </date_debut>
+        <date_fin>
+            1:45:0
+        </date_fin>
+        
+            <annotation>
+                <titre>Caractéristiques recherchées pour un document XML</titre>
+                <date_debut>
+                    1:0:0
+                </date_debut>
+                <date_fin>
+                    1:10:0
+                </date_fin>
+                <contenu>
+                    
+                        
+                            
+                                <paragraphe>Les règles syntaxiques strictes d'XML rendent son interprétation informatique univoque.</paragraphe>
+                            
+                        
+                        
+                            
+                                <paragraphe>Un document XML a pour objectif d'être lisible par un être humain, afin de plus facilement en appréhender le format.</paragraphe>
+                            
+                        
+                        
+                            
+                                <paragraphe>Un document XML est passif, il dépend de programmes informatiques qui le transforment.</paragraphe>
+                            
+                        
+                    
+                </contenu>
+            </annotation>
+        
+		
+            <annotation>
+                <titre>Exemple de fichier XML</titre>
+                <date_debut>
+                    0:14:0
+                </date_debut>
+                <date_fin>
+                    0:15:0
+                </date_fin>
+                <contenu>
+                    
+                        
+                            
+                                <paragraphe>Liste nominative de patients</paragraphe>
+                            
+                        
+                        
+                            
+                                
+                            
+                        
+                    
+                </contenu>
+            </annotation>
+        
+    
+   </segment>
+    </cours_audio>

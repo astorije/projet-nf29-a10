@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+    <not:plan xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive"
+        xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:not="utc.fr/nf29/sc/plan">
+        <bs:sTitlePlan xmlns:bs="scpf.org:base">
+            <sc:fullTitle>plan du cours</sc:fullTitle>
+        </bs:sTitlePlan>
+        <sp:partiePlan>
+            <bs:sTitlePartiePlan xmlns:bs="scpf.org:base">
+                <sc:fullTitle>1. partie plan 1</sc:fullTitle>
+            </bs:sTitlePartiePlan>
+            <not:partiePlan>
+                <sp:sousPartiePlan>
+                    <bs:sTitlePartiePlan xmlns:bs="scpf.org:base">
+                        <sc:fullTitle>1.1. sous partie plan</sc:fullTitle>
+                    </bs:sTitlePartiePlan>
+                    <not:sousPartiePlan>
+                        <sp:segmentAudio sc:refUri="/test/coursAudio/NF17_cours_XML_01.segment"/>
+                        <sp:soussouspartiePlan>
+                            <bs:sTitlePartiePlan xmlns:bs="scpf.org:base">
+                                <sc:fullTitle>1.1.1. sous sous partie</sc:fullTitle>
+                            </bs:sTitlePartiePlan>
+                            <not:sousSousPartiePlan/>
+                        </sp:soussouspartiePlan>
+                        <sp:soussouspartiePlan>
+                            <bs:sTitlePartiePlan xmlns:bs="scpf.org:base">
+                                <sc:fullTitle>1.1.2. sous sous partie</sc:fullTitle>
+                            </bs:sTitlePartiePlan>
+                            <not:sousSousPartiePlan/>
+                        </sp:soussouspartiePlan>
+                    </not:sousPartiePlan>
+                </sp:sousPartiePlan>
+                <sp:sousPartiePlan>
+                    <bs:sTitlePartiePlan xmlns:bs="scpf.org:base">
+                        <sc:fullTitle>1.2. sous partie plan</sc:fullTitle>
+                    </bs:sTitlePartiePlan>
+                    <not:sousPartiePlan>
+                        <sp:segmentAudio sc:refUri="/test/coursAudio/NF17_cours_XML_02.segment"/>
+                        <sp:soussouspartiePlan>
+                            <bs:sTitlePartiePlan xmlns:bs="scpf.org:base">
+                                <sc:fullTitle>1.2.1. sous partie</sc:fullTitle>
+                            </bs:sTitlePartiePlan>
+                            <not:sousSousPartiePlan/>
+                        </sp:soussouspartiePlan>
+                        <sp:soussouspartiePlan>
+                            <bs:sTitlePartiePlan xmlns:bs="scpf.org:base">
+                                <sc:fullTitle>1.2.2. sous partie</sc:fullTitle>
+                            </bs:sTitlePartiePlan>
+                            <not:sousSousPartiePlan/>
+                        </sp:soussouspartiePlan>
+                    </not:sousPartiePlan>
+                </sp:sousPartiePlan>
+            </not:partiePlan>
+        </sp:partiePlan>
+    </not:plan>
+</sc:item>
