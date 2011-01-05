@@ -33,6 +33,23 @@ h1#title {
   border-radius: 0 0 15px 15px;
 }
 
+h1#titles {
+  margin-top: 0;
+  text-align: center;
+  color: #402D1F;
+  width: 800px;
+  font-size : 12px;
+  margin: auto;
+  margin-bottom: 15px;
+  padding: 5px;
+
+  background-color: #BFB38D;
+
+  -moz-border-radius: 0 0 15px 15px;
+  -webkit-border-radius: 0 0 15px 15px;
+  border-radius: 0 0 15px 15px;
+}
+
 a {
   color: #8C2C0F;
   text-decoration: none;
