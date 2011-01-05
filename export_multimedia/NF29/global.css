@@ -1,0 +1,167 @@
+/* Couleurs :
+ * #26221D Marron foncé +
+ * #8C2C0F Marron coloré
+ * #E5E5B8 Crème
+ * #BFB38D Beige
+ * #402D1F Marron foncé
+ *
+ * #BF352F Rouge
+ * #54873B Vert
+ */
+
+body {
+  font-family:"Trebuchet MS", Tahoma, Arial, Verdana;
+  padding: 0;
+  margin: 0;
+  color: #26221D;
+}
+
+h1 {
+  margin-top: 0;
+  text-align: center;
+  color: #402D1F;
+  width: 800px;
+  margin: auto;
+  margin-bottom: 15px;
+  padding: 5px;
+
+  background-color: #BFB38D;
+
+  -moz-border-radius: 0 0 15px 15px;
+  -webkit-border-radius: 0 0 15px 15px;
+  border-radius: 0 0 10px 10px;
+}
+
+a {
+  color: #8C2C0F;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #26221D;
+}
+
+#questions {
+  position: relative;
+  width: 1000px;
+  margin: auto;
+}
+
+.question {
+  position: absolute;
+  display: none;
+  width: 980px;
+  border: 2px solid #402D1F;
+  background-color: #E5E5B8;
+  margin: 5px auto;
+  padding: 10px;
+
+/*
+  box-shadow: 0 1px 10px #888;
+  -o-box-shadow: 0 1px 10px #888;
+  -moz-box-shadow: 0 1px 10px #888;
+  -webkit-box-shadow: 0 1px 10px #888;
+  */
+}
+
+#article {
+  position: relative;
+  width: 1000px;
+  margin: auto;
+}
+
+#indice_link {
+  background: #402D1F;
+  width: 60px;
+  padding: 5px;
+  text-align: center;
+
+  position: fixed;
+  bottom: 40px;
+  right: 15px;
+
+  -moz-border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
+}
+
+#indice_link a {
+  color: #E5E5B8;
+}
+
+#indice_link a:hover {
+  color: #BFB38D;
+}
+
+.indice_bloc {
+  display: none;
+}
+
+.solution {
+  color: #54873B;
+  display: none;
+}
+
+#toggle_solutions {
+  text-align: right;
+  margin-right: 10px;
+}
+
+a#previous {
+  display: none;
+}
+
+#score {
+  display: none;
+  width: 500px;
+  border: 2px solid #402D1F;
+  background-color: #BFB38D;
+  margin: 5px auto;
+  padding: 10px;
+  text-align: center;
+}
+
+#score_sentence {
+  margin-bottom: 10px;
+}
+
+#footer {
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  margin: auto;
+  position: fixed;
+  background-color: #BFB38D;
+  bottom: 0;
+  border-top: 1px solid #402D1F;
+}
+#footer ul {
+  margin: 10px;
+  padding: 0;
+}
+#footer li {
+  display: inline-block;
+  width: 120px;
+}
+.left {
+  text-align: left;
+}
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
+
+.rounded_box {
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+}
+.good {
+  color: #54873B;
+}
+.bad {
+  color: #BF352F;
+}

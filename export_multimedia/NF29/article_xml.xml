@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="file:/Z:/Projet%20NF29/module1.rng" type="xml"?>
+
+<?xml-stylesheet type="text/xsl" href="article_transfoXSLT.xsl"?>
+<article xmlns="http://utc.fr/nf29/PR/article">
+    <titre_article>Le XML</titre_article>
+    <meta_article>
+        <date_creation>2010-03-21</date_creation>
+        <auteur>
+            <utilisateur>
+                <nom>Obert</nom>
+                <prenom>Antoine</prenom>
+            </utilisateur>
+        </auteur>
+        <date_modification>2010-04-21</date_modification>
+        <contributeurs>
+            <utilisateur>
+                <nom>Dejonqueres</nom>
+                <prenom>Marc</prenom>
+            </utilisateur>
+        </contributeurs>
+        <contributeurs>
+            <utilisateur>
+                <nom>Vié</nom>
+                <prenom>Jean</prenom>
+            </utilisateur>
+        </contributeurs>
+        <relecteur>
+            <utilisateur>
+                <nom>Marchand</nom>
+                <prenom>Pierre</prenom>
+            </utilisateur>
+        </relecteur>
+        <statut_validation>en attente de relecture</statut_validation>
+        <statut_completude>incomplet</statut_completude>
+    </meta_article>
+    
+    <partie>
+        <titre>Introduction</titre>
+        <sous_partie>
+            <titre>Définition</titre>
+            <contenu xmlns="http://utc.fr/nf29/pr/contenu">
+                <paragraphe>
+                    L'eXtensible Markup Language XML est un méta-langage
+                    permettant de définir des langages à balises.
+                    Il standardisé comme une recommandation par le W3C depuis 1998.
+                </paragraphe>
+            </contenu>
+        </sous_partie>
+        <sous_partie>
+            <titre>Historique : de SGML à XML</titre>
+            <contenu xmlns="http://utc.fr/nf29/pr/contenu">
+                <paragraphe>
+                    XML hérite historiquement (et fonctionnellement) du méta-langage SGML, développé au début des années 1980 et largement utilisé dans le cadre des systèmes documentaires, notamment dans les industries de hautes technologies pour lesquelles la fiabilité de la documentation est cruciale. SGML restait un formalisme insuffisamment explicite et trop complexe, ce qui rendait difficile la programmation d'applications SGML dans des cadres plus larges. SGML laissait notamment des ambiguïtés en terme d'interprétation du balisage. XML est un langage respectant la syntaxe SGML, mais en y ajoutant des contraintes supplémentaires, afin d'en lever les ambiguïtés.
+                </paragraphe>
+            </contenu>
+        </sous_partie>
+        <sous_partie>
+            <titre>Syntaxe</titre> 
+            <sous_sous_partie>
+                <titre>Notion de document bien formé</titre>
+                <contenu xmlns="http://utc.fr/nf29/pr/contenu">
+                    <paragraphe>
+                        Un document XML permet d'utiliser un ensemble de balises fournissant des
+                        informations supplémentaires sur le contenu. Cet ensemble doit être établi d'après
+                        les différents constituants (logiques et sémantiques) du document (ou du type de
+                        document traité).
+                        XML n'impose pas de sémantique à priori mais uniquement des règles
+                        syntaxiques. 
+                    </paragraphe>
+                    <paragraphe>
+                        Les règles syntaxiques à respecter sont :
+                    </paragraphe>
+                    <itemListe>
+                        <paragraphe>
+                            Il n'existe qu'un seul élément père par document, cet élément contenant
+                            tous les autres. Il est également appelé racine.
+                        </paragraphe>
+                    </itemListe>
+                     <itemListe>
+                         <paragraphe>
+                             Tout élément fils est inclus complètement dans son père (pas d'éléments
+                             croisés).
+                         </paragraphe>
+                     </itemListe>
+                </contenu>
+            </sous_sous_partie>
+        </sous_partie>   
+        
+    </partie>
+    <ref_note uri="diagrammes" titre="Diagrammes"/>
+    
+</article>
+
+

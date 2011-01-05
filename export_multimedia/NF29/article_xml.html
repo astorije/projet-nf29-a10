@@ -1,0 +1,85 @@
+<html xmlns:cont="http://utc.fr/nf29/pr/contenu">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Le XML</title>
+      <link rel="stylesheet" href="global.css" type="text/css"><script src="jquery-1.4.4.min.js"></script><script src="custom-form-elements.js"></script><script src="app.js"></script></head>
+   <body>
+      <h1>Le XML</h1>
+      <center>contenu en attente de relecture et incomplet</center>
+      <div id="article">
+         <form method="post" action="#">
+            <div class="question rounded_box">
+               <p><b><font size="5"></font></b></p>
+               <p><b><font size="5">Introduction</font></b></p>
+               <p><b><font size="4">Définition</font></b></p>
+               <p>
+                  L'eXtensible Markup Language XML est un méta-langage
+                  permettant de définir des langages à balises.
+                  Il standardisé comme une recommandation par le W3C depuis 1998.
+                  
+               </p>
+            </div>
+            <div class="question rounded_box">
+               <p><b><font size="5"></font></b></p>
+               <p><b><font size="5">Introduction</font></b></p>
+               <p><b><font size="4">Historique : de SGML à XML</font></b></p>
+               <p>
+                  XML hérite historiquement (et fonctionnellement) du méta-langage SGML, développé au début des années 1980 et largement utilisé
+                  dans le cadre des systèmes documentaires, notamment dans les industries de hautes technologies pour lesquelles la fiabilité
+                  de la documentation est cruciale. SGML restait un formalisme insuffisamment explicite et trop complexe, ce qui rendait difficile
+                  la programmation d'applications SGML dans des cadres plus larges. SGML laissait notamment des ambiguïtés en terme d'interprétation
+                  du balisage. XML est un langage respectant la syntaxe SGML, mais en y ajoutant des contraintes supplémentaires, afin d'en
+                  lever les ambiguïtés.
+                  
+               </p>
+            </div>
+            <div class="question rounded_box">
+               <p><b><font size="5">Introduction</font></b></p>
+               <p><b><font size="5">Syntaxe</font></b></p>
+               <p><b><font size="4">Notion de document bien formé</font></b></p>
+               <p>
+                  Un document XML permet d'utiliser un ensemble de balises fournissant des
+                  informations supplémentaires sur le contenu. Cet ensemble doit être établi d'après
+                  les différents constituants (logiques et sémantiques) du document (ou du type de
+                  document traité).
+                  XML n'impose pas de sémantique à priori mais uniquement des règles
+                  syntaxiques. 
+                  
+               </p>
+               <p>
+                  Les règles syntaxiques à respecter sont :
+                  
+               </p>
+               <UL>
+                  <LI>
+                     <p>
+                        Il n'existe qu'un seul élément père par document, cet élément contenant
+                        tous les autres. Il est également appelé racine.
+                        
+                     </p>
+                  </LI>
+               </UL>
+               <UL>
+                  <LI>
+                     <p>
+                        Tout élément fils est inclus complètement dans son père (pas d'éléments
+                        croisés).
+                        
+                     </p>
+                  </LI>
+               </UL>
+            </div>
+         </form>
+      </div>
+      <div id="score" class="rounded_box">
+         <div id="score_sentence"><strong><span id="score_value"></span> %</strong>.
+            
+         </div><a href="#">Afficher les solutions.</a></div>
+      <div id="footer">
+         <ul>
+            <li class="right"><a id="previous" href="#">Precedent</a></li>
+            <li class="left"><a id="next" href="#">Suivant</a></li>
+         </ul>
+      </div>
+   </body>
+</html>

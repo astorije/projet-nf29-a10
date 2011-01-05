@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="file:/Z:/Projet%20NF29/module1.rng" type="xml"?>
+
+<?xml-stylesheet type="text/xsl" href="article_transfoXSLT.xsl"?>
+<article xmlns="http://utc.fr/nf29/PR/article">
+    <titre_article>Unified Modeling Language</titre_article>
+    <meta_article>
+        <date_creation>2010-11-15</date_creation>
+        <auteur>
+			<utilisateur>
+				<nom>Manvu</nom>
+				<prenom>Gérard</prenom>
+			</utilisateur>
+	   </auteur>
+        <date_modification>2010-12-15</date_modification>
+        <contributeurs>
+			<utilisateur>
+				<nom>Depanier</nom>
+				<prenom>Hans</prenom>
+			 </utilisateur>
+        </contributeurs>
+        <contributeurs>
+			<utilisateur>
+				<nom>Secsarentrer</nom>
+				<prenom>Edmond</prenom>
+			</utilisateur>
+        </contributeurs>
+        <relecteur>
+			<utilisateur>
+				<nom>Baralair</nom>
+				<prenom>Lenny</prenom>
+			</utilisateur>
+        </relecteur>
+		<statut_validation>relu</statut_validation>
+        <statut_completude>complet</statut_completude>
+    </meta_article>
+    
+    <partie>
+        <titre>Le formalisme d'UML</titre>
+        <sous_partie>
+            <titre>Mise en œuvre d'une démarche à l'aide d'UML : les vues</titre>
+                <contenu xmlns="http://utc.fr/nf29/pr/contenu">
+                    <paragraphe>
+                        Une façon de mettre en œuvre UML est de considérer différentes vues qui peuvent se superposer pour collaborer à la définition du système :
+                    </paragraphe>
+					<itemListe>
+						<paragraphe>
+							Vue des cas d'utilisation : c'est la description du modèle « vue » par les acteurs du système. Elle correspond aux besoins attendus par chaque acteur (c'est le QUOI et le QUI).
+						</paragraphe>
+					</itemListe>
+					<itemListe>
+						<paragraphe>
+							Vue logique : c'est la définition du système vu de l'intérieur. Elle explique comment peuvent être satisfaits les besoins des acteurs (c'est le COMMENT).
+						</paragraphe>
+					</itemListe>
+					<itemListe>
+						<paragraphe>
+							Vue d'implémentation : cette vue définit les dépendances entre les modules.
+						</paragraphe>
+					</itemListe>
+					<itemListe>
+						<paragraphe>
+							Vue des processus : c'est la vue temporelle et technique, qui met en œuvre les notions de tâches concurrentes, stimuli, contrôle, synchronisation, etc.
+						</paragraphe>
+					</itemListe>
+					<itemListe>
+						<paragraphe>
+							Vue de déploiement : cette vue décrit la position géographique et l'architecture physique de chaque élément du système (c'est le OÙ).
+						</paragraphe>
+					</itemListe>
+                </contenu>
+        </sous_partie>
+        <sous_partie>
+            <titre>Les diagrammes</titre> 
+            <sous_sous_partie>
+                <titre>Diagrammes structurels ou statiques</titre>
+                <contenu xmlns="http://utc.fr/nf29/pr/contenu">
+                    <paragraphe>
+                        Les diagrammes structurels ou statiques (Structure Diagram) rassemblent :
+                    </paragraphe>
+					<itemListe>
+						<paragraphe>
+							Diagramme de classes (cf. Class diagram) : il représente les classes intervenant dans le système.
+						</paragraphe>
+					</itemListe>
+					<itemListe>
+						<paragraphe>
+							Diagramme d'objets (cf. Object diagram) : il sert à représenter les instances de classes (objets) utilisées dans le système.
+						</paragraphe>
+					</itemListe>
+                </contenu>
+            </sous_sous_partie>
+			<sous_sous_partie>
+                <titre>Diagrammes comportementaux</titre>
+                <contenu xmlns="http://utc.fr/nf29/pr/contenu">
+                    <paragraphe>
+                        Les diagrammes comportementaux (Behavior Diagram) rassemblent :
+                    </paragraphe>
+					<itemListe>
+						<paragraphe>
+							Diagramme des cas d'utilisation (use-cases) (cf. Use Case Diagram) : il permet d'identifier les possibilités d'interaction entre le système et les acteurs (intervenants extérieurs au système), c'est-à-dire toutes les fonctionnalités que doit fournir le système.
+						</paragraphe>
+					</itemListe>
+					<itemListe>
+						<paragraphe>
+							Diagramme états-transitions (cf. State Machine Diagram) : permet de décrire sous forme de machine à états finis le comportement du système ou de ses composants.
+						</paragraphe>
+					</itemListe>
+                </contenu>
+            </sous_sous_partie>
+        </sous_partie>   
+        
+    </partie>
+	<partie>
+		<titre>Standardisation et Certification UML</titre>
+		<contenu xmlns="http://utc.fr/nf29/pr/contenu">
+			<paragraphe>
+				UML n'est pas un standard de fait mais un standard « industriel » de l'OMG (novembre 1997) au même titre que CORBA par exemple. Ceci étant, vu le succès initial de ce langage, il aurait pu tout aussi bien être simplement « standard de fait ». Depuis juillet 2005, la première version 2.* de UML est validée par l'OMG.
+				Par ailleurs, depuis 2003, l'OMG a mis en place un programme de certification à la pratique et la connaissance d'UML : OCUP (OMG Certified UML Professional), qui recouvre trois niveaux successifs de maîtrise.
+			</paragraphe>
+		</contenu>
+    </partie>
+	<partie>
+		<titre>Logiciels de modélisation UML</titre>
+		<contenu xmlns="http://utc.fr/nf29/pr/contenu">
+			<paragraphe>
+				Il existe de nombreux outils logiciels de modélisation UML. Malheureusement aucun d'entre eux ne respecte strictement aucune des versions de UML, particulièrement UML2 : beaucoup de ces outils introduisent des notations particulières non conformes, très peu supportent les différents types de diagrammes définis par le standard. Beaucoup en revanche incluent des outils de génération de squelette de code, particulièrement à partir du diagramme de classes, qui est celui qui se prête le mieux à une telle automatisation.
+			</paragraphe>
+		</contenu>
+    </partie>
+	<ref_note uri="diagrammes" titre="Diagrammes"/>
+    
+</article>
+
+
