@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar 
+    xmlns="http://relaxng.org/ns/structure/1.0"
+    xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+    datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+    <start>
+        <element name="plan">
+            <attribute name="auteur"/>
+            <attribute name="titre"/>
+            <zeroOrMore>
+                <ref name="partie_plan"/>
+            </zeroOrMore>
+        </element>
+    </start>
+    <define name="partie_plan">
+        <element name="partie_plan">
+            <attribute name="titre"/>
+            <zeroOrMore>
+                <ref name="ref_note"/>
+            </zeroOrMore>
+            <zeroOrMore>
+                <ref name="sous_partie_plan"/>
+            </zeroOrMore>
+        </element>
+    </define>
+    <define name="sous_partie_plan">
+        <element name="sous_partie_plan">
+            <attribute name="titre"/>
+            <zeroOrMore>
+                <ref name="ref_note"/>
+            </zeroOrMore>
+            <zeroOrMore>
+                <ref name="sous_sous_partie_plan"/>
+            </zeroOrMore>
+        </element>
+    </define>
+    <define name="sous_sous_partie_plan">
+        <element name="sous_sous_partie_plan">
+            <attribute name="titre"/>
+            <zeroOrMore>
+                <ref name="ref_note"/>
+            </zeroOrMore>
+        </element>
+    </define>
+    <define name="ref_note">
+        <element name="ref_note">
+            <attribute name="uri">
+                <data type="ID"/>
+            </attribute>
+            <attribute name="titre">
+                <text/>
+            </attribute>
+        </element>
+    </define>
+</grammar>

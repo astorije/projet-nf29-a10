@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar 
+  xmlns="http://relaxng.org/ns/structure/1.0"
+  xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+  datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+    
+    <include href="utilisateur.rng"/>
+    <include href="ressource.rng"/>
+   
+    <start>
+   
+        <element name="note">
+            <attribute name="uri"><data type="ID"/></attribute>
+            <element name="meta_note">
+                <element name="statut"><text /></element>
+                <element name="date_creation"><data type="date" /></element>
+                <element name="date_modification"><data type="date" /></element>
+                <element name="auteur"><ref name="utilisateur" /></element>
+                <element name="contributeurs">
+                    <zeroOrMore>
+                        <element name="contributeur"><ref name="utilisateur"/></element>
+                    </zeroOrMore>
+                </element>
+                <element name="relecteur"><ref name="utilisateur"/></element>
+            </element>
+            <element name="titre"><text/></element>
+            <ref name="contenu"/>
+        </element>
+        
+    </start>
+</grammar>

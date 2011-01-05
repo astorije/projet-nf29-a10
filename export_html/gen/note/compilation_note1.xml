@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<h1>Note 1 [Compilation]</h1>
+    <ul>
+        <li>Liste1</li>
+        <li>Liste2</li>
+    </ul>
+    <p>Bonjour, ceci est une note.</p>
+    <img src="http://www.aaa.fre.fr/images/tt.gif" alt="image gif"/>
+    <ul>
+        <li>Liste1 NOTE2</li>
+        <li>Liste2 NOTE2</li>
+    </ul>
+    <p>Bonjour, ceci est une note 2.</p>
+    <img src="http://www.aaa.fre.fr/images/tt22.gif" alt="image 22 gif"/>
+
