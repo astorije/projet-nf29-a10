@@ -15,16 +15,16 @@
 			{
 				if ($file != "." && $file != "..") 
 				{
-					echo "<a href=\"$id.php?id=$file\">$file</a><a href=\"pdf.php?id=$file\" target=\"_blank\"><img src=\"images/pdf.gif\" /></a><br/>";
+					echo "<a href=\"$id.php?id=$file\">$file</a><a href=\"$id.php?id=$file\" target=\"_blank\"><img src=\"images/pdf.gif\" /></a><br/>";
 				}
 			}
 			closedir($handle);
 		}
 		
-		if($id=="plan")
+		/*if($id=="plan")
 		{
 			/** Generation scenari to Rng **/
-			$path = "scenari/sources/";
+			/*$path = "scenari/sources/";
 			if ($handle = opendir("$path/Plan/")) 
 			{
 				while (false !== ($file = readdir($handle))) 
@@ -72,8 +72,9 @@
 				}
 				closedir($handle);
 			}
-		}
-		
+		}*/
+
+				
 		include('template2.php');
 	}
 
