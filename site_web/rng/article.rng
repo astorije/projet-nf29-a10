@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar 
+  ns="http://utc.fr/nf29/PR/article"
+  xmlns="http://relaxng.org/ns/structure/1.0"
+  xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+  datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+    
+ 
+    <start>
+        <element name="article">
+            <element name="titre_article"><text/></element>
+            <element name="meta_article">
+                <element name="date_creation"><data type="date"/></element>
+                <element name="auteur"><externalRef href="utilisateur.rng"/></element>
+                <optional>
+                    <element name="date_modification"><data type="date"></data></element>
+                </optional>
+                <zeroOrMore>
+                    <element name="contributeurs">
+                        <zeroOrMore>
+                            <externalRef href="utilisateur.rng"/>
+                        </zeroOrMore>    
+                    </element>
+                </zeroOrMore>
+                <optional>
+                    <element name="relecteur">
+                        <externalRef href="utilisateur.rng"/>
+                    </element>
+                </optional>  
+                <element name="statut_validation">
+                    <choice>
+                        <value>en attente de relecture</value>
+                        <value>relue</value>
+                    </choice>
+                </element>            
+                <element name="statut_completude">
+                    <choice>
+                        <value>incomplet</value>
+                        <value>complet</value>
+                    </choice>
+                </element>
+            </element>
+            <oneOrMore>
+                <ref name="partie"/>
+            </oneOrMore>
+            <zeroOrMore>
+                <ref name="ref_note"/>
+            </zeroOrMore>
+        </element>
+    </start>
+        
+    <define name="partie">
+        <element name="partie">
+            <ref name="partie_content"/>
+            <zeroOrMore>
+                <ref name="sous_partie"/>
+            </zeroOrMore>
+        </element>
+    </define>
+    
+    <define name="sous_partie">
+        <element name="sous_partie">
+            <ref name="partie_content"/>
+            <zeroOrMore>
+                <ref name="sous_sous_partie"/>
+            </zeroOrMore>
+        </element>
+    </define>
+    
+    <define name="sous_sous_partie">
+        <element name="sous_sous_partie">
+            <ref name="partie_content"/>
+        </element>
+    </define>
+    
+    <define name="partie_content">
+        <element name="titre"><text/></element>
+        <optional>
+            <externalRef href="contenu.rng"/>          
+        </optional>
+    </define>
+    
+    <define name="ref_note">
+        <element name="ref_note">
+            <attribute name="uri"><data type="ID"/></attribute>
+            <attribute name="titre"><text/></attribute>
+        </element>
+    </define>
+    
+</grammar>
