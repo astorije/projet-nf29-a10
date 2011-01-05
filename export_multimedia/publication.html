@@ -3,29 +3,48 @@
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <title>Parcours</title>
       <link rel="stylesheet" href="css/global.css" type="text/css">
-      <link rel="stylesheet" href="css/exercises.css" type="text/css"><script src="js/jquery-1.4.4.min.js"></script><script src="js/jquery.flash.js"></script><script src="js/exercises.js"></script></head>
+      <link rel="stylesheet" href="css/exercises.css" type="text/css">
+      <link rel="stylesheet" href="css/style.css" type="text/css"><script src="js/jquery-1.4.4.min.js"></script><script src="js/jquery.flash.js"></script><script src="js/custom.js"></script><script src="js/exercises.js"></script><style type="text/css">
+                    #chargement 
+                    {
+                    display:none;
+                    }
+                </style></head>
    <body>
       <div id="questions">
-         <h1 id="title" class="hidden">
-            <p>UML et XML</p>
-            <p>Saas Canonge - Alain Julien</p>
-            <p>Version - 1.0</p>
-            <p>Les collections du petit UTCéens</p>
-            <p>Editions de l'Université de Technologie de Compiègne</p>
-         </h1>
-         <div>
-            <div>
-               <h2>Note de l'éditeur</h2>
-               <p>
-                  <p>Devant le succès de l'encyclopédie étudiante de l'UTC, les éditions de l'Université de Technologie de Compiègne sont heureuses
-                     de vous présenter cet ouvrage dédié à l'UML et au XML. L'ensemble des contenus de cette publication ont été rédigé collaborativement
-                     par les étudiants de l'université.Bonne lecture.
-                  </p>
-               </p>
-            </div>
-            <div><iframe height="600px" width="100%" src="file:///C:/Users/gaelle/Documents/MOD2/export_multimedia/parcours.html"></iframe></div>
-         </div>
-      </div>
-      <div id="footer" class="hidden"></div>
+         <div id="conteneur">
+            <div id="gauche">
+               <h1 id="titles" class="hidden">
+                  <p>UML et XML</p>
+                  <p>Saas Canonge - Alain Julien</p>
+                  <p>Version - 1.0</p>
+                  <p>Les collections du petit UTCéens</p>
+                  <p>Editions de l'Université de Technologie de Compiègne</p>
+               </h1>
+               <div>
+                  <div>
+                     <h2>Note de l'éditeur</h2>
+                     <p>
+                        <p>Devant le succès de l'encyclopédie étudiante de l'UTC, les éditions de l'Université de Technologie de Compiègne sont heureuses
+                           de vous présenter cet ouvrage dédié à l'UML et au XML. L'ensemble des contenus de cette publication ont été rédigé collaborativement
+                           par les étudiants de l'université.Bonne lecture.
+                        </p>
+                     </p>
+                  </div>
+                  <p><button id="button1" onclick="envoieRequete('file:///C:/Users/gaelle/Documents/MOD2/export_multimedia/parcours.html', '1')">Parcours 1</button></p>
+                  <div id="chargement"><b style="color:#ff0000;">CHARGEMENT EN COURS ...</b></div>
+               </div>
+            </div><iframe id="test" height="800px" width="100%" src=""></iframe></div>
+      </div><script type="text/javascript">  
+                    function envoieRequete(url,id)
+                    {
+                    
+                    $('#button'+id).click( function() {
+                    $('#test').attr('src',url);
+                    
+                    });
+                    }
+                    
+                </script><div id="footer" class="hidden"></div>
    </body>
 </html>

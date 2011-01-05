@@ -1,0 +1,45 @@
+<html xmlns:ressource="utc.fr/nf29/PR/ressource" xmlns:php="http://php.net/xsl" xmlns:parcours="utc.fr/nf29/PR/parcours" xmlns:context="utc.fr/nf29/PR/contextualisation" xmlns:content="utc.fr/nf29/pr/contenu" xmlns:notion="utc.fr/nf29/PR/notion">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Parcours</title>
+      <link rel="stylesheet" href="css/global.css" type="text/css">
+      <link rel="stylesheet" href="css/exercises.css" type="text/css">
+      <link rel="stylesheet" href="css/style.css" type="text/css"><script src="js/jquery-1.4.4.min.js"></script><script src="js/jquery.flash.js"></script><script src="js/exercises.js"></script><script src="js/jquery.tools.min.js"></script><style type="text/css">
+                    #chargement 
+                    {
+                    display:none;
+                    }
+                </style></head>
+   <body>
+      <div id="questions">
+         <div id="conteneur">
+            <div id="gauche">
+               <h1 id="title" class="hidden">
+                  <p>Revision NF29</p>
+                  <p>Saas - Alain</p>
+               </h1>
+               <div>
+                  <h2>Parcours de révision pour le médian de NF29</h2>
+                  <p>
+                     <p>Revoir surtout le chapitre sur le XML.Le reste est facile.</p>
+                  </p>
+               </div>
+               <h2>Le XML</h2>
+               <p><button id="bouton1" onclick="envoieRequete('file:///C:/Users/gaelle/Documents/MOD2/export_multimedia/article_xml.html', '1')">Article sur le XML</button></p>
+               <p><button id="bouton2" onclick="envoieRequete('file:///C:/Users/gaelle/Documents/MOD2/export_multimedia/exercices_php.html', '2')">Exercices de TD</button></p>
+               <p><button id="bouton3" onclick="envoieRequete('file:///C:/Users/gaelle/Documents/MOD2/export_multimedia/cours_audio.html', '3')">Enregistrements audio</button></p>
+               <div id="chargement"><b style="color:#ff0000;">CHARGEMENT EN COURS ...</b></div>
+            </div><iframe id="test" height="500px" width="100%" src=""></iframe></div>
+      </div><script type="text/javascript">  
+                   function envoieRequete(url,id)
+                     {
+               
+                    $('#bouton'+id).click( function() {
+                    $('#test').attr('src',url);
+                    
+                    });
+                    }
+                
+                </script><div id="footer" class="hidden"></div>
+   </body>
+</html>
