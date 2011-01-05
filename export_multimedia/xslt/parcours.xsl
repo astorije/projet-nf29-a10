@@ -49,7 +49,7 @@
                    function envoieRequete(url,id)
                      {
                
-                    $('#bouton'+id).click( function() {
+                    $('#'+id).click( function() {
                     $('#test').attr('src',url);
                     
                     });
@@ -84,7 +84,7 @@
     </xsl:template>
     
     <xsl:template match="ressource:ressource">
-        <p> <button id="bouton{position()}" onclick="envoieRequete('file:///C:/Users/gaelle/Documents/MOD2/export_multimedia/{replace(ressource:uri,'\.xml','.html')}', '{position()}')"><xsl:value-of select="ressource:titre" /></button></p>
+        <p> <button id="{replace(ressource:titre,' ','-')}{position()}" onclick="envoieRequete('file:///C:/Users/gaelle/Documents/MOD2/export_multimedia/{replace(ressource:uri,'\.xml','.html')}', '{replace(ressource:titre,' ','-')}{position()}')"><xsl:value-of select="ressource:titre" /></button></p>
       
         <!-- <p> <a href="{replace(ressource:uri,'.xml','.html')}" onclick="envoieRequete(file:///C:/Users/gaelle/Documents/MOD2/export_multimedia/exercices_php.html,{ressource:uri});"><xsl:value-of select="ressource:titre" /></a> </p>
          <p> <a href="{replace(ressource:uri,'.xml','.html')}"> <xsl:value-of select="ressource:titre" /> </a> </p>

@@ -136,9 +136,9 @@ $(document).ready(function() {
         }
         else if($(domEle).find('input:checkbox').length) {
           if(($(domEle).find('input:checkbox:checked').length
-            && $(domEle).find('.solution img').attr('alt') != 'Vrai')
+            && $(domEle).find('.solution img').attr('alt') != 'true')
           || ($(domEle).find('input:checkbox').not(':checked').length
-            && $(domEle).find('.solution img').attr('alt') != 'Faux'))
+            && $(domEle).find('.solution img').attr('alt') != 'false'))
             correct = false;
         }
         else if($(domEle).find('input:radio').length) {

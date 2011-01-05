@@ -31,7 +31,7 @@
                         </p>
                      </p>
                   </div>
-                  <p><button id="button1" onclick="envoieRequete('file:///C:/Users/gaelle/Documents/MOD2/export_multimedia/parcours.html', '1')">Parcours 1</button></p>
+                  <p><button id="1" onclick="envoieRequete('file:///C:/Users/gaelle/Documents/MOD2/export_multimedia/parcours_xml.html', '1')">Parcours 1</button></p>
                   <div id="chargement"><b style="color:#ff0000;">CHARGEMENT EN COURS ...</b></div>
                </div>
             </div><iframe id="test" height="800px" width="100%" src=""></iframe></div>
@@ -39,7 +39,7 @@
                     function envoieRequete(url,id)
                     {
                     
-                    $('#button'+id).click( function() {
+                    $('#'+id).click( function() {
                     $('#test').attr('src',url);
                     
                     });

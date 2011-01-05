@@ -25,16 +25,21 @@
                   </p>
                </div>
                <h2>Le XML</h2>
-               <p><button id="bouton1" onclick="envoieRequete('file:///C:/Users/gaelle/Documents/MOD2/export_multimedia/article_xml.html', '1')">Article sur le XML</button></p>
-               <p><button id="bouton2" onclick="envoieRequete('file:///C:/Users/gaelle/Documents/MOD2/export_multimedia/exercices_php.html', '2')">Exercices de TD</button></p>
-               <p><button id="bouton3" onclick="envoieRequete('file:///C:/Users/gaelle/Documents/MOD2/export_multimedia/cours_audio.html', '3')">Enregistrements audio</button></p>
+               <p><button id="Article-sur-le-XML1" onclick="envoieRequete('file:///C:/Users/gaelle/Documents/MOD2/export_multimedia/NF29/article_xml.html', 'Article-sur-le-XML1')">Article sur le XML</button></p>
+               <p><button id="Exercices-de-TD2" onclick="envoieRequete('file:///C:/Users/gaelle/Documents/MOD2/export_multimedia/exercices_php.html', 'Exercices-de-TD2')">Exercices de TD</button></p>
+               <p><button id="Enregistrements-audio3" onclick="envoieRequete('file:///C:/Users/gaelle/Documents/MOD2/export_multimedia/cours_audio.html', 'Enregistrements-audio3')">Enregistrements audio</button></p>
+               <div id="chargement"><b style="color:#ff0000;">CHARGEMENT EN COURS ...</b></div>
+               <h2>Le UML</h2>
+               <p><button id="Article-sur-le-UML1" onclick="envoieRequete('file:///C:/Users/gaelle/Documents/MOD2/export_multimedia/NF29/article_uml.html', 'Article-sur-le-UML1')">Article sur le UML</button></p>
+               <p><button id="Exercices-de-TD2" onclick="envoieRequete('file:///C:/Users/gaelle/Documents/MOD2/export_multimedia/exercice.html', 'Exercices-de-TD2')">Exercices de TD</button></p>
+               <p><button id="Enregistrements-audio3" onclick="envoieRequete('file:///C:/Users/gaelle/Documents/MOD2/export_multimedia/cours_audio_uml.html', 'Enregistrements-audio3')">Enregistrements audio</button></p>
                <div id="chargement"><b style="color:#ff0000;">CHARGEMENT EN COURS ...</b></div>
             </div><iframe id="test" height="500px" width="100%" src=""></iframe></div>
       </div><script type="text/javascript">  
                    function envoieRequete(url,id)
                      {
                
-                    $('#bouton'+id).click( function() {
+                    $('#'+id).click( function() {
                     $('#test').attr('src',url);
                     
                     });

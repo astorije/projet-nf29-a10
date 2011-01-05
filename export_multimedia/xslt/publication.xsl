@@ -50,7 +50,7 @@
                     function envoieRequete(url,id)
                     {
                     
-                    $('#button'+id).click( function() {
+                    $('#'+id).click( function() {
                     $('#test').attr('src',url);
                     
                     });
@@ -84,7 +84,7 @@
     
     <xsl:template match="publication:ref_parcours">
         
-            <p> <button id="button{position()}" onclick="envoieRequete('file:///C:/Users/gaelle/Documents/MOD2/export_multimedia/{replace(. ,'\.xml','.html')}', '{position()}')">Parcours <xsl:value-of select="position()" /></button></p>
+        <p> <button id="{replace(publication:ref_parcours,' ','-')}{position()}" onclick="envoieRequete('file:///C:/Users/gaelle/Documents/MOD2/export_multimedia/{replace(. ,'\.xml','.html')}', '{replace(publication:ref_parcours,' ','-')}{position()}')">Parcours <xsl:value-of select="position()" /></button></p>
         
     </xsl:template>
     
