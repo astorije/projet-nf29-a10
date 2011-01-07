@@ -1,150 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="file:/Z:/Projet%20NF29/module1.rng" type="xml"?>
+
 <?xml-stylesheet type="text/css" href="style.css" media="all"?>
 <article>
-    <titre_article>Unified Modeling Language</titre_article>
+    <titre_article>Le XML</titre_article>
     <meta_article>
-        <date_creation>2010-11-15</date_creation>
+        <date_creation>2010-03-21</date_creation>
         <auteur>
-			<utilisateur>
-				<nom>Manvu</nom>
-				<prenom>Gérard</prenom>
-			</utilisateur>
-	   </auteur>
-        <date_modification>2010-12-15</date_modification>
+            <utilisateur>
+                <nom>Obert</nom>
+                <prenom>Antoine</prenom>
+            </utilisateur>
+        </auteur>
+        <date_modification>2010-04-21</date_modification>
         <contributeurs>
-			<utilisateur>
-				<nom>Depanier</nom>
-				<prenom>Hans</prenom>
-			 </utilisateur>
+            <utilisateur>
+                <nom>Dejonqueres</nom>
+                <prenom>Marc</prenom>
+            </utilisateur>
         </contributeurs>
         <contributeurs>
-			<utilisateur>
-				<nom>Secsarentrer</nom>
-				<prenom>Edmond</prenom>
-			</utilisateur>
+            <utilisateur>
+                <nom>Vié</nom>
+                <prenom>Jean</prenom>
+            </utilisateur>
         </contributeurs>
         <relecteur>
-			<utilisateur>
-				<nom>Baralair</nom>
-				<prenom>Lenny</prenom>
-			</utilisateur>
+            <utilisateur>
+                <nom>Marchand</nom>
+                <prenom>Pierre</prenom>
+            </utilisateur>
         </relecteur>
-		<statut_validation>relu</statut_validation>
-        <statut_completude>complet</statut_completude>
+        <statut_validation>en attente de relecture</statut_validation>
+        <statut_completude>incomplet</statut_completude>
     </meta_article>
     
     <partie>
-        <titre>Le formalisme d'UML</titre>
+        <titre>Introduction</titre>
         <sous_partie>
-            <titre>Mise en oeuvre d'une démarche à l'aide d'UML : les vues</titre>
-                <contenu xmlns="http://utc.fr/nf29/pr/contenu">
-                    <paragraphe>
-                        Une façon de mettre en oeuvre UML est de considérer différentes vues qui peuvent se superposer pour collaborer à la définition du système :
-                    </paragraphe>
-					<itemListe>
-						<paragraphe>
-							Vue des cas d'utilisation : c'est la description du modèle « vue » par les acteurs du système. Elle correspond aux besoins attendus par chaque acteur (c'est le QUOI et le QUI).
-						</paragraphe>
-					</itemListe>
-					<itemListe>
-						<paragraphe>
-							Vue logique : c'est la définition du système vu de l'intérieur. Elle explique comment peuvent être satisfaits les besoins des acteurs (c'est le COMMENT).
-						</paragraphe>
-					</itemListe>
-					<itemListe>
-						<paragraphe>
-							Vue d'implémentation : cette vue définit les dépendances entre les modules.
-						</paragraphe>
-					</itemListe>
-					<itemListe>
-						<paragraphe>
-							Vue des processus : c'est la vue temporelle et technique, qui met en oeuvre les notions de tâches concurrentes, stimuli, contrôle, synchronisation, etc.
-						</paragraphe>
-					</itemListe>
-					<itemListe>
-						<paragraphe>
-							Vue de déploiement : cette vue décrit la position géographique et l'architecture physique de chaque élément du système (c'est le OÙ).
-						</paragraphe>
-					</itemListe>
-                </contenu>
+            <titre>Définition</titre>
+            <contenu xmlns="http://utc.fr/nf29/pr/contenu">
+                <paragraphe>
+                    L'eXtensible Markup Language XML est un méta-langage
+                    permettant de définir des langages à balises.
+                    Il standardisé comme une recommandation par le W3C depuis 1998.
+                </paragraphe>
+            </contenu>
         </sous_partie>
         <sous_partie>
-            <titre>Les diagrammes</titre> 
+            <titre>Historique : de SGML à XML</titre>
+            <contenu xmlns="http://utc.fr/nf29/pr/contenu">
+                <paragraphe>
+                    XML hérite historiquement (et fonctionnellement) du méta-langage SGML, développé au début des années 1980 et largement utilisé dans le cadre des systèmes documentaires, notamment dans les industries de hautes technologies pour lesquelles la fiabilité de la documentation est cruciale. SGML restait un formalisme insuffisamment explicite et trop complexe, ce qui rendait difficile la programmation d'applications SGML dans des cadres plus larges. SGML laissait notamment des ambiguïtés en terme d'interprétation du balisage. XML est un langage respectant la syntaxe SGML, mais en y ajoutant des contraintes supplémentaires, afin d'en lever les ambiguïtés.
+                </paragraphe>
+            </contenu>
+        </sous_partie>
+        <sous_partie>
+            <titre>Syntaxe</titre> 
             <sous_sous_partie>
-                <titre>Diagrammes structurels ou statiques</titre>
+                <titre>Notion de document bien formé</titre>
                 <contenu xmlns="http://utc.fr/nf29/pr/contenu">
                     <paragraphe>
-                        Les diagrammes structurels ou statiques (Structure Diagram) rassemblent :
+                        Un document XML permet d'utiliser un ensemble de balises fournissant des
+                        informations supplémentaires sur le contenu. Cet ensemble doit être établi d'après
+                        les différents constituants (logiques et sémantiques) du document (ou du type de
+                        document traité).
+                        XML n'impose pas de sémantique à priori mais uniquement des règles
+                        syntaxiques. 
                     </paragraphe>
-					<itemListe>
-						<paragraphe>
-							Diagramme de classes (cf. Class diagram) : il représente les classes intervenant dans le système.
-						</paragraphe>
-					</itemListe>
-					<itemListe>
-						<paragraphe>
-							Diagramme d'objets (cf. Object diagram) : il sert à représenter les instances de classes (objets) utilisées dans le système.
-						</paragraphe>
-					</itemListe>
-                </contenu>
-            </sous_sous_partie>
-			<sous_sous_partie>
-                <titre>Diagrammes comportementaux</titre>
-                <contenu xmlns="http://utc.fr/nf29/pr/contenu">
                     <paragraphe>
-                        Les diagrammes comportementaux (Behavior Diagram) rassemblent :
+                        Les règles syntaxiques à respecter sont :
                     </paragraphe>
-					<itemListe>
-						<paragraphe>
-							Diagramme des cas d'utilisation (use-cases) (cf. Use Case Diagram) : il permet d'identifier les possibilités d'interaction entre le système et les acteurs (intervenants extérieurs au système), c'est-à-dire toutes les fonctionnalités que doit fournir le système.
-						</paragraphe>
-					</itemListe>
-					<itemListe>
-						<paragraphe>
-							Diagramme états-transitions (cf. State Machine Diagram) : permet de décrire sous forme de machine à états finis le comportement du système ou de ses composants.
-						</paragraphe>
-					</itemListe>
+                    <itemListe>
+                        <paragraphe>
+                            Il n'existe qu'un seul élément père par document, cet élément contenant
+                            tous les autres. Il est également appelé racine.
+                        </paragraphe>
+                    </itemListe>
+                     <itemListe>
+                         <paragraphe>
+                             Tout élément fils est inclus complètement dans son père (pas d'éléments
+                             croisés).
+                         </paragraphe>
+                     </itemListe>
                 </contenu>
             </sous_sous_partie>
         </sous_partie>   
         
     </partie>
-	<partie>
-		<titre>Standardisation et Certification UML</titre>
-		<contenu xmlns="http://utc.fr/nf29/pr/contenu">
-			<paragraphe>
-				UML n'est pas un standard de fait mais un standard « industriel » de l'OMG (novembre 1997) au même titre que CORBA par exemple. Ceci étant, vu le succès initial de ce langage, il aurait pu tout aussi bien être simplement « standard de fait ». Depuis juillet 2005, la première version 2.* de UML est validée par l'OMG.
-				Par ailleurs, depuis 2003, l'OMG a mis en place un programme de certification à la pratique et la connaissance d'UML : OCUP (OMG Certified UML Professional), qui recouvre trois niveaux successifs de maîtrise.
-			</paragraphe>
-		</contenu>
-    </partie>
-	<partie>
-		<titre>Logiciels de modélisation UML</titre>
-		<contenu xmlns="http://utc.fr/nf29/pr/contenu">
-			<paragraphe>
-				Il existe de nombreux outils logiciels de modélisation UML. Malheureusement aucun d'entre eux ne respecte strictement aucune des versions de UML, particulièrement UML2 : beaucoup de ces outils introduisent des notations particulières non conformes, très peu supportent les différents types de diagrammes définis par le standard. Beaucoup en revanche incluent des outils de génération de squelette de code, particulièrement à partir du diagramme de classes, qui est celui qui se prête le mieux à une telle automatisation.
-			</paragraphe>
-		</contenu>
-    </partie>
     
 
 
-<note uri="a1" xmlns="utc.fr/nf29/pr/note">
-            <utilisateur>
-            </utilisateur>
-            <utilisateur>
-            </utilisateur>
-            <utilisateur>
-            </utilisateur>           
-            <utilisateur>
-            </utilisateur>    
-        <version>1.0</version>
-	<titre>Industrialisation</titre>
-	<contenu>
-		<paragraphe>Après l'unification et la standardisation, bientôt l'industrialisation d'UML : les outils qui supportent UML se multiplient (GDPro, ObjectTeam, Objecteering, OpenTool, Rational Rose, Rhapsody, STP, Visio, Visual Modeler, WithClass...).</paragraphe>
-	</contenu>
-    <titre>ce que j'ai retenu de l'UML</titre>
-    <contenu xmlns="utc.fr/nf29/pr/contenu">
-        <paragraphe>contenu de la note sur le cours d'UML</paragraphe>
-    </contenu>
-</note></article>
+</article>
