@@ -8,12 +8,15 @@
 		</sm:part>
 		<sm:set usage="required">
 			<sm:part code="article" name="￼;Article￼" internalized="never">
+				<sm:metaIfExternalized sc:refUri="/base/sTitle/sTitle.model" usage="required"/>
 				<sm:allowedModel sc:refUri="/article/article.model"/>
 			</sm:part>
 			<sm:part code="coursAudio" name="￼;Cours Audio￼" internalized="never">
+				<sm:metaIfExternalized sc:refUri="/base/sTitle/sTitle.model" usage="required"/>
 				<sm:allowedModel sc:refUri="/coursaudio/coursAudio.model"/>
 			</sm:part>
 			<sm:part code="exercice" name="￼;Exercice￼" internalized="never">
+				<sm:metaIfExternalized sc:refUri="/base/sTitle/sTitle.model" usage="required"/>
 				<sm:allowedModel sc:refUri="/exercice/exercice.model"/>
 			</sm:part>
 		</sm:set>

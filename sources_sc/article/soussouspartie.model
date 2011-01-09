@@ -6,9 +6,6 @@
 			<sm:part code="contenu" name="￼;Contenu￼" internalized="always">
 				<sm:allowedModel sc:refUri="/contenu/contenu.model"/>
 			</sm:part>
-			<sm:part code="note" name="￼;Note￼" internalized="never">
-				<sm:allowedModel sc:refUri="/note/note.model"/>
-			</sm:part>
 		</sm:set>
 	</sm:structure>
 	<sm:authoring/>

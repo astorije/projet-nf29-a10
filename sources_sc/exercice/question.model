@@ -11,23 +11,23 @@
 		<sm:part code="SolutionGenerale" name="￼;SolutionGenerale￼" internalized="userDependent" usage="optional">
 			<sm:allowedModel sc:refUri="/contenu/contenu.model"/>
 		</sm:part>
-		<sm:alternative usage="required">
+		<sm:alternative usage="optional">
 			<sm:set name="￼;reponseTxt￼">
 				<sm:part code="responseTexte" name="￼;reponseTexte￼" internalized="userDependent">
 					<sm:meta sc:refUri="/exercice/validChoix.model" usage="required"/>
-					<sm:allowedModel sc:refUri="/base/sTxt/sTxt.model"/>
+					<sm:allowedModel sc:refUri="/base/txt/txt.model"/>
 				</sm:part>
 			</sm:set>
 			<sm:set name="￼;reponseChoixMultiple￼">
 				<sm:part code="reponseChoixMultiple" name="￼;choix￼" internalized="userDependent">
 					<sm:meta sc:refUri="/exercice/validChoix.model" usage="required"/>
-					<sm:allowedModel sc:refUri="/base/sTxt/sTxt.model"/>
+					<sm:allowedModel sc:refUri="/base/txt/txt.model"/>
 				</sm:part>
 			</sm:set>
 			<sm:set name="￼;reponseChoixUnique￼">
 				<sm:part code="reponseChoixUnique" name="￼;choix￼" internalized="userDependent">
 					<sm:meta sc:refUri="/exercice/validChoix.model" usage="required"/>
-					<sm:allowedModel sc:refUri="/base/sTxt/sTxt.model"/>
+					<sm:allowedModel sc:refUri="/base/txt/txt.model"/>
 				</sm:part>
 			</sm:set>
 		</sm:alternative>

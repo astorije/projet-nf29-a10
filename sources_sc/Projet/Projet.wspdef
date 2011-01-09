@@ -10,6 +10,7 @@
 			<sm:class sc:refUri="/parcours/parcours.model" access="readWrite"/>
 			<sm:class sc:refUri="/coursaudio/coursAudio.model" access="readWrite"/>
 			<sm:class sc:refUri="/coursaudio/segmentAudio.model" access="readWrite"/>
+			<sm:class sc:refUri="/publication/publication.model" access="readWrite"/>
 		</sm:group>
 		<sm:group name="￼;Ressources￼" displayMode="open">
 			<sm:class sc:refUri="/binaries/gif/gif.model" access="readWrite"/>

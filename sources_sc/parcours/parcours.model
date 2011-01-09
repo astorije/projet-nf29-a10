@@ -2,14 +2,11 @@
 <sm:compositionPrim xmlns:sc="http://www.utc.fr/ics/scenari/v3/core" xmlns:sm="http://www.utc.fr/ics/scenari/v3/modeling" name="￼;Parcours￼">
 	<sm:identification targetNamespace="utc.fr/nf29/sc/parcours" targetPrefix="par" code="parcours" itemExtension="parcours"/>
 	<sm:structure>
-		<sm:part code="mtpar" name="￼;méta-parcours￼" internalized="userDependent" usage="required">
-			<sm:allowedModel sc:refUri="/parcours/metaParcours.model"/>
-		</sm:part>
 		<sm:part code="contextualisation" name="￼;contextualisation￼" internalized="always" usage="required">
 			<sm:allowedModel sc:refUri="/contextualisation/contextualisation.model"/>
 		</sm:part>
 		<sm:set usage="required">
-			<sm:part code="notion" name="￼;notion￼" internalized="never">
+			<sm:part code="notion" name="￼;notion￼" internalized="always">
 				<sm:allowedModel sc:refUri="/notion/notion.model"/>
 			</sm:part>
 		</sm:set>

@@ -10,9 +10,6 @@
 				<sm:meta sc:refUri="/base/sTitle/sTitlePartie.model" usage="required"/>
 				<sm:allowedModel sc:refUri="/article/soussouspartie.model"/>
 			</sm:part>
-			<sm:part code="note" name="￼;Note￼" internalized="never">
-				<sm:allowedModel sc:refUri="/note/note.model"/>
-			</sm:part>
 		</sm:set>
 	</sm:structure>
 	<sm:authoring>
