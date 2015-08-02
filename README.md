@@ -1,0 +1,1 @@
+This project is an encyclopedia-like project, developed for academic purposes at the Université de Technologie de Compiègne, France, by the students of the NF29 course (Document and Information Engineering) in Fall 2010.
